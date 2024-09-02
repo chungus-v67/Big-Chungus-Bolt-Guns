@@ -51,6 +51,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 	protected bool wasMagEmptyAfterReload = false;
 	protected int meshIdx = -1;
 	IEntity mosinRound = null;
+	protected int magSlotIndex = -1;
 	
 	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
 	{
@@ -86,6 +87,13 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		protected SCR_WeaponInfo hud = SCR_WeaponInfo.Cast(character.GetInfoDisplay());
 		protected SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());	
 		
+		if (magazine && magSlotIndex == -1){
+			InventoryMagazineComponent magInvComp = InventoryMagazineComponent.Cast(magazine.GetOwner().FindComponent(InventoryMagazineComponent));
+			if (magInvComp) {
+				magSlotIndex = magInvComp.GetParentSlot().GetID();
+			}
+		}
+		
 		// Init variables
 		// *************************************************************************
 		
@@ -99,6 +107,8 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		m_playerAnimStopReloading = animation.BindVariableBool("MosinStopReloading");
 
 
+
+				// Check if mag has been deleted. Attempt to replace
 		if (!magazine) {
 			if (weapon) {
 				MuzzleComponent thisMuzzle = MuzzleComponent.Cast(weapon.FindComponent(MuzzleComponent));
@@ -107,14 +117,20 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 					if (defaultMagResource) {
 						IEntity defaultMag = GetGame().SpawnEntityPrefab(defaultMagResource, GetGame().GetWorld());
 						if (defaultMag) {
-							SCR_WeaponAttachmentsStorageComponent weaponAttachment = SCR_WeaponAttachmentsStorageComponent.Cast(m_Owner.FindComponent(SCR_WeaponAttachmentsStorageComponent));
+							SCR_WeaponAttachmentsStorageComponent weaponAttachment = SCR_WeaponAttachmentsStorageComponent.Cast(m_Owner.FindComponent(SCR_WeaponAttachmentsStorageComponent)); 
 							if (weaponAttachment) {
-								InventoryStorageSlot magSlot = weaponAttachment.FindSuitableSlotForItem(defaultMag);
+								InventoryStorageSlot magSlot = weaponAttachment.GetSlot(magSlotIndex);
 								if (magSlot) {
 									MagazineComponent defaultMagComp = MagazineComponent.Cast(defaultMag.FindComponent(MagazineComponent));
 									if (defaultMagComp) {
-										defaultMagComp.SetAmmoCount(0);
+										BaseRplComponent rplComponent = BaseRplComponent.Cast(defaultMag.FindComponent(BaseRplComponent));
+										if (rplComponent)
+										{
+							 			   rplComponent.InsertToReplication();
+										} 	
 										magSlot.AttachEntity(defaultMag);
+										magazine = defaultMagComp;
+										magazine.SetAmmoCount(0);
 									}
 								}
 							}		
@@ -125,13 +141,12 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		}
 		
 		if (!magWellType) {
-			magWellType.Spawn();
+			//magWellType.Spawn();
 			if (magazine){
 				magWellType = magazine.GetMagazineWell().Type();
 			}
 		}
 		// ***************************************************************************
-		
 		
 		
 		// Event that increments ammo count and stores new value to animation variable
@@ -214,7 +229,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			SetBoolVariable(m_animCloseBoltFlag, false);
 								
 			// If the time exceeds the amount set, this attempts to exit the reload as remediation
-			if (GetGame().GetWorld().GetWorldTime() - m_startTime > m_sMaxReloadTime ){
+			if (m_startTime != -1 && GetGame().GetWorld().GetWorldTime() - m_startTime > m_sMaxReloadTime ){
 				animation.SetVariableInt(m_playerAnimStopReloading, true);
 				SetIntVariable(m_animStopReloading, true);
 				animation.SetVariableBool(m_playerAnimCloseBoltFlag, true);
@@ -244,6 +259,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		}
 		
 		if (animEventType == m_emptyMagAfterReloadCheck) {
+			m_startTime = -1; //This needs to be called at the end of the reload after the loop. Just putting it here for simplicity
 			protected SCR_MagazinePredicate predicate = new SCR_MagazinePredicate();
 			predicate.magWellType = magWellType;
 			dummyMag = invMan.FindItem(predicate);	
@@ -283,7 +299,6 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		// Used at the beginning of the reload to set the variable that tracks how long the reload has gone on for.
 		if (animEventType == m_startReloadTimer) {
 			m_startTime = GetGame().GetWorld().GetWorldTime();
-			Print(m_startTime);
 			animation.SetVariableInt(m_playerAnimStopReloading, false);
 			SetIntVariable(m_animStopReloading, false);
 		}
