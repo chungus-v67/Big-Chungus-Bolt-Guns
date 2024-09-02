@@ -1,0 +1,131 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 3
+ $node "Scene_Root" {
+  $keys t q s {
+   $frame 0 3 {
+   }
+  }
+  $node "Armature" {
+   $keys t q s {
+    $frame 0 3 {
+    }
+   }
+   $node "w_root" {
+    $keys t q s {
+     $frame 0 3 {
+      #q -0.00000106 -0.00000014 1 0.00000008
+     }
+    }
+    $node "w_bolt_rear" {
+     $keys t q s {
+      $frame 0 3 {
+       #t 0 -0.0990709 0.0296288
+      }
+     }
+     $node "w_bolt" {
+      $keys t q s {
+       $frame 0 3 {
+        #t -0.0000002 0 0.0770658
+       }
+      }
+     }
+    }
+    $node "w_sight" {
+     $keys t q s {
+      $frame 0 3 {
+       #t -0.0000008 -0.1172473 0.3825909
+       #q -0.00002691 0 0 1
+      }
+     }
+     $node "w_sight_slider" {
+      $keys t q s {
+       $frame 0 3 {
+        #t 0.0000001 0 -0.0672861
+       }
+      }
+     }
+    }
+    $node "w_trigger" {
+     $keys t q s {
+      $frame 0 3 {
+       #t -0.0000001 -0.0427416 0.0661644
+      }
+     }
+    }
+   }
+  }
+  $node "snap_hand_right" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.0500258 0
+    }
+   }
+  }
+  $node "snap_hand_left" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.0736769 0.3041216
+    }
+   }
+  }
+  $node "slot_optics" {
+   $keys t q s {
+    $frame 0 3 {
+     #t -0.0318237 0.0928722 0.1337623
+    }
+   }
+  }
+  $node "slot_magazine" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.087065 0.1139609
+    }
+   }
+  }
+  $node "slot_ironsight_rear" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.123336 0.2983944
+    }
+   }
+  }
+  $node "slot_ironsight_front" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.1235641 0.9418106
+    }
+   }
+  }
+  $node "eye" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.1234619 0
+    }
+   }
+  }
+  $node "barrel_muzzle" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.1009189 0.9759129
+    }
+   }
+  }
+  $node "barrel_chamber" {
+   $keys t q s {
+    $frame 0 3 {
+     #t 0 0.1010761 0.2076129
+    }
+   }
+  }
+ }
+ $events {
+  #event 1 "Weapon_TriggerPulled" "" -1 0 "" 0
+  #event 2 "AdjustAmmoCount" "" -1 0 "" 0
+  #event 2 "LoopIn" "" -1 0 "" 0
+  #event 3 "Weapon_Rack_Bolt" "" -1 0 "" 0
+  #event 3 "Weapon_TriggerReleased" "" -1 0 "" 0
+  #event 3 "LoopOut" "" -1 0 "" 0
+ }
+}

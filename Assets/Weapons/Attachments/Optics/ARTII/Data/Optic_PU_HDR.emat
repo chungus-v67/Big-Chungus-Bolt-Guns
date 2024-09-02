@@ -1,0 +1,5 @@
+HDREffect : "{B5D201F21F2D379C}Assets/_SharedMaterials/Weapons/Optic_HDR_base.emat" {
+ ReticleMap "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+ ReticleColor 0 0 0 1
+ ReticleScale 0.82
+}

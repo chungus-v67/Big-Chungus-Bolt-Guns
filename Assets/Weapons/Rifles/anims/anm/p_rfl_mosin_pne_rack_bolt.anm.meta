@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{431F1A222BA94325}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_rack_bolt.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,8 @@
+GameProject {
+ ID "MosinNagant"
+ GUID "61BD6595183FCEBD"
+ TITLE "Mosin Nagant"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

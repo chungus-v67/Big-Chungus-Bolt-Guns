@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{958FA7D1B62B2B4B}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_bolt_rack.anm"
+ Configurations {
+  TXAResourceClass PC {
+   PositionCompressFactor 0
+   RotationCompressFactor 0
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

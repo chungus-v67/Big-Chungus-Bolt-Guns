@@ -1,0 +1,122 @@
+GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Optic_ARTII_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1EBB0698FD}" {
+    ItemDisplayName UIInfo "{5D0CC83435B5584E}" {
+     Name "Mosin PU Scope"
+     Description "3.5x fixed optic for the 91/30 PU Mosin Nagant Sniper"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D0CC83435B55848}" {
+     ItemVolume 100
+     PivotBoneName "snap_optic"
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
+      AttachmentType AttachmentOpticsMosinPU "{5D0CCDD062A6250E}" {
+      }
+     }
+     PreviewRenderAttributes "{52D69389645B4E4D}" {
+      CameraDistanceToItem 0.6
+     }
+    }
+   }
+  }
+  MeshObject "{5D0CC83435B55858}" {
+   Object "{DB54AAD66E436754}Assets/Weapons/Attachments/Optics/PU/PU scope_2.xob"
+  }
+  SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{5D0CC83435B55853}" {
+   }
+   SightsRanges {
+    SightRangeInfo "{5D0CCDD062A62502}" {
+     Range 0.075 100
+    }
+    SightRangeInfo "{5D0CCDD062A62503}" {
+     Range 0.11 200
+    }
+    SightRangeInfo "{5D0CCDD062A62500}" {
+     Range 0.178 300
+    }
+    SightRangeInfo "{5D0CCDD062A62501}" {
+     Range 0.247 400
+    }
+    SightRangeInfo "{5D0CCDD062A657C3}" {
+     Range 0.33 500
+    }
+    SightRangeInfo "{5D0CCDD062A657DC}" {
+     Range 0.41 600
+    }
+    SightRangeInfo "{5D0CCDD062A657DD}" {
+     Range 0.515 700
+    }
+    SightRangeInfo "{61E925D6409B78B4}" {
+     Range 0.62 800
+    }
+    SightRangeInfo "{61E925D640FFAAA3}" {
+     Range 0.76 900
+    }
+    SightRangeInfo "{61E925D640D4080B}" {
+     Range 0.915 1000
+    }
+   }
+   SightsFOVInfo SCR_SightsZoomFOVInfo "{5D0CCDD062A657D9}" {
+    m_fBaseZoom 3.5
+    m_fZoomMax 3.5
+    m_fStepZoomSize 0.1
+   }
+   SightsPointFront PointInfo "{5D0CCDD062A657DB}" {
+    PivotID "optic_front"
+   }
+   SightsPointRear PointInfo "{5D0CCDD062A657D5}" {
+    PivotID "optic_rear"
+   }
+   m_sReticleTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+   m_sReticleGlowTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+   m_fMagnification 3.5
+   m_fReticleBaseZoom 3.5
+   m_eZeroingType EPZ_CAMERA_TURN
+   m_fReticleOffsetX -0.065
+   m_vCameraOffset -0.002 0.01 0
+   m_vCameraAngles 0 0.003 0
+   m_vCameraMisalignmentScale 1 1 1
+   m_rScopeHDRMatrial "{1725299A966C713F}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_PU_HDR.emat"
+   m_fBasicParallax 1
+   m_fScopeRadius 0.01
+   m_fReticlePIPScale 0.8
+   m_fObjectivePIPEdgeMin 3
+   m_fObjectivePIPEdgeMax 4.5
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   ActionContexts {
+    UserActionContext "{5284E0EFF4E818E9}" {
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAttachment "{5284E0EFDA00C63B}" {
+     ParentContextList +{
+     }
+     VisibilityRange 0.5
+    }
+    SCR_AttachementAction "{5D0CC83435B55B8D}" {
+     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B8A}" {
+      Name "Detach: "
+     }
+    }
+    SCR_AttachItemFromInventoryAction "{5D0CC83435B55B88}" {
+     ParentContextList {
+      "optic"
+     }
+     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B89}" {
+      Name "Attach: "
+     }
+     VisibilityRange 1
+     Duration 1
+    }
+   }
+  }
+ }
+ coords 1722.995 39 2857.235
+}

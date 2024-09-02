@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4FB0818684A0A91E}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_finger_trigger_out.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

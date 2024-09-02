@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0.549 0.549 0.549 1
+ BCRMap "{51C5D223686E5EC9}Assets/Weapons/Attachments/Optics/PU/Data/Textures/PUScopeMat_BCR.edds"
+ NMOMap "{691D69B1B1190C57}Assets/Weapons/Attachments/Optics/PU/Data/Textures/PUScopeMat_NMO.edds"
+}

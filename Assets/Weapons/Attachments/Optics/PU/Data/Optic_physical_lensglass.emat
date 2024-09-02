@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{62393683F1B84925}Assets/Weapons/Attachments/Optics/PU/Data/Textures/Optic_physical_lensglass_BCR.edds"
+ NMOMap "{5AE18D1128CF1BBB}Assets/Weapons/Attachments/Optics/PU/Data/Textures/Optic_physical_lensglass_NMO.edds"
+}

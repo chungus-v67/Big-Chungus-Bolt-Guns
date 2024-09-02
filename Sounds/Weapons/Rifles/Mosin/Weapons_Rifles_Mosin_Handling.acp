@@ -1,0 +1,1360 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 62477
+   name "Signal 61"
+   tl -192.404 -1915.429
+   res "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
+   inputsport {
+    1 2 8 10 36 53 54 100
+   }
+   outputsport {
+    5 42
+   }
+   inputvalues {
+    0 0 1 1 1 1000 1000 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1 10000 10000 1
+   }
+   path "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
+  }
+  SignalClass {
+   id 73741
+   name "Signal 70"
+   tl -1195.833 -887.222
+   res "{8892979EFCA49B59}Sounds/_SharedData/Signals/SimpleHelpers/RandomDelay.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 74764
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 5
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 74764
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    4 5
+   }
+   outputsport {
+    1
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    100 100
+   }
+   path "{8892979EFCA49B59}Sounds/_SharedData/Signals/SimpleHelpers/RandomDelay.sig"
+  }
+  SignalClass {
+   id 97293
+   name "Signal Reverb"
+   tl 170 -1713.077
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   inputsport {
+    1 35 40 112 139
+   }
+   outputsport {
+    34 39 105 106 107 110
+   }
+   inputvalues {
+    40 1 1 16000 16000
+   }
+   inputvaluesmin {
+    0 0 0 0 0
+   }
+   inputvaluesmax {
+    100 1 1 16000 16000
+   }
+   path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 3081
+   name "SOUND_RELOAD_MAG_REMOVE"
+   version 5
+   tl -192.404 -601.833
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 5138
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 37897
+   name "SOUND_DRY"
+   version 5
+   tl -192.404 -985.047
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 34834
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 7175
+  }
+  SoundClass {
+   id 63497
+   name "SOUND_WPN_TOSAFETY"
+   version 5
+   tl -192.404 -1428.988
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 68626
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 64521
+   name "SOUND_WPN_TOSEMIAUTO"
+   version 5
+   tl -192.404 -1623.273
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 66578
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 78857
+   name "SOUND_RELOAD_MAG_INSERT"
+   version 5
+   tl -192.404 -371.429
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 79890
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 80905
+   name "SOUND_RELOAD_BOLT_PULL"
+   version 5
+   tl -192.404 -138.571
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 81938
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 83977
+   name "SOUND_RELOAD_BOLT_SLIDE_BACK"
+   version 5
+   tl -192.404 92.857
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 82962
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 86025
+   name "SOUND_RELOAD_BOLT_SNAP"
+   version 5
+   tl -192.404 540.238
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 85010
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass {
+   id 95241
+   name "SOUND_RELOAD_BOLT_SLIDE_FWD"
+   version 5
+   tl -192.404 295.363
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 94226
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+ }
+ mixers {
+  MixerClass {
+   id 69643
+   name "OutputState 68"
+   version 4
+   tl 169.619 -1344
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 6151
+     links {
+      ConnectionClass connection {
+       id 3081
+       port 65
+      }
+      ConnectionClass connection {
+       id 63497
+       port 65
+      }
+      ConnectionClass connection {
+       id 64521
+       port 65
+      }
+      ConnectionClass connection {
+       id 78857
+       port 65
+      }
+      ConnectionClass connection {
+       id 80905
+       port 65
+      }
+      ConnectionClass connection {
+       id 86025
+       port 65
+      }
+      ConnectionClass connection {
+       id 95241
+       port 65
+      }
+      ConnectionClass connection {
+       id 83977
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 7175
+     links {
+      ConnectionClass connection {
+       id 37897
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 152583
+     links {
+      ConnectionClass connection {
+       id 75805
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 197639
+     links {
+      ConnectionClass connection {
+       id 77853
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    8421379 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 74764
+   name "Constant 69"
+   version 5
+   tl -1364.722 -888.334
+   "Constant values" {
+    IOPConstantsValueClass "Delay Min" {
+     Key "Delay Min"
+     Value 110.4
+     Port 1
+    }
+    IOPConstantsValueClass "Delay Max" {
+     Key "Delay Max"
+     Value 155.8
+     Port 2
+    }
+   }
+  }
+  ConstantClass {
+   id 92172
+   name "Sample Shorten"
+   version 5
+   tl -1294.167 111
+   "Constant values" {
+    IOPConstantsValueClass "#1" {
+     Key "#1"
+     Value 80
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 5138
+   name "SOUND_RELOAD_MAG_REMOVE"
+   version 5
+   tl -407.904 -601.833
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 87059
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 56324
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 34834
+   name "SOUND_DRY"
+   version 5
+   tl -407.904 -985.047
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 91155
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 33796
+       port 65
+      }
+      ConnectionClass connection {
+       id 72708
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 66578
+   name "SOUND_WPN_TOSEMIAUTO"
+   version 5
+   tl -407.904 -1623.273
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 11283
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 65540
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 68626
+   name "SOUND_WPN_TOSAFETY"
+   version 5
+   tl -407.904 -1428.988
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 11283
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 67588
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 79890
+   name "SOUND_RELOAD_MAG_INSERT"
+   version 5
+   tl -407.904 -371.429
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 88083
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 57348
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 81938
+   name "SOUND_RELOAD_BOLT_PULL"
+   version 5
+   tl -407.904 -138.571
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 88083
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 52228
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 82962
+   name "SOUND_RELOAD_BOLT_SLIDE_BACK"
+   version 5
+   tl -407.904 92.857
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 90131
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 60420
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 85010
+   name "SOUND_RELOAD_BOLT_SNAP"
+   version 5
+   tl -407.904 540.238
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 90131
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 54276
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 94226
+   name "SOUND_RELOAD_BOLT_SLIDE"
+   version 5
+   tl -407.904 295.363
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 45084
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 90131
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 96260
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf" {
+   id 11283
+   version 5
+   tl -707.904 -1758.047
+   parent "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf"
+  }
+  AmplitudeClass : "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf" {
+   id 87059
+   version 5
+   tl -1293.056 -238.222
+   parent "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf"
+  }
+  AmplitudeClass : "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf" {
+   id 88083
+   name "Amplitude 10-5"
+   comment "Uses 15-10 Curve"
+   version 5
+   tl -1294.167 -126.333
+   ctl 0 -21
+   parent "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf"
+  }
+  AmplitudeClass : "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf" {
+   id 90131
+   name "Amplitude 5-0"
+   comment "Uses 15-10 Curve"
+   version 5
+   tl -1294.167 -30
+   ctl 0 -21
+   parent "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf"
+  }
+  AmplitudeClass : "{D6921F7062BE7960}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-60LUFS_to_-55LUFS.conf" {
+   id 91155
+   version 5
+   tl -408.333 -1060
+   parent "{D6921F7062BE7960}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-60LUFS_to_-55LUFS.conf"
+  }
+ }
+ frequency {
+  FrequencyClass : "{65257CB7AD05C1FD}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Handling_Rifle.conf" {
+   id 12309
+   version 5
+   tl -707.904 -1678.19
+   ctl -2812.5 1687.5
+   parent "{65257CB7AD05C1FD}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Handling_Rifle.conf"
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 62477
+       port 42
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 33796
+   name "Shot_Dry"
+   version 7
+   tl -1019 -1005.047
+   Volume -24
+   "Pitch variance" 0.25
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{FF4B15CE9224A4F7}Sounds/Weapons/Rifles/M21/Samples/Weapons_Rifles_M21_DryFire_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6655AC578FC39567}Sounds/Weapons/Rifles/M21/Samples/Weapons_Rifles_M21_DryFire_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{115FC4DF7B617A17}Sounds/Weapons/Rifles/M21/Samples/Weapons_Rifles_M21_DryFire_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{16983E8E1DE7C0D4}Sounds/Weapons/Rifles/M21/Samples/Weapons_Rifles_M21_DryFire_04.wav"
+     Index 3
+    }
+   }
+  }
+  BankLocalClass {
+   id 52228
+   name "BoltPull"
+   version 7
+   tl -1011.222 -117.786
+   Volume -5
+   Pitch 2
+   "Pitch variance" 0.4
+   Resampler FIR_8
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/M21/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 54276
+   name "BoltSnap"
+   version 7
+   tl -1019 555.143
+   Volume -10.383
+   "Pitch variance" 0.5
+   Resampler FIR_4
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/M21/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 56324
+   name "MagOut"
+   version 7
+   tl -1019 -535.381
+   Volume -20.253
+   "Pitch variance" 0.5
+   Resampler FIR_8
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{A80A2B70B45139CC}Sounds/Weapons/Rifles/M21/Samples/Handling/Weapons_Rifles_M21_MagOut_01.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 57348
+   name "MagIn"
+   version 7
+   tl -1017.889 -335.917
+   Volume 3
+   "Pitch variance" 0.5
+   Resampler FIR_8
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/M21/sounds/mosin-load-1.wav"
+     Probability 50
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/M21/sounds/mosin-load-2.wav"
+     Probability 20
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/M21/sounds/mosin-load-3.wav"
+     Probability 20
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/M21/sounds/mosin-load-4.wav"
+     Probability 10
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 60420
+   name "BoltSlideBack"
+   version 7
+   tl -1019 93.262
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 92172
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -24
+   Pitch -2
+   "Pitch variance" 0.7
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/M21/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 65540
+   name "Sniper_SafetyOff"
+   version 7
+   tl -1019 -1624.702
+   Volume -31
+   "Volume variance" 1
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{8544178BB672D041}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOff_03.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{6B50C69A5F370EA1}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOff_01.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{F24E7F0342D03F31}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOff_02.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 67588
+   name "Sniper_SafetyOn"
+   version 7
+   tl -1019 -1423.273
+   Volume -31
+   "Volume variance" 1
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{991456D83B30E3D7}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{000AEF4126D7D247}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{770087C9D2753D37}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_03.wav"
+     Index 2
+    }
+   }
+  }
+  BankLocalClass {
+   id 72708
+   name "Trigger Release Click"
+   version 7
+   tl -1017.889 -912.917
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 73741
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -42
+   Pitch 1.071
+   "Pitch variance" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{DCFC2B2D1DD2D11F}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_01.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{45E292B40035E08F}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_02.wav"
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{32E8FA3CF4970FFF}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_03.wav"
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{352F006D9211B53C}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_04.wav"
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{422568E566B35A4C}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_05.wav"
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DB3BD17C7B546BDC}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_06.wav"
+     Index 5
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AC31B9F48FF684AC}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_07.wav"
+     Index 6
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D4B425DEB6591E5A}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_08.wav"
+     Index 7
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A3BE4D5642FBF12A}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_09.wav"
+     Index 8
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5FFE043DE4AD561B}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_10.wav"
+     Index 9
+    }
+    AudioBankSampleClass Sample {
+     Filename "{28F46CB5100FB96B}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_11.wav"
+     Index 10
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B1EAD52C0DE888FB}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_12.wav"
+     Index 11
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C6E0BDA4F94A678B}Sounds/Weapons/_SharedData/Foley_Weapon/Generic/Weapons_Foley_RattleClick_13.wav"
+     Index 12
+    }
+   }
+  }
+  BankLocalClass {
+   id 96260
+   name "BoltSlideFwd"
+   version 7
+   tl -1013.444 293.546
+   ins {
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 92172
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   Volume -4
+   "Pitch variance" 0.7
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 80
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/M21/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 98308
+   name "MagIn"
+   version 7
+   tl 50 -220
+   Volume -17.443
+   "Pitch variance" 0.5
+   Resampler FIR_8
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/M21/sounds/mosin-load-1.wav"
+     Probability 50
+    }
+    AudioBankSampleClass Sample {
+     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/M21/sounds/mosin-load-2.wav"
+     Probability 20
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/M21/sounds/mosin-load-3.wav"
+     Probability 20
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/M21/sounds/mosin-load-4.wav"
+     Probability 10
+     Index 3
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass : "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf" {
+   id 45084
+   version 5
+   tl -707.904 -1836.107
+   parent "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf"
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 75805
+   name "AuxOut Reverb INT"
+   version 5
+   tl 169.619 -1591.513
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 3081
+       port 5
+      }
+      ConnectionClass connection {
+       id 37897
+       port 5
+      }
+      ConnectionClass connection {
+       id 63497
+       port 5
+      }
+      ConnectionClass connection {
+       id 64521
+       port 5
+      }
+      ConnectionClass connection {
+       id 78857
+       port 5
+      }
+      ConnectionClass connection {
+       id 80905
+       port 5
+      }
+      ConnectionClass connection {
+       id 86025
+       port 5
+      }
+      ConnectionClass connection {
+       id 95241
+       port 5
+      }
+      ConnectionClass connection {
+       id 83977
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 97293
+       port 34
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 97293
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 152583
+  }
+  AuxOutClass {
+   id 77853
+   name "AuxOut Reverb EXT"
+   version 5
+   tl 169.619 -1467.756
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 64521
+       port 5
+      }
+      ConnectionClass connection {
+       id 63497
+       port 5
+      }
+      ConnectionClass connection {
+       id 37897
+       port 5
+      }
+      ConnectionClass connection {
+       id 3081
+       port 5
+      }
+      ConnectionClass connection {
+       id 78857
+       port 5
+      }
+      ConnectionClass connection {
+       id 80905
+       port 5
+      }
+      ConnectionClass connection {
+       id 86025
+       port 5
+      }
+      ConnectionClass connection {
+       id 95241
+       port 5
+      }
+      ConnectionClass connection {
+       id 83977
+       port 5
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 97293
+       port 105
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 197639
+  }
+ }
+ version 1
+}

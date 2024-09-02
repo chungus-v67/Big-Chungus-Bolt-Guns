@@ -1,0 +1,27 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 3
+ $node "w_trigger" {
+  $keys t q {
+   $frame 0 {
+    #t -0.0000001 -0.0427416 0.0661644
+    #q -0.12182795 -0.00000002 -0.00000026 0.99255121
+   }
+   $frame 1 {
+    #q 0 0 -0 1
+   }
+   $frame 2 {
+    #q -0.06102774 0 -0.00000013 0.9981361
+   }
+   $frame 3 {
+   }
+  }
+ }
+ $events {
+  #event 1 "Weapon_TriggerPulled" "" -1 0 "" 0
+  #event 2 "LoopIn" "" -1 0 "" 0
+  #event 3 "LoopOut" "" -1 0 "" 0
+  #event 3 "Weapon_TriggerReleased" "" -1 0 "" 0
+ }
+}

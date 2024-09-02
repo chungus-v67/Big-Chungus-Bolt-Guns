@@ -1,0 +1,62 @@
+MetaFileClass {
+ Name "{DB54AAD66E436754}Assets/Weapons/Attachments/Optics/PU/PU scope_2.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{61E8DA7B333341C5}" {
+     SourceMaterial "Optic_pip"
+     AssignedMaterial "{0091FAECFC169506}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_PIPMaterial.emat"
+    }
+    MaterialAssignClass "{61E8DA7EBB0479B3}" {
+     SourceMaterial "PUScopeMat"
+     AssignedMaterial "{F565341D15EBCCBA}Assets/Weapons/Attachments/Optics/PU/Data/PUScopeMat.emat"
+    }
+    MaterialAssignClass "{61E8DA7EBB0479A0}" {
+     SourceMaterial "Optic_physical_lensglass"
+     AssignedMaterial "{C6AC8F3731B71E88}Assets/Weapons/Attachments/Optics/PU/Data/Optic_physical_lensglass.emat"
+    }
+    MaterialAssignClass "{61E904237A1E3473}" {
+     SourceMaterial "Optic_lensglass"
+     AssignedMaterial "{39C2A3A521FE9A1B}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_Lensglass.emat"
+    }
+   }
+   MeshParams {
+    MeshParam PIP {
+    }
+    MeshParam PUScope {
+    }
+    MeshParam PUScopeBase {
+    }
+    MeshParam PUScope_front_glass {
+    }
+    MeshParam PUScope_rear_glass {
+    }
+    MeshParam PUScope_real_front_glass {
+    }
+    MeshParam PUScope_real_rear_glass {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_mosin_firegeo {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{53A1C05C8CA2F994}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_ik.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

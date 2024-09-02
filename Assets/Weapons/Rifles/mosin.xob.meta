@@ -1,0 +1,68 @@
+MetaFileClass {
+ Name "{0AC909417B7EFCB9}Assets/Weapons/Rifles/mosin.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MergeMeshes 0
+   ExportSkinning 1
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{61DE34A721A8B472}" {
+     SourceMaterial "Mosin9130Mat"
+     AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
+    }
+    MaterialAssignClass "{61DE34A75819C17A}" {
+     SourceMaterial "MosinClipMat"
+     AssignedMaterial "{28E2706EC151B38E}Assets/Weapons/Magazines/Mosin/Data/MosinClipMat.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BoltBody {
+    }
+    MeshParam CockingKnob {
+    }
+    MeshParam Frame {
+    }
+    MeshParam RearSightLeaf {
+    }
+    MeshParam RearSightSlide {
+    }
+    MeshParam RearSightSlideButton {
+    }
+    MeshParam Trigger {
+    }
+    MeshParam Cartridge {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_FireGeo {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_Weapon {
+     LayerPreset "Weapon"
+     SurfaceProperties {
+      "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
+      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

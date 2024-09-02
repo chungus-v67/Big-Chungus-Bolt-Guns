@@ -1,0 +1,33 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 1
+ $node "RightHandIndex1" {
+  $keys q {
+   $frame 0 1 {
+    #q -0.00049797 -0.10830466 0.07434207 0.99133408
+   }
+  }
+  $node "RightHandIndex2" {
+   $keys q {
+    $frame 0 1 {
+     #q 0.0356423 0.01278625 0.00131406 0.99928194
+    }
+   }
+   $node "RightHandIndex3" {
+    $keys q {
+     $frame 0 1 {
+      #q -0.11602964 0.1568267 -0.0230452 0.9805159
+     }
+    }
+    $node "RightHandIndex4" {
+     $keys q {
+      $frame 0 1 {
+       #q -0.13047032 -0.023821 0.03788623 0.99044168
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0.337 0.337 0.337 1
+ BCRMap "{B914AE76D5ADC17A}Assets/Weapons/Magazines/Mosin/Data/Textures/MosinClipMat_BCR.edds"
+ NMOMap "{81CC15E40CDA93E4}Assets/Weapons/Magazines/Mosin/Data/Textures/MosinClipMat_NMO.edds"
+}
