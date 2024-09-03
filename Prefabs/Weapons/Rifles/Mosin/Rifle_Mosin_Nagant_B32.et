@@ -352,6 +352,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 0 0.0417
       Angles 0 72.4431 0
      }
+     m_sMaxReloadTime 8000
      m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_BS32.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
@@ -427,5 +428,5 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
    }
   }
  }
- coords 189.776 1 150.032
+ coords 192.935 1 148.26
 }
