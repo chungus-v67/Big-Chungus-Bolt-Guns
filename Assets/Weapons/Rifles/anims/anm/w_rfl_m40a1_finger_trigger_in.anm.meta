@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5B029C4EF2C59591}Assets/Weapons/Rifles/anims/anm/w_rfl_m40a1_finger_trigger_in.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

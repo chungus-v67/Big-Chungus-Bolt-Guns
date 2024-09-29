@@ -1,0 +1,27 @@
+MetaFileClass {
+ Name "{C2701E3A82E0D5DD}Assets/Weapons/Attachments/Optics/Redfield/Redfield_3x9_no_colliders.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6276524EB3F9F289}" {
+     SourceMaterial "scope"
+     AssignedMaterial "{AC5C1D6E44B16F7F}Assets/Weapons/Attachments/Optics/Redfield/Data/scope.emat"
+    }
+   }
+   MeshParams {
+    MeshParam scope {
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,11 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 15
+ $node "Scene_Root" {
+  $keys t q {
+   $frame 0 15 {
+   }
+  }
+ }
+}

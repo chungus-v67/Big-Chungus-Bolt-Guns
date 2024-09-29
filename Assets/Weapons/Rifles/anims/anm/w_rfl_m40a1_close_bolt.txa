@@ -1,0 +1,161 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 19
+ $node "Scene_Root" {
+  $keys t q s {
+   $frame 0 19 {
+   }
+  }
+  $node "Armature" {
+   $keys t q s {
+    $frame 0 19 {
+    }
+   }
+   $node "w_root" {
+    $keys t q s {
+     $frame 0 19 {
+      #q -0.00000106 -0.00000014 1 0.00000008
+     }
+    }
+    $node "w_safety" {
+     $keys t q s {
+      $frame 0 19 {
+       #t -0.0140068 -0.0890656 0.0584007
+       #q -0.00000021 0.00000124 0 1
+      }
+     }
+    }
+    $node "w_bolt" {
+     $keys t q s {
+      $frame 0 {
+       #t 0 -0.0954619 -0.0194002
+       #q -0.00000101 -0.00000014 0.47833163 0.87817925
+      }
+      $frame 1 {
+       #t 0 -0.0954619 -0.0097028
+      }
+      $frame 2 {
+       #t -0.0000001 -0.0954619 0.013422
+      }
+      $frame 3 {
+       #t -0.0000001 -0.0954619 0.0410224
+      }
+      $frame 4 {
+       #t -0.0000002 -0.0954619 0.0641472
+      }
+      $frame 5 {
+       #t -0.0000002 -0.0954619 0.0738446
+      }
+      $frame 6 {
+       #t -0.0000002 -0.0954619 0.0738446
+       #q -0.00000092 -0.00000013 0.43353465 0.90113682
+      }
+      $frame 7 {
+       #t -0.0000002 -0.0954619 0.0738446
+       #q -0.00000068 -0.00000009 0.31894812 0.94777226
+      }
+      $frame 8 {
+       #t -0.0000002 -0.0954619 0.0738446
+       #q -0.00000037 -0.00000005 0.17325574 0.98487693
+      }
+      $frame 9 {
+       #t -0.0000002 -0.0954619 0.0738446
+       #q -0.00000011 -0.00000001 0.05032093 0.9987331
+      }
+      $frame 10 19 {
+       #t -0.0000002 -0.0954619 0.0738446
+       #q 0 0 0 1
+      }
+     }
+    }
+    $node "w_trigger" {
+     $keys t q s {
+      $frame 0 19 {
+       #t -0.0000001 -0.0478338 0.0661644
+      }
+     }
+    }
+   }
+  }
+  $node "snap_magazine" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.0800987 0.1103828
+     #q 0 -0.0197981 0 0.99980396
+    }
+   }
+  }
+  $node "snap_hand_right" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.0500258 0
+    }
+   }
+  }
+  $node "snap_hand_left" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.0736769 0.3041216
+    }
+   }
+  }
+  $node "slot_optics" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.1085129 0.1598079
+    }
+   }
+  }
+  $node "slot_magazine" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.0696211 0.1228959
+    }
+   }
+  }
+  $node "slot_ironsight_rear" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.1200716 0.0695982
+    }
+   }
+  }
+  $node "slot_ironsight_front" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0.1226975 0.106417 0.9418106
+    }
+   }
+  }
+  $node "eye" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.1234619 0
+    }
+   }
+  }
+  $node "barrel_muzzle" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.0952857 0.8502722
+    }
+   }
+  }
+  $node "barrel_chamber" {
+   $keys t q s {
+    $frame 0 19 {
+     #t 0 0.1010761 0.2076129
+    }
+   }
+  }
+ }
+ $events {
+  #event 0 "Weapon_EnableFire" "" -1 0 "" 0
+  #event 4 "Sound" "SOUND_RELOAD_BOLT_SLIDE_FWD" 0 0 "" 0
+  #event 16 "Weapon_Rack_Bolt" "" -1 0 "" 0
+  #event 17 "EmptyMagAfterReloadCheck" "" -1 0 "" 0
+  #event 18 "Weapon_Rack_Bolt" "" -1 0 "" 0
+  #event 19 "BlendOut2" "" -1 0 "" 0
+ }
+}

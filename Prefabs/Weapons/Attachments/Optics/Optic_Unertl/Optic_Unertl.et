@@ -1,0 +1,151 @@
+GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/Optic_ARTII_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1EBB0698FD}" {
+    ItemDisplayName UIInfo "{5D0CC83435B5584E}" {
+     Name "M40 Unertl 10x Scope"
+     Description "10x fixed optic for the M40A1 sniper rifle"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5D0CC83435B55848}" {
+     Weight 0.5
+     ItemVolume 100
+     PivotBoneName "snap_optic"
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
+      AttachmentType AttachmentOpticsM40A1 "{5D0CCDD062A6250E}" {
+      }
+     }
+     PreviewRenderAttributes "{52D69389645B4E4D}" {
+      CameraOffset 0 0 0.05
+     }
+    }
+   }
+  }
+  MeshObject "{5D0CC83435B55858}" {
+   Object "{F28CB1F310927824}Assets/Weapons/Attachments/Optics/Unertl/Redfield_3x9.xob"
+   Materials {
+    MaterialAssignClass "{627664EDC9CFE774}" {
+     SourceMaterial "Optic_lensglass"
+     AssignedMaterial ""
+    }
+   }
+  }
+  SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
+   SightsPosition PointInfo "{5D0CC83435B55853}" {
+    Offset 0 0 0
+   }
+   SightsRanges {
+    SightRangeInfo "{5D0CCDD062A62502}" {
+     Range 0.075 100
+    }
+    SightRangeInfo "{5D0CCDD062A62503}" {
+     Range 0.11 200
+    }
+    SightRangeInfo "{5D0CCDD062A62500}" {
+     Range 0.16 300
+    }
+    SightRangeInfo "{5D0CCDD062A62501}" {
+     Range 0.22 400
+    }
+    SightRangeInfo "{5D0CCDD062A657C3}" {
+     Range 0.29 500
+    }
+    SightRangeInfo "{5D0CCDD062A657DC}" {
+     Range 0.38 600
+    }
+    SightRangeInfo "{5D0CCDD062A657DD}" {
+     Range 0.48 700
+    }
+    SightRangeInfo "{6276524F630BC124}" {
+     Range 0.595 800
+    }
+    SightRangeInfo "{6276524F630BC1DB}" {
+     Range 0.7 900
+    }
+    SightRangeInfo "{6276524F630BC1DD}" {
+     Range 0.84 1000
+    }
+   }
+   SightsFOVInfo SCR_SightsZoomFOVInfo "{5D0CCDD062A657D9}" {
+    m_fBaseZoom 10
+    m_fZoomMax 10
+    m_fStepZoomSize 1
+   }
+   SightsPointFront PointInfo "{5D0CCDD062A657DB}" {
+    PivotID "optic_front"
+   }
+   SightsPointRear PointInfo "{5D0CCDD062A657D5}" {
+    PivotID "optic_rear"
+   }
+   SightsPriority 1
+   m_sReticleTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+   m_sReticleGlowTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+   m_fMagnification 10
+   m_fReticleBaseZoom 1
+   m_fVignetteScale 1.05
+   m_eZeroingType EPZ_CAMERA_TURN
+   m_fReticleOffsetX 0
+   m_vCameraOffset 0 0 0
+   m_vCameraAngles 0 0 0
+   m_vCameraMisalignmentScale 1 1 1
+   m_rScopeHDRMatrial "{35DAD4DEC096E880}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_M40A1_HDR.emat"
+   m_fBasicParallax 1
+   m_fScopeRadius 0.01
+   m_fReticlePIPScale 0.8
+   m_fObjectivePIPEdgeMin 3
+   m_fObjectivePIPEdgeMax 4.5
+  }
+  SightsComponent "{62790C335B8E1C45}" {
+   SightsPosition PointInfo "{62790C334E2B23C1}" {
+    PivotID "eye"
+    Offset 0 0.046 -0.01
+   }
+   SightsRanges {
+    SightRangeInfo "{62790C31EE0EBC8E}" {
+     WeaponPosition PointInfo "{62790C301446C5F7}" {
+     }
+    }
+   }
+   ADSTime 0.35
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   ActionContexts {
+    UserActionContext "{5284E0EFF4E818E9}" {
+     Position PointInfo "{5284E0EFC526E6F0}" {
+      Offset 0.0043 0.0318 0.001
+      Angles 180 0 0
+     }
+     Radius 0.1
+     LineOfSightCheck 0
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAttachment "{5284E0EFDA00C63B}" {
+     ParentContextList +{
+     }
+     VisibilityRange 0.5
+    }
+    SCR_AttachementAction "{5D0CC83435B55B8D}" {
+     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B8A}" {
+      Name "Detach: "
+     }
+     VisibilityRange -1
+    }
+    SCR_AttachItemFromInventoryAction "{5D0CC83435B55B88}" {
+     ParentContextList {
+      "optic"
+     }
+     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B89}" {
+      Name "Attach: "
+     }
+     VisibilityRange 1.5
+     Duration 1
+    }
+   }
+  }
+ }
+ coords 185.102 1 147.181
+}

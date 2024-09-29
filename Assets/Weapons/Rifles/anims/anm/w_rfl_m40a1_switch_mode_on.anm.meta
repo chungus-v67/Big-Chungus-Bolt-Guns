@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{060E916E2B6828A2}Assets/Weapons/Rifles/anims/anm/w_rfl_m40a1_switch_mode_on.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

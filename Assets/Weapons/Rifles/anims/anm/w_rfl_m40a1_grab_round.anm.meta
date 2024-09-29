@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D998136A81614C96}Assets/Weapons/Rifles/anims/anm/w_rfl_m40a1_grab_round.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

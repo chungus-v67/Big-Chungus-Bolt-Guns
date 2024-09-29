@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{5AC69AE5BD3C6FE6}Assets/Weapons/Rifles/Data/M40A1 Textures/m40a1_BCR.edds"
+ NMOMap "{621E2177644B3D78}Assets/Weapons/Rifles/Data/M40A1 Textures/m40a1_NMO.edds"
+}

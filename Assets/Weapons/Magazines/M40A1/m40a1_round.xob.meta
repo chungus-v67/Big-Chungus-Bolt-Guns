@@ -1,0 +1,29 @@
+MetaFileClass {
+ Name "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40a1/m40a1_round.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{62784E48050686D5}" {
+     SourceMaterial "cartridge_762x51mm"
+     AssignedMaterial "{8F72E0AF32EA37FA}Assets/Weapons/Magazines/M40a1/Data/cartridge_762x51mm.emat"
+    }
+   }
+   MeshParams {
+    MeshParam Bullet {
+    }
+    MeshParam Casing {
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

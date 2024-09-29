@@ -1,0 +1,62 @@
+MetaFileClass {
+ Name "{F28CB1F310927824}Assets/Weapons/Attachments/Optics/Unertl/Redfield_3x9.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MergeMeshes 0
+   ExportSkinning 1
+   ExportSceneHierarchy 1
+   MaterialAssigns {
+    MaterialAssignClass "{627A6CE8D1C71AC0}" {
+     SourceMaterial "Optic_physical_lensglass"
+     AssignedMaterial "{3C29D4ADAC94D19B}Assets/Weapons/Attachments/Optics/4x20/Data/Optic_4x20_Lensglass.emat"
+    }
+    MaterialAssignClass "{627A6CE8D1C71ADD}" {
+     SourceMaterial "Optic_pip"
+     AssignedMaterial "{0091FAECFC169506}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_PIPMaterial.emat"
+    }
+    MaterialAssignClass "{627A6CE8DB0B1C2D}" {
+     SourceMaterial "scope"
+     AssignedMaterial "{439671167F27ED21}Assets/Weapons/Attachments/Optics/Unertl/Data/scope_2.emat"
+    }
+   }
+   MeshParams {
+    MeshParam scope {
+    }
+    MeshParam PIP {
+    }
+    MeshParam Redfield_real_front_glass {
+    }
+    MeshParam Redfield_real_rear_glass {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_m40a1_FireGeo {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{CE9253778DD8FBDE}Common/Materials/Game/metal.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_mosin_weapon {
+     LayerPreset "Weapon"
+     SurfaceProperties {
+      "{BF7032579F3C450F}Common/Materials/Game/Metal/metal_1mm.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

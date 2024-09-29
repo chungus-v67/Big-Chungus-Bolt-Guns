@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{3452C71DE305A418}Assets/Weapons/Magazines/M40a1/Data/Textures/cartridge_762x51mm_BCR.edds"
+ NMOMap "{0C8A7C8F3A72F686}Assets/Weapons/Magazines/M40a1/Data/Textures/cartridge_762x51mm_NMO.edds"
+}

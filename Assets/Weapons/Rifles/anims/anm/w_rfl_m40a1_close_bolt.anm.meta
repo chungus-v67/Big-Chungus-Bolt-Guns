@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{06218BABC71499CB}Assets/Weapons/Rifles/anims/anm/w_rfl_m40a1_close_bolt.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8EB95E50D1F33896}Assets/Weapons/Attachments/Optics/Redfield/Data/Optic_physical_lensglass.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

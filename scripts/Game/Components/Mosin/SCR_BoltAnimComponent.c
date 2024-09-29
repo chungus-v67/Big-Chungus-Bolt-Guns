@@ -53,19 +53,16 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 	IEntity mosinRound = null;
 	protected int magSlotIndex = -1;
 	protected MagazineComponent defaultMagComp = null;
-	protected int count = 0;
 	protected BaseMagazineComponent magazine = null;
 	
 	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
 	{
 		m_Owner = ent;
-		m_player = parent;
 		m_animAmmoCount = BindIntVariable("MosinAmmoCount");
 		m_animStopReloading = BindBoolVariable("MosinStopReloading");
 		m_animCloseBoltFlag = BindBoolVariable("MosinCloseBoltFlag");
 		m_setAmmoCount = GameAnimationUtils.RegisterAnimationEvent("SetAmmoCount");
 		m_adjustAmmoCount = GameAnimationUtils.RegisterAnimationEvent("AdjustAmmoCount");
-		m_getAmmoCount = GameAnimationUtils.RegisterAnimationEvent("GetAmmoCount");
 		m_checkMag = GameAnimationUtils.RegisterAnimationEvent("CheckMag"); 
 		m_ejectRound = GameAnimationUtils.RegisterAnimationEvent("EjectRound");
 		m_spawnRound = GameAnimationUtils.RegisterAnimationEvent("SpawnRound");
@@ -84,10 +81,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		protected WeaponComponent weapon = WeaponComponent.Cast(m_Owner.FindComponent(WeaponComponent));	
 		ChimeraCharacter character = ChimeraCharacter.Cast(m_Owner.GetParent());		
 		protected SCR_CharacterControllerComponent controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());					
-			
 		protected CharacterAnimationComponent animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));		
-		GroupInfoDisplay test = GroupInfoDisplay.Cast(character.GetInfoDisplay());		
-		protected SCR_WeaponInfo hud = SCR_WeaponInfo.Cast(character.GetInfoDisplay());
 		protected SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());	
 		if (!magazine){ 
 			magazine = MagazineComponent.Cast(weapon.GetCurrentMagazine());	
@@ -155,28 +149,11 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 					SetIntVariable(m_animStopReloading, true);
 				}
 			}
-			
-			Print(GetGame().GetWorld().GetWorldTime() - m_startTime);
-			// If the time exceeds the amount set, this attempts to exit the reload as remediation
-			if (m_startTime != -1 && GetGame().GetWorld().GetWorldTime() - m_startTime > m_sMaxReloadTime ){
-				animation.SetVariableInt(m_playerAnimStopReloading, true);
-				SetIntVariable(m_animStopReloading, true);
-				if(magazine) {
-					magazine.SetAmmoCount(m_sMaxAmmo);
-				}
-				m_startTime = -1;
-			}
-			
-			animation.SetVariableBool(m_playerAnimCloseBoltFlag, false);
-			SetBoolVariable(m_animCloseBoltFlag, false);	
 		}
 		
 		// Grabs a magazine from the inventory and attaches it to the left hand prop for the animation
 		if (animEventType == m_spawnRound){
-			protected SCR_MagazinePredicate predicate = new SCR_MagazinePredicate();
-			predicate.magWellType = magWellType;
 			Resource prefab = Resource.Load(m_sShellPrefab);
-			EntitySpawnParams spawnParams3 = new EntitySpawnParams();
 			mosinRound = GetGame().SpawnEntityPrefab(prefab, GetGame().GetWorld());
 			EntitySlotInfo leftHandSlot = controller.GetLeftHandPointInfo();
 			leftHandSlot.AttachEntity(mosinRound);
@@ -201,8 +178,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 
 			if (newMag){
 				RplComponent.DeleteRplEntity(newMag, false);
-			} 
-			else {
+			} else {
 				animation.SetVariableInt(m_playerAnimStopReloading, true);
 				SetIntVariable(m_animStopReloading, true);
 			}
@@ -241,12 +217,10 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			animation.SetVariableInt(m_playerAnimStopReloading, false);
 			SetIntVariable(m_animStopReloading, false);		
 			
-			
 			protected SCR_MagazinePredicate predicate = new SCR_MagazinePredicate();
 			predicate.magWellType = magWellType;
 			dummyMag = invMan.FindItem(predicate);	
 			if (magazine) {
-			
 				if (magazine.GetAmmoCount() == 0 && dummyMag == null) {
 					magazine.SetAmmoCount(1);
 					wasMagEmptyAfterReload = true;	

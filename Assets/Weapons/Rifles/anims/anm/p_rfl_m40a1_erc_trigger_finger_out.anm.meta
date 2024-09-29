@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{594CD764EC9A299D}Assets/Weapons/Rifles/anims/anm/p_rfl_m40a1_erc_trigger_finger_out.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

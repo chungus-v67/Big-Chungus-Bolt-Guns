@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9EE7EC7C3A1B271E}Assets/Weapons/Rifles/anims/anm/p_rfl_m40a1_pne_rack_bolt.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

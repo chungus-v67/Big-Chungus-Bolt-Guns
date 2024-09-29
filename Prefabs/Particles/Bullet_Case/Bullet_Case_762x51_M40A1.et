@@ -1,0 +1,14 @@
+GenericEntity : "{BE79A6E700CF746A}Prefabs/Particles/Bullet_Case/Bullet_Case_Base.et" {
+ ID "5AD06B4660E94833"
+ components {
+  MeshObject "{5AC2D35718C1EEDD}" {
+   Object "{560EBC5C9F4D7A27}Assets/Weapons/Magazines/M40A1/m40a1_casing.xob"
+  }
+  SCR_ParticleContactComponent "{5AD06B4611C6C9BD}" {
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{5C52D5B18B5BE9EC}" {
+    m_sSoundProject "{BFD8C39A140E182E}Sounds/Weapons/_SharedData/Weapon_Bullet_Casings_5_56mm.acp"
+   }
+  }
+ }
+ coords 190.631 1 148.81
+}

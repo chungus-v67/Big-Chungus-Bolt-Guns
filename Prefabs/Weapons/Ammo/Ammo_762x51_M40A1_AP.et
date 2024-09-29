@@ -1,0 +1,56 @@
+Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   InitSpeed 840
+   InitSpeedVariation 5
+   Mass 0.00972
+   ProjectileEffects {
+    ProjectileDamage "{5168BBF3DBD79134}" {
+     DamageValue 160
+    }
+    ExplosionEffect "{85DB664DDCA5D5B0}" {
+     Enabled 1
+    }
+    ExplosionEffect "{62784E52F41D2D29}" {
+     Enabled 0
+    }
+    SubmunitionEffect "{62784E52F41D2D23}" {
+     Enabled 0
+     Prefab "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/Ammo_B32_Incendiary.et"
+    }
+    ProjectileDamage "{62784E52F41D2DDA}" {
+     Enabled 0
+     DamageValue 30
+     DamageType Explosive
+     DamageEffects {
+      SCR_ExplosionDamageEffect "{62784E52F41D2DDC}" {
+      }
+     }
+    }
+    ProjectileDamage "{62784E52F41D2DDE}" {
+     Enabled 0
+     DamageValue 1
+     DamageType Incendiary
+     DamageEffects {
+      SCR_IncendiaryBulletDamageEffect "{62784E52F41D2DD0}" {
+      }
+     }
+    }
+    ProjectileDamage "{62784E52F41D2DD4}" {
+     DamageValue 20
+     DamageEffects {
+      SCR_BaseBulletDamageEffect "{62784E52F41D2DD6}" {
+      }
+     }
+    }
+   }
+   BallisticTableConfig "{0471293E3DE1E1DF}Configs/Weapons/AIBallisiticTables/AIBT_762x54r_Ball_7N1.conf"
+   AirDrag 0.000009
+   PenetrationDepth 12
+  }
+ }
+ coords 1716.523 39.72 2856.801
+ ProjectileModel "{C8461CE54BC35441}Assets/Weapons/Ammo/Bullets/762x51/Bullet_762x51.xob"
+ CartridgeModel "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/m40a1_round.xob"
+}

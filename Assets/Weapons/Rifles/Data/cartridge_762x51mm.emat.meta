@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6BFB1A135E36AE97}Assets/Weapons/Rifles/Data/cartridge_762x51mm.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{B38DD5A49F900C0E}Assets/Weapons/Attachments/Optics/Unertl/Data/Textures/scope_BCR.edds"
+ NMOMap "{8B556E3646E75E90}Assets/Weapons/Attachments/Optics/Unertl/Data/Textures/scope_NMO.edds"
+}

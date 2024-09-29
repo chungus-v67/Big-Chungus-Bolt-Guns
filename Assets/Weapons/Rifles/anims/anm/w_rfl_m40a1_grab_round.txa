@@ -1,0 +1,121 @@
+$animation "" {
+ #version 1.0
+ #fps 30
+ #numFrames 12
+ $node "Scene_Root" {
+  $keys t q {
+   $frame 0 12 {
+   }
+  }
+  $node "Armature" {
+   $keys t q {
+    $frame 0 12 {
+    }
+   }
+   $node "w_root" {
+    $keys t q {
+     $frame 0 12 {
+      #q -0.00000106 -0.00000014 1 0.00000008
+     }
+    }
+    $node "w_safety" {
+     $keys t q {
+      $frame 0 12 {
+       #t -0.0140068 -0.0890656 0.0584007
+       #q -0.00000021 0.00000124 0 1
+      }
+     }
+    }
+    $node "w_bolt" {
+     $keys t q {
+      $frame 0 12 {
+       #t -0 -0.0954619 -0.0194002
+       #q -0.00000101 -0.00000014 0.47833163 0.87817925
+      }
+     }
+    }
+    $node "w_trigger" {
+     $keys t q {
+      $frame 0 12 {
+       #t -0.0000001 -0.0478338 0.0661644
+      }
+     }
+    }
+   }
+  }
+  $node "snap_magazine" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.0800987 0.1103828
+     #q 0 -0.0197981 0 0.99980396
+    }
+   }
+  }
+  $node "snap_hand_right" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.0500258 0
+    }
+   }
+  }
+  $node "snap_hand_left" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.0736769 0.3041216
+    }
+   }
+  }
+  $node "slot_optics" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.1085129 0.1598079
+    }
+   }
+  }
+  $node "slot_magazine" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.0696211 0.1228959
+    }
+   }
+  }
+  $node "slot_ironsight_rear" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.1200716 0.0695982
+    }
+   }
+  }
+  $node "slot_ironsight_front" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0.1226975 0.106417 0.9418106
+    }
+   }
+  }
+  $node "eye" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.1234619 0
+    }
+   }
+  }
+  $node "barrel_muzzle" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.0952857 0.8502722
+    }
+   }
+  }
+  $node "barrel_chamber" {
+   $keys t q {
+    $frame 0 12 {
+     #t 0 0.1010761 0.2076129
+    }
+   }
+  }
+ }
+ $events {
+  #event 12 "BlendOut2" "" -1 0 "" 0
+ }
+}
