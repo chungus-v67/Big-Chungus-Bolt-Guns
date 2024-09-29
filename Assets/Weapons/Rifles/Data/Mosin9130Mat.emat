@@ -1,5 +1,5 @@
 MatPBRBasic {
  Color 0.549 0.549 0.549 1
- BCRMap "{CD955E8EDCF88F2B}Assets/Weapons/Rifles/Data/Textures/Mosin9130Mat_BCR.edds"
- NMOMap "{F54DE51C058FDDB5}Assets/Weapons/Rifles/Data/Textures/Mosin9130Mat_NMO.edds"
+ BCRMap "{40B5F69D9DA09431}Assets/Weapons/Rifles/Data/Textures/mosin_textures/Mosin_BCR.edds"
+ NMOMap "{37921BBAAA9CE5CD}Assets/Weapons/Rifles/Data/Textures/mosin_textures/Mosin9130Mat_NMO.edds"
 }

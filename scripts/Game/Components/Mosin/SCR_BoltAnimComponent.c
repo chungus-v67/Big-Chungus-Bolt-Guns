@@ -260,6 +260,9 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			animation.SetVariableInt(m_playerAnimStopReloading, false);
 			SetIntVariable(m_animStopReloading, false);		
 			
+			animation.SetVariableBool(m_playerAnimCloseBoltFlag, false);
+			SetBoolVariable(m_animCloseBoltFlag, false);
+			
 
 			if (!weapon.GetCurrentMagazine()){
 				MuzzleComponent thisMuzzle = MuzzleComponent.Cast(weapon.FindComponent(MuzzleComponent));

@@ -1960,6 +1960,6 @@ $animation "" {
   }
  }
  $events {
-  #event 10 "BlendOut2" "" -1 0 "" 0
+  #event 10 "BlendOut" "" -1 0 "" 0
  }
 }
