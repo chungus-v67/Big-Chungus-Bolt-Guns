@@ -1,0 +1,8 @@
+SCR_ChimeraCharacter : "{284E735C6C70DAD2}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_BaseLoadout.et" {
+ ID "52092032B0E62200"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{39255AA37FC5A4B6}Prefabs/Weapons/Rifles/M40A1/Rifle_M40a1.et"
+  }
+ }
+}

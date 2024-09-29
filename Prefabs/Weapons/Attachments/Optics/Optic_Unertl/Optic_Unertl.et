@@ -81,19 +81,25 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
     PivotID "optic_rear"
    }
    SightsPriority 1
-   m_sReticleTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
-   m_sReticleGlowTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
+   m_sReticleTexture "{B8191C187C287898}UI/Textures/Sights/m40a1_scope.edds"
+   m_sReticleGlowTexture "{B8191C187C287898}UI/Textures/Sights/m40a1_scope.edds"
    m_fMagnification 10
+   m_fReticleAngularSize 2.23
    m_fReticleBaseZoom 1
-   m_fVignetteScale 1.05
+   m_fObjectiveFov 1.1
+   m_fObjectiveScale 2
+   m_fVignetteScale 2.5
+   m_bShouldHideParentObject 1
+   m_fVignetteMoveSpeed 2
    m_eZeroingType EPZ_CAMERA_TURN
    m_fReticleOffsetX 0
    m_vCameraOffset 0 0 0
    m_vCameraAngles 0 0 0
    m_vCameraMisalignmentScale 1 1 1
    m_rScopeHDRMatrial "{35DAD4DEC096E880}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_M40A1_HDR.emat"
+   m_fVignetteParallaxScale 50
    m_fBasicParallax 1
-   m_fScopeRadius 0.01
+   m_fScopeRadius 0.015
    m_fReticlePIPScale 0.8
    m_fObjectivePIPEdgeMin 3
    m_fObjectivePIPEdgeMax 4.5
@@ -147,5 +153,5 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
    }
   }
  }
- coords 185.102 1 147.181
+ coords 1715.766 39 2858.314
 }
