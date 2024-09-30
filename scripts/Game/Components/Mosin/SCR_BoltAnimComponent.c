@@ -214,8 +214,8 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			m_startTime = -1; //This needs to be called at the end of the reload after the loop. Just putting it here for simplicity
 			
 			// also calling this here to perform cleanup and prevent it from going into a bad state where it deletes the mag
-			animation.SetVariableInt(m_playerAnimStopReloading, false);
-			SetIntVariable(m_animStopReloading, false);		
+			//animation.SetVariableInt(m_playerAnimStopReloading, false);
+			//SetIntVariable(m_animStopReloading, false);		
 			
 			protected SCR_MagazinePredicate predicate = new SCR_MagazinePredicate();
 			predicate.magWellType = magWellType;

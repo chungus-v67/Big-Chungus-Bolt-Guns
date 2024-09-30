@@ -45,7 +45,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
      Range 0.11 200
     }
     SightRangeInfo "{5D0CCDD062A62500}" {
-     Range 0.16 300
+     Range 0.165 300
     }
     SightRangeInfo "{5D0CCDD062A62501}" {
      Range 0.22 400
