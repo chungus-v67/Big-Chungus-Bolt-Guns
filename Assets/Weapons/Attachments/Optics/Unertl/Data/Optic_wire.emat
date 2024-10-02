@@ -1,0 +1,7 @@
+MatPBRBasicGlass {
+ DiffuseIBL 0.261 0.71 0.71 1
+ SpecularIBL 0.678 0.68 0.587 1
+ Specular 0.411 0.377 0.546 1
+ BCRMap "{7DDB93C19284C399}UI/Textures/Sights/redfield wires.edds"
+ OpacityMap "{E5C76CBD3EE2ECB7}UI/Textures/Sights/DefaultMaterial_Opacity.edds"
+}

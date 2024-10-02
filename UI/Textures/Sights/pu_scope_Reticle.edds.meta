@@ -1,14 +1,23 @@
 MetaFileClass {
  Name "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
-Configurations {
- TGAResourceClass PC : "{33F97FFE35E57E1D}Configs/System/ResourceTypes/PC/TextureReticle.conf" {
+ Configurations {
+  TGAResourceClass PC : "{33F97FFE35E57E1D}Configs/System/ResourceTypes/PC/TextureReticle.conf" {
+   GenerateMips 1
+  }
+  TGAResourceClass XBOX_ONE : "{0B42FA7CFD77120F}Configs/System/ResourceTypes/XBOX_ONE/TextureReticle.conf" {
+   GenerateMips 1
+  }
+  TGAResourceClass PS4 : "{C1FA7DC8973FA4A1}Configs/System/ResourceTypes/PS4/TextureReticle.conf" {
+   GenerateMips 1
+  }
+  TGAResourceClass HEADLESS : "{9664EF94CE7C4525}Configs/System/ResourceTypes/HEADLESS/TextureReticle.conf" {
+   GenerateMips 1
+  }
+  TGAResourceClass XBOX_SERIES : "{A4AA0C6FDF186747}Configs/System/ResourceTypes/XBOX_SERIES/TextureReticle.conf" {
+   GenerateMips 1
+  }
+  TGAResourceClass PS5 : PC {
+   GenerateMips 1
+  }
  }
- TGAResourceClass XBOX_ONE : "{0B42FA7CFD77120F}Configs/System/ResourceTypes/XBOX_ONE/TextureReticle.conf" {
- }
- TGAResourceClass PS4 : "{C1FA7DC8973FA4A1}Configs/System/ResourceTypes/PS4/TextureReticle.conf" {
- }
- TGAResourceClass HEADLESS : "{9664EF94CE7C4525}Configs/System/ResourceTypes/HEADLESS/TextureReticle.conf" {
- }
- TGAResourceClass XBOX_SERIES : "{A4AA0C6FDF186747}Configs/System/ResourceTypes/XBOX_SERIES/TextureReticle.conf" {
- }
-}}
+}

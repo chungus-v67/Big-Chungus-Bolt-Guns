@@ -8,15 +8,19 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{627A6CE8D1C71AC0}" {
      SourceMaterial "Optic_physical_lensglass"
-     AssignedMaterial "{3C29D4ADAC94D19B}Assets/Weapons/Attachments/Optics/4x20/Data/Optic_4x20_Lensglass.emat"
-    }
-    MaterialAssignClass "{627A6CE8D1C71ADD}" {
-     SourceMaterial "Optic_pip"
-     AssignedMaterial "{0091FAECFC169506}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_PIPMaterial.emat"
+     AssignedMaterial "{895F32FE9C7E2355}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_Redfield_Lensglass.emat"
     }
     MaterialAssignClass "{627A6CE8DB0B1C2D}" {
      SourceMaterial "scope"
      AssignedMaterial "{439671167F27ED21}Assets/Weapons/Attachments/Optics/Unertl/Data/scope_2.emat"
+    }
+    MaterialAssignClass "{6282137DE3294CE4}" {
+     SourceMaterial "Optic_pip"
+     AssignedMaterial "{0091FAECFC169506}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_PIPMaterial.emat"
+    }
+    MaterialAssignClass "{6282137223482BF6}" {
+     SourceMaterial "Optic_wire"
+     AssignedMaterial "{8BEBFB416FAD87C7}Assets/Weapons/Attachments/Optics/Unertl/Data/Optic_wire.emat"
     }
    }
    MeshParams {
@@ -27,6 +31,8 @@ MetaFileClass {
     MeshParam Redfield_real_front_glass {
     }
     MeshParam Redfield_real_rear_glass {
+    }
+    MeshParam "PIP_LOD0.001" {
     }
    }
    GeometryParams {

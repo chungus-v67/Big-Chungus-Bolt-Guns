@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8BEBFB416FAD87C7}Assets/Weapons/Attachments/Optics/Unertl/Data/Optic_wire.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

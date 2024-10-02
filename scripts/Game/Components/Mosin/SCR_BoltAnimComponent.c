@@ -54,6 +54,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 	protected int magSlotIndex = -1;
 	protected MagazineComponent defaultMagComp = null;
 	protected BaseMagazineComponent magazine = null;
+	protected int loopCounter = 0;
 	
 	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
 	{
@@ -122,6 +123,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			//shows the "cartridge" mesh in the gun. This is not the real magazine, just a part of the gun's mesh
 			GameAnimationUtils.ShowMesh(weapon.GetOwner(),meshIdx,true); 
 			
+			// mag full
 			if (magazine){
 				magazine.SetAmmoCount(currentAmmoCount);			
 				if (currentAmmoCount >= m_sMaxAmmo){
@@ -141,7 +143,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 				animation.SetVariableInt(m_playerAnimStopReloading, true);
 				SetBoolVariable(m_animStopReloading, true);
 			} 			
-			
+			// null mag or mag full?
 			if (magazine){
 				currentAmmoCount = magazine.GetAmmoCount();	
 				if (currentAmmoCount >= m_sMaxAmmo || newMag == null){
@@ -157,10 +159,22 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			mosinRound = GetGame().SpawnEntityPrefab(prefab, GetGame().GetWorld());
 			EntitySlotInfo leftHandSlot = controller.GetLeftHandPointInfo();
 			leftHandSlot.AttachEntity(mosinRound);
+			
+			animation.SetVariableBool(m_playerAnimCloseBoltFlag, false);
+			SetBoolVariable(m_animCloseBoltFlag, false);
+			
 		}
 		
 		// Despawns the magazine from the left hand and deletes it
 		if (animEventType == m_despawnRound){
+			// check loop counter
+			if (loopCounter > m_sMaxAmmo){
+				animation.SetVariableInt(m_playerAnimStopReloading, true);
+				SetBoolVariable(m_animStopReloading, true);
+			}
+			loopCounter +=1;
+			
+			
 			if (mosinRound){
 				EntitySlotInfo leftHandSlot = controller.GetLeftHandPointInfo();
 				leftHandSlot.AttachEntity(mosinRound);
@@ -168,7 +182,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 				RplComponent.DeleteRplEntity(mosinRound, false);
 				mosinRound = null;
 			} else {
-				animation.SetVariableInt(m_playerAnimStopReloading, true);
+				animation.SetVariableInt(m_playerAnimStopReloading, true); // no mag?
 				SetIntVariable(m_animStopReloading, true);
 			}
 			
@@ -179,12 +193,11 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 			if (newMag){
 				RplComponent.DeleteRplEntity(newMag, false);
 			} else {
-				animation.SetVariableInt(m_playerAnimStopReloading, true);
+				animation.SetVariableInt(m_playerAnimStopReloading, true); // no mag?
 				SetIntVariable(m_animStopReloading, true);
 			}
 			
-			animation.SetVariableBool(m_playerAnimCloseBoltFlag, false);
-			SetBoolVariable(m_animCloseBoltFlag, false);
+
 								
 
 		}		
@@ -256,6 +269,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 				
 		// Used at the beginning of the reload to set the variable that tracks how long the reload has gone on for.
 		if (animEventType == m_startReloadTimer) {
+			loopCounter = 0;
 			m_startTime = GetGame().GetWorld().GetWorldTime();
 			animation.SetVariableInt(m_playerAnimStopReloading, false);
 			SetIntVariable(m_animStopReloading, false);		
