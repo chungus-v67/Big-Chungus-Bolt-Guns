@@ -179,7 +179,7 @@ AnimSrcGraphFile {
        IsExit 0
       }
       AnimSrcNodeState MagReload {
-       EditorPos 12 17.6
+       EditorPos 11.9 17.4
        Child "MagReloadSTM"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 4"
        TimeStorage Inherit
@@ -290,12 +290,12 @@ AnimSrcGraphFile {
        Child "Firing_STM"
        StartExpr "true"
        InterruptExpr "HasVariableChanged(State)"
-       IsReentrant 1
+       EnqueueMethod Ignore
       }
       AnimSrcNodeQueueItem "{5538C86ED529BB5A}" {
        Child "ModeIK 2"
        StartExpr "HasVariableChanged(State)"
-       IsReentrant 1
+       EnqueueMethod Ignore
       }
      }
     }
@@ -546,10 +546,12 @@ AnimSrcGraphFile {
       AnimSrcNodeQueueItem "{55AEC32A2912AFA5}" {
        Child "FireAnim"
        StartExpr "HasVariableChanged(Firing, false, true) && !LastBullet && !Empty"
+       EnqueueMethod Enqueue
       }
       AnimSrcNodeQueueItem "{55AEC32821E0C4D0}" {
        Child "FireEmptyAnim"
        StartExpr "HasVariableChanged(Firing, false, true) && Empty"
+       EnqueueMethod Enqueue
       }
      }
     }
@@ -565,6 +567,7 @@ AnimSrcGraphFile {
       AnimSrcNodeQueueItem "{55AEC3240D48D0E6}" {
        Child "FireAnim"
        StartExpr "HasVariableChanged(Firing, false, true)"
+       EnqueueMethod Enqueue
       }
      }
     }

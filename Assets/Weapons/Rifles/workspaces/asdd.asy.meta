@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8587086AE3E45EFD}Assets/Weapons/Rifles/workspaces/asdd.asy"
+ Configurations {
+  AnimSyncTableResourceClass PC {
+  }
+  AnimSyncTableResourceClass XBOX_ONE : PC {
+  }
+  AnimSyncTableResourceClass XBOX_SERIES : PC {
+  }
+  AnimSyncTableResourceClass PS4 : PC {
+  }
+  AnimSyncTableResourceClass PS5 : PC {
+  }
+  AnimSyncTableResourceClass HEADLESS : PC {
+  }
+ }
+}

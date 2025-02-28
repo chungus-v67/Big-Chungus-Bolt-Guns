@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3F52BE68EC32E608}Assets/Weapons/Rifles/workspaces/asd.ae"
+ Configurations {
+  AnimEventListResourceClass PC {
+  }
+  AnimEventListResourceClass XBOX_ONE : PC {
+  }
+  AnimEventListResourceClass XBOX_SERIES : PC {
+  }
+  AnimEventListResourceClass PS4 : PC {
+  }
+  AnimEventListResourceClass PS5 : PC {
+  }
+  AnimEventListResourceClass HEADLESS : PC {
+  }
+ }
+}

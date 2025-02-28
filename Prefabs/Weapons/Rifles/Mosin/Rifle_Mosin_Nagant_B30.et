@@ -292,8 +292,11 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       }
      }
      FireModes {
+      BaseFireMode "{506B20D1476BA99E}" {
+       ManualAction 0
+      }
       BaseFireMode "{B80A64F4A8EF8333}" {
-       UIName "Bolt Action"
+       UIName "Single"
        ManualAction 1
       }
      }
@@ -325,6 +328,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
        }
       }
      }
+     OutOfADSWhileReloading 1
      MagazineTemplate "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/Magazine_762x54_B30_Mosin_Nagant.et"
     }
     SCR_BoltAnimationComponent "{60B4EA76EB15F6E0}" {
@@ -374,10 +378,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 -0.0514 0.0199
      }
     }
-    UserActionContext "{62044E984F082D68}" {
+    UserActionContext "{61FECC6555D008A5}" {
      UIInfo SCR_ActionContextUIInfo "{62044E984F084567}" {
      }
-     ContextName "optic"
      Position PointInfo "{62044E984F084561}" {
       PivotID "slot_optics"
       Offset 0 0 0
@@ -424,6 +427,8 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      }
     }
    }
+  }
+  SCR_WeaponStatsManagerComponent "{648847151D9D767A}" {
   }
  }
  coords 188.662 1 150.261

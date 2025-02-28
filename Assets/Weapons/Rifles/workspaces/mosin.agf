@@ -50,7 +50,7 @@ AnimSrcGraphFile {
       }
       AnimSrcNodeState "Prepare Reload" {
        EditorPos 7.8 19.4
-       Child "Buffer Use 30993"
+       Child "DUMMY NODE"
        StartCondition "true"
        TimeStorage "Real Time"
       }
@@ -60,7 +60,8 @@ AnimSrcGraphFile {
        IsExit 1
       }
       AnimSrcNodeState "Check if mag is full" {
-       EditorPos 7.8 20.9
+       EditorPos 7.7 20.9
+       Child "DUMMY NODE"
        TimeStorage "Real Time"
       }
      }
@@ -140,6 +141,9 @@ AnimSrcGraphFile {
      EditorPos 20.6 18.7
      Source "Reload.Reload_RackBolt"
      Looptype "No Loop"
+     BonesInterpolatedInModelSpace {
+      "RightHandProp"
+     }
     }
     AnimSrcNodeGroupSelect ReloadErcCroG {
      EditorPos 4.3 10.8
@@ -220,7 +224,8 @@ AnimSrcGraphFile {
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 55 && GetCommandF(CMD_Weapon_Reload) == 1.0"
       }
       AnimSrcNodeState ReloadActionBoltOpen {
-       EditorPos 21.4 15
+       EditorPos 20.8 14.5
+       Child "DUMMY NODE"
        StartCondition "GetCommandI(CMD_Weapon_Reload) == 1 && GetCommandF(CMD_Weapon_Reload) == 1.0"
        TimeStorage "Real Time"
        IsExit 1
@@ -290,12 +295,12 @@ AnimSrcGraphFile {
        Child "Firing_STM"
        StartExpr "true"
        InterruptExpr "HasVariableChanged(State)"
-       IsReentrant 1
+       EnqueueMethod Ignore
       }
       AnimSrcNodeQueueItem "{5538C86ED529BB5A}" {
        Child "ModeIK 2"
        StartExpr "HasVariableChanged(State)"
-       IsReentrant 1
+       EnqueueMethod Ignore
       }
      }
     }
@@ -317,10 +322,6 @@ AnimSrcGraphFile {
     AnimSrcNodeSource Finger_out {
      EditorPos -20.5 14.2
      Source "Reload.Erc.Finger_trigger_out"
-    }
-    AnimSrcNodePose IdleFinger_1 {
-     EditorPos 6.9 6
-     Source "Reload.Idle_finger"
     }
     AnimSrcNodeStateMachine FingerOnTrigger {
      EditorPos -20.9 16.2
@@ -404,10 +405,11 @@ AnimSrcGraphFile {
      Child1 "FingerOnTrigger"
     }
     AnimSrcNodeBlendT "Blend T 1" {
-     EditorPos 4.6 4.8
+     EditorPos 4.6 4.6
      BlendTime "0.2"
      Condition "Low && !IsTag(\"TagRackBolt\")"
      Child0 "WeaponReloadStanceSTM"
+     Child1 "DUMMY NODE"
      OptimizeMin 1
      PostEval 1
     }
@@ -546,10 +548,12 @@ AnimSrcGraphFile {
       AnimSrcNodeQueueItem "{55AEC32A2912AFA5}" {
        Child "FireAnim"
        StartExpr "HasVariableChanged(Firing, false, true) && !LastBullet && !Empty"
+       EnqueueMethod Enqueue
       }
       AnimSrcNodeQueueItem "{55AEC32821E0C4D0}" {
        Child "FireEmptyAnim"
        StartExpr "HasVariableChanged(Firing, false, true) && Empty"
+       EnqueueMethod Enqueue
       }
      }
     }
@@ -565,6 +569,7 @@ AnimSrcGraphFile {
       AnimSrcNodeQueueItem "{55AEC3240D48D0E6}" {
        Child "FireAnim"
        StartExpr "HasVariableChanged(Firing, false, true)"
+       EnqueueMethod Enqueue
       }
      }
     }
@@ -1220,7 +1225,7 @@ AnimSrcGraphFile {
      EditorPos 11.2 21.9
      Source "Reload.Reload_GrabRound"
     }
-    AnimSrcNodeBufferUse "Buffer Use 30993" {
+    AnimSrcNodeBufferUse "DUMMY NODE" {
      EditorPos 2.428 18.976
      BufferName "asd"
     }

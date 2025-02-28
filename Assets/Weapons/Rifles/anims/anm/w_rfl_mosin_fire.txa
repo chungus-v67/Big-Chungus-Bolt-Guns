@@ -122,9 +122,8 @@ $animation "" {
  }
  $events {
   #event 1 "Weapon_TriggerPulled" "" -1 0 "" 0
-  #event 2 "AdjustAmmoCount" "" -1 0 "" 0
   #event 2 "LoopIn" "" -1 0 "" 0
-  #event 3 "Weapon_Rack_Bolt" "" -1 0 "" 0
+  #event 2 "AdjustAmmoCount" "" -1 0 "" 0
   #event 3 "Weapon_TriggerReleased" "" -1 0 "" 0
   #event 3 "LoopOut" "" -1 0 "" 0
  }
