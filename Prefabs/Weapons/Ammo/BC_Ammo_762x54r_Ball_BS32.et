@@ -17,7 +17,7 @@ Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.e
     }
     SubmunitionEffect "{61EC288EE8D0CE6B}" {
      Enabled 0
-     Prefab "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/Ammo_B32_Incendiary.et"
+     Prefab "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/BC_Ammo_B32_Incendiary.et"
     }
     ProjectileDamage "{61F8654BBD6B1A32}" {
      Enabled 1
@@ -29,7 +29,7 @@ Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.e
      }
     }
     ProjectileDamage "{61F903F775ACB280}" {
-     DamageValue 2
+     DamageValue 1
      DamageType Incendiary
      DamageEffects {
       SCR_IncendiaryBulletDamageEffect "{61F903F77AAAD553}" {
