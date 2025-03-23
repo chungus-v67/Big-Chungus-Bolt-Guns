@@ -7,21 +7,21 @@ Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.e
    Mass 0.0096
    ProjectileEffects {
     ProjectileDamage "{5168BBF3DBD79134}" {
-     DamageValue 160
+     DamageValue 0
+    }
+    ProjectileDamage "{64ED6A3CCF7F358C}" {
+     DamageValue 0
+     DamageEffects {
+      SCR_BaseBulletDamageEffect "{64ED6A3CF545697E}" {
+      }
+     }
     }
     ExplosionEffect "{85DB664DDCA5D5B0}" {
      ParticleEffect "{36BEC9C5D0BD48B1}Particles/Weapon/Explosion_B32_API.ptc"
     }
-    ExplosionEffect "{61EAF21AE2ADB160}" {
-     Enabled 0
-    }
-    SubmunitionEffect "{61EC288EE8D0CE6B}" {
-     Enabled 0
-     Prefab "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/BC_Ammo_B32_Incendiary.et"
-    }
     ProjectileDamage "{61F8654BBD6B1A32}" {
-     Enabled 1
-     DamageValue 30
+     Enabled 0
+     DamageValue 1
      DamageType Explosive
      DamageEffects {
       SCR_ExplosionDamageEffect "{61F8654BA62763DD}" {
@@ -29,24 +29,21 @@ Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.e
      }
     }
     ProjectileDamage "{61F903F775ACB280}" {
-     DamageValue 1
+     DamageValue 0.1
      DamageType Incendiary
      DamageEffects {
       SCR_IncendiaryBulletDamageEffect "{61F903F77AAAD553}" {
       }
      }
     }
-    ProjectileDamage "{61F903F40D942E98}" {
-     DamageValue 20
-     DamageEffects {
-      SCR_BaseBulletDamageEffect "{61F903F438FDBEB2}" {
-      }
-     }
-    }
    }
    BallisticTableConfig "{0471293E3DE1E1DF}Configs/Weapons/AIBallisiticTables/AIBT_762x54r_Ball_7N1.conf"
    AirDrag 0.0000094
-   PenetrationDepth 13.7
+   Diameter 14
+   MushroomingDamageMultiplier 0.25
+   PenetrationDepth 8.5
+   PenetrationDensity 7.62
+   PenetrationSpeed 780
   }
  }
  coords 1722.827 39 2856.806
