@@ -125,7 +125,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      SightsPointRear PointInfo "{61DE56145AAA617A}" {
       PivotID "slot_ironsight_rear"
      }
-     ADSTime 0.3
+     ADSTime 3.5
      SightsSwitchSkip 0
      m_iOpticDOFDistanceScale 30
     }
@@ -326,7 +326,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
        }
       }
      }
-     MagazineTemplate "{4A5DC7CD376BCA74}Prefabs/Weapons/Magazines/Magazine_762x54_B32_Mosin_Nagant.et"
+     MagazineTemplate "{4A5DC7CD376BCA74}Prefabs/Weapons/Magazines/BC_Magazine_762x54_B32_Mosin_Nagant.et"
     }
     SCR_BoltAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{7C5D11BD4B0DBD8A}Assets/Weapons/Rifles/workspaces/mosin.agr"
@@ -353,7 +353,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Angles 0 72.4431 0
      }
      m_sMaxReloadTime 8000
-     m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_BS32.et"
+     m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/BC_Ammo_762x54r_Ball_BS32.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
     }

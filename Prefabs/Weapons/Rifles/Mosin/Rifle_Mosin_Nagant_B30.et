@@ -31,6 +31,8 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
     }
    }
   }
+  SCR_WeaponStatsManagerComponent "{648847151D9D767A}" {
+  }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
     AttachmentSlotComponent "{5472D21A19B61CDF}" {
@@ -125,7 +127,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      SightsPointRear PointInfo "{62044E984F0BAD32}" {
       PivotID "slot_ironsight_rear"
      }
-     ADSTime 0.25
+     ADSTime 3.5
      m_iOpticDOFDistanceScale 30
     }
     SightsComponent "{BB23A637957CFFF8}" {
@@ -355,7 +357,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 0 0.0417
       Angles 0 72.4431 0
      }
-     m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_BS32.et"
+     m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/BC_Ammo_762x54r_Ball_BS32.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
     }
@@ -427,8 +429,6 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      }
     }
    }
-  }
-  SCR_WeaponStatsManagerComponent "{648847151D9D767A}" {
   }
  }
  coords 188.662 1 150.261
