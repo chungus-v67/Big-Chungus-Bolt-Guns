@@ -127,7 +127,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      SightsPointRear PointInfo "{62044E984F0BAD32}" {
       PivotID "slot_ironsight_rear"
      }
-     ADSTime 3.5
+     ADSTime 0.35
      m_iOpticDOFDistanceScale 30
     }
     SightsComponent "{BB23A637957CFFF8}" {
