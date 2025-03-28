@@ -25,6 +25,12 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
   }
   MeshObject "{5D0CC83435B55858}" {
    Object "{DB54AAD66E436754}Assets/Weapons/Attachments/Optics/PU/PU scope_2.xob"
+   Materials {
+    MaterialAssignClass "{64F8378BA30F2708}" {
+     SourceMaterial "Optic_pip"
+     AssignedMaterial "{1C8A9AC4A0AE4921}Assets/Weapons/Attachments/Optics/Shared/SightsPIPMaterial.emat"
+    }
+   }
   }
   SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
    SightsPosition PointInfo "{5D0CC83435B55853}" {
@@ -80,7 +86,6 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
    m_fReticleOffsetX -0.065
    m_vCameraOffset -0.002 0.01 0
    m_vCameraAngles 0 0.003 0
-   m_vCameraMisalignmentScale 1 1 1
    m_rScopeHDRMatrial "{1725299A966C713F}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_PU_HDR.emat"
    m_fBasicParallax 1
    m_fScopeRadius 0.01
@@ -100,20 +105,19 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
      }
      VisibilityRange 0.5
     }
-    SCR_AttachementAction "{5D0CC83435B55B8D}" {
-     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B8A}" {
-      Name "Detach: "
-     }
-    }
     SCR_AttachItemFromInventoryAction "{5D0CC83435B55B88}" {
-     ParentContextList {
-      "optic"
+     ParentContextList +{
      }
      UIInfo SCR_ActionUIInfo "{5D0CC83435B55B89}" {
       Name "Attach: "
      }
      VisibilityRange 1
      Duration 1
+    }
+    SCR_AttachementAction "{5D0CC83435B55B8D}" {
+     UIInfo SCR_ActionUIInfo "{5D0CC83435B55B8A}" {
+      Name "Detach: "
+     }
     }
    }
   }
