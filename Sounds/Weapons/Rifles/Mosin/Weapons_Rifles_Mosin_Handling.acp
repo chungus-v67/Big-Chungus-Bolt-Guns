@@ -6,19 +6,19 @@ AudioClass {
    tl -192.404 -1915.429
    res "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
    inputsport {
-    1 2 8 10 36 53 54 100
+    1 2 36 53 54 100
    }
    outputsport {
     5 42
    }
    inputvalues {
-    0 0 1 1 1 1000 1000 0
+    0 0 1 1000 1000 0
    }
    inputvaluesmin {
-    0 0 0 0 0 0 0 0
+    0 0 0 0 0 0
    }
    inputvaluesmax {
-    1 1 1 1 1 10000 10000 1
+    1 1 1 10000 10000 1
    }
    path "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
   }
@@ -83,7 +83,7 @@ AudioClass {
     1 35 40 112 139
    }
    outputsport {
-    34 39 105 106 107 110
+    34 39 105 107 106 110
    }
    inputvalues {
     40 1 1 16000 16000
@@ -95,6 +95,28 @@ AudioClass {
     100 1 1 16000 16000
    }
    path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+  SignalClass {
+   id 102413
+   name "WPN Handling Spatiality"
+   tl -719.266 -2094.876
+   res "{1387EB9E4DBEB1F2}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapons_Handling_Spatiality.sig"
+   inputsport {
+    1 3
+   }
+   outputsport {
+    9
+   }
+   inputvalues {
+    0 1
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{1387EB9E4DBEB1F2}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapons_Handling_Spatiality.sig"
   }
  }
  sounds {
@@ -375,7 +397,7 @@ AudioClass {
    }
    path "{B764D803219C775E}Sounds/FinalMix.afm"
    inputs {
-    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large"
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
    }
   }
  }
@@ -423,7 +445,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -470,7 +492,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -521,7 +543,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -568,7 +590,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -615,7 +637,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -662,7 +684,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -709,7 +731,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -756,7 +778,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -803,7 +825,7 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 45084
+       id 101404
        port 65
       }
      }
@@ -845,7 +867,7 @@ AudioClass {
   AmplitudeClass : "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf" {
    id 11283
    version 5
-   tl -707.904 -1758.047
+   tl -717.624 -1914.136
    parent "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf"
   }
   AmplitudeClass : "{011A82046959B996}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Weapons_Reload.conf" {
@@ -883,7 +905,7 @@ AudioClass {
   FrequencyClass : "{65257CB7AD05C1FD}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Handling_Rifle.conf" {
    id 12309
    version 5
-   tl -707.904 -1678.19
+   tl -718.196 -1833.707
    ctl -2812.5 1687.5
    parent "{65257CB7AD05C1FD}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Handling_Rifle.conf"
    ins {
@@ -939,7 +961,7 @@ AudioClass {
    Resampler FIR_8
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/M21/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
+     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/Mosin/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
     }
    }
   }
@@ -953,7 +975,7 @@ AudioClass {
    Resampler FIR_4
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/M21/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
+     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/Mosin/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
     }
    }
   }
@@ -981,21 +1003,21 @@ AudioClass {
    Resampler FIR_8
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/M21/sounds/mosin-load-1.wav"
+     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-1.wav"
      Probability 50
     }
     AudioBankSampleClass Sample {
-     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/M21/sounds/mosin-load-2.wav"
+     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-2.wav"
      Probability 20
      Index 1
     }
     AudioBankSampleClass Sample {
-     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/M21/sounds/mosin-load-3.wav"
+     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-3.wav"
      Probability 20
      Index 2
     }
     AudioBankSampleClass Sample {
-     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/M21/sounds/mosin-load-4.wav"
+     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-4.wav"
      Probability 10
      Index 2
     }
@@ -1028,7 +1050,7 @@ AudioClass {
    "Fade in time" 80
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/M21/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
+     Filename "{1439CE5DF4FD6E2C}Sounds/Weapons/Rifles/Mosin/sounds/213456-Rifle-MosinNagant-bolt-open.wav"
     }
    }
   }
@@ -1178,7 +1200,7 @@ AudioClass {
    "Fade in time" 80
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/M21/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
+     Filename "{22A6ECE9E58B4981}Sounds/Weapons/Rifles/Mosin/sounds/213453-Rifle-MosinNagant-bolt-close-2.wav"
     }
    }
   }
@@ -1192,21 +1214,21 @@ AudioClass {
    Resampler FIR_8
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/M21/sounds/mosin-load-1.wav"
+     Filename "{344DBC6B7CC97F18}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-1.wav"
      Probability 50
     }
     AudioBankSampleClass Sample {
-     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/M21/sounds/mosin-load-2.wav"
+     Filename "{AD5305F2612E4E88}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-2.wav"
      Probability 20
      Index 1
     }
     AudioBankSampleClass Sample {
-     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/M21/sounds/mosin-load-3.wav"
+     Filename "{DA596D7A958CA1F8}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-3.wav"
      Probability 20
      Index 2
     }
     AudioBankSampleClass Sample {
-     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/M21/sounds/mosin-load-4.wav"
+     Filename "{DD9E972BF30A1B3B}Sounds/Weapons/Rifles/Mosin/sounds/mosin-load-4.wav"
      Probability 10
      Index 3
     }
@@ -1214,11 +1236,28 @@ AudioClass {
   }
  }
  spatialities {
-  SpatialityClass : "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf" {
-   id 45084
+  SpatialityClass : "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf" {
+   id 101404
    version 5
-   tl -707.904 -1836.107
-   parent "{3E728F2490D6D7BE}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_Handling.conf"
+   tl -718.402 -1996.334
+   parent "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 102413
+       port 9
+      }
+     }
+    }
+   }
+   pi + {
+    0
+   }
+   pu {
+    1 0
+   }
   }
  }
  auxOuts {
