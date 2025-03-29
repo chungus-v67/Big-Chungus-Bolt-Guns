@@ -55,6 +55,8 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 	protected MagazineComponent defaultMagComp = null;
 	protected BaseMagazineComponent magazine = null;
 	protected int loopCounter = 0;
+	protected CharacterAnimationComponent animation = null;
+	protected SCR_CharacterControllerComponent controller = null;
 	
 	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
 	{
@@ -81,8 +83,10 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 
 		protected WeaponComponent weapon = WeaponComponent.Cast(m_Owner.FindComponent(WeaponComponent));	
 		ChimeraCharacter character = ChimeraCharacter.Cast(m_Owner.GetParent());		
-		protected SCR_CharacterControllerComponent controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());					
-		protected CharacterAnimationComponent animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));		
+		if (character)
+			controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());		
+		if (character && controller)			
+			animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));		
 		protected SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());	
 		if (!magazine){ 
 			magazine = MagazineComponent.Cast(weapon.GetCurrentMagazine());	
