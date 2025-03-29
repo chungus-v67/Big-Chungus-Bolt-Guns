@@ -83,7 +83,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
     PivotID "optic_rear"
    }
    SightsPriority 1
-   m_bForceSimpleDOF 1
+   m_bForceSimpleDOF 0
    m_sReticleTexture "{1E148479D0243261}UI/Textures/Sights/Redfield_Reticle.edds"
    m_sReticleGlowTexture "{1E148479D0243261}UI/Textures/Sights/Redfield_Reticle.edds"
    m_fMagnification 3
