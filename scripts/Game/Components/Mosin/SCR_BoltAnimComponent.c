@@ -85,8 +85,10 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 		ChimeraCharacter character = ChimeraCharacter.Cast(m_Owner.GetParent());		
 		if (character)
 			controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());		
+		else return;
 		if (character && controller)			
 			animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));		
+		else return;
 		protected SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());	
 		if (!magazine){ 
 			magazine = MagazineComponent.Cast(weapon.GetCurrentMagazine());	
