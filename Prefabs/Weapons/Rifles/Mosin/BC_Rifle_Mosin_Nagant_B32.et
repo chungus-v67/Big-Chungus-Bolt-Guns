@@ -9,6 +9,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
   MeshObject "{CFBAA4B701F95D69}" {
    Object "{0AC909417B7EFCB9}Assets/Weapons/Rifles/mosin.xob"
   }
+  RigidBody "{5254ACCA96B16F72}" {
+   CenterOfMass 0 0.066 0.2
+  }
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
     ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {

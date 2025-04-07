@@ -4,7 +4,6 @@ MetaFileClass {
   FBXResourceClass PC {
    MergeMeshes 0
    ExportSkinning 1
-   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{61DE34A721A8B472}" {
      SourceMaterial "Mosin9130Mat"
@@ -43,11 +42,10 @@ MetaFileClass {
      Mass 0
      Margin 0
     }
-    GeometryParam UTM_Weapon {
+    GeometryParam UCX_Body {
      LayerPreset "Weapon"
      SurfaceProperties {
       "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
-      "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
      }
      Mass 0
      Margin 0

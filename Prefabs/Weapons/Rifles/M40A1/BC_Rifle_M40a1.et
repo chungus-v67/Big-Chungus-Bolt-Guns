@@ -9,6 +9,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
   MeshObject "{CFBAA4B701F95D69}" {
    Object "{E305A2CD51E38943}Assets/Weapons/Rifles/m40a1.xob"
   }
+  RigidBody "{5254ACCA96B16F72}" {
+   CenterOfMass 0 0.062 0.146
+  }
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
     ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
@@ -40,7 +43,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      AttachmentSlot InventoryStorageSlot Scope {
       AutoTransform 1
       ChildPivotID "snap_weapon"
-      Prefab "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Redfield/Optic_Redfield.et"
+      Prefab "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et"
      }
      AttachmentType AttachmentOpticsM40A1 "{58E2BCF93BDCA8BA}" {
      }
@@ -348,7 +351,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
        }
       }
      }
-     MagazineTemplate "{541E6C7E6AF67A89}Prefabs/Weapons/Magazines/Magazine_762x51_M40a1.et"
+     MagazineTemplate "{541E6C7E6AF67A89}Prefabs/Weapons/Magazines/BC_Magazine_762x51_M40a1.et"
     }
     SCR_BoltAnimationComponent "{60B4EA76EB15F6E0}" {
      AnimGraph "{9591BA316190C870}Assets/Weapons/Rifles/workspaces/m40a1.agr"
@@ -375,7 +378,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Angles 0 72.4431 0
      }
      m_sMaxReloadTime 8000
-     m_sShellPrefab "{B3381A4F2F946923}Prefabs/Weapons/Ammo/Ammo_762x51_M40A1_AP.et"
+     m_sShellPrefab "{B3381A4F2F946923}Prefabs/Weapons/Ammo/BC_Ammo_762x51_M40A1_AP.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
     }
