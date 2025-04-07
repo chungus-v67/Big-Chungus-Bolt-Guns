@@ -40,6 +40,8 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      Enabled 1
      AttachmentSlot InventoryStorageSlot Scope {
       ChildPivotID "snap_weapon"
+      Prefab "{A03B33641708422A}Prefabs/Weapons/Attachments/Optics/Optic_PU/BC_Optic_PU.et"
+      InspectionWidgetOffset 0 0 0
      }
      AttachmentType AttachmentOpticsMosinPU "{58E2BCF93BDCA8BA}" {
      }
@@ -379,15 +381,14 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 -0.0514 0.0199
      }
     }
-    UserActionContext "{61F977FA15F6BE87}" {
+    UserActionContext "{61FECC6555D008A5}" {
      UIInfo SCR_ActionContextUIInfo "{61F977FAD59CF4CC}" {
      }
-     ContextName "optic"
      Position PointInfo "{5086F9ADE97650DF}" {
       PivotID "slot_optics"
       Offset 0 0 0
      }
-     Radius 0.1
+     Radius 0.2
      Height 0.1
     }
    }

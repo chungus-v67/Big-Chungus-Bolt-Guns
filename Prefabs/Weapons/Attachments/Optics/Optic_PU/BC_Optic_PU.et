@@ -96,14 +96,18 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
   ActionsManagerComponent "{5284E0EFF569AD07}" {
    ActionContexts {
     UserActionContext "{5284E0EFF4E818E9}" {
-     Radius 0.5
+     Position PointInfo "{5284E0EFC526E6F0}" {
+      Offset 0 0.0209 0.0202
+     }
+     Radius 0.1
+     Height 0
     }
    }
    additionalActions {
     SCR_EquipWeaponAttachment "{5284E0EFDA00C63B}" {
      ParentContextList +{
      }
-     VisibilityRange 0.5
+     VisibilityRange -1
     }
     SCR_AttachItemFromInventoryAction "{5D0CC83435B55B88}" {
      ParentContextList +{

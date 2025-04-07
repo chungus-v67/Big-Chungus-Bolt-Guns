@@ -406,10 +406,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 -0.012 -0.0024
      }
     }
-    UserActionContext "{6276524FCDFBFB57}" {
+    UserActionContext "{61FECC6555D008A5}" {
      UIInfo SCR_ActionContextUIInfo "{6276524FCDFBFB54}" {
      }
-     ContextName "optic"
      Position PointInfo "{6276524FCDFBFB55}" {
       PivotID "slot_optics"
       Offset 0 0 0
