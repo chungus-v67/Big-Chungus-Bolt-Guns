@@ -2689,63 +2689,63 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651E54C6CA20BB76}\" {
+  #event 0 "Sound" "AnimSrcEventGeneric \"{651EF24336D29317}\" {
+ Name \"Sound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"SOUND_CHAR_MOVEMENT\"
+ UserInt 0
+}" 0 0 "" 0
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651EF24336D293DF}\" {
  Name \"Weapon_EnableFire\"
  Comment \"\"
  MainPathOnly 0
  UserString \"\"
  UserInt -1
 }" 0 0 "" 0
-  #event 0 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B8C6}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVEMENT\"
- UserInt 0
-}" 0 0 "" 0
-  #event 1 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B8EF}\" {
+  #event 1 "Sound" "AnimSrcEventGeneric \"{651EF24336D293C3}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"
  UserInt 0
 }" 0 0 "" 0
-  #event 9 "aaWeapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C6CA20B8F0}\" {
- Name \"aaWeapon_Rack_Bolt\"
+  #event 9 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651EF24336D293AA}\" {
+ Name \"Weapon_Rack_Bolt\"
  Comment \"\"
  MainPathOnly 0
  UserString \"\"
  UserInt -1
 }" 0 0 "" 0
-  #event 10 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B80C}\" {
+  #event 10 "Sound" "AnimSrcEventGeneric \"{651EF24336D293A6}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_CHAR_MOVEMENT\"
  UserInt 1
 }" 0 0 "" 0
-  #event 12 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B81F}\" {
+  #event 12 "Sound" "AnimSrcEventGeneric \"{651EF24336D29393}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_CHAR_MOVEMENT\"
  UserInt 0
 }" 0 0 "" 0
-  #event 15 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B82D}\" {
+  #event 15 "Sound" "AnimSrcEventGeneric \"{651EF24336D2938C}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"
  UserInt 0
 }" 0 0 "" 0
-  #event 18 "Sound" "AnimSrcEventGeneric \"{651E54C6CA20B83B}\" {
+  #event 18 "Sound" "AnimSrcEventGeneric \"{651EF24336D2907E}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_CHAR_HANDGRAB.RightHand\"
  UserInt 0
 }" 0 0 "" 0
-  #event 19 "BlendOut2" "AnimSrcEventGeneric \"{651E54C6CA20B84B}\" {
+  #event 19 "BlendOut2" "AnimSrcEventGeneric \"{651EF24336D29075}\" {
  Name \"BlendOut2\"
  Comment \"\"
  MainPathOnly 0

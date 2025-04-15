@@ -155,42 +155,42 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651E54C611B5CA1F}\" {
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651EF243066B5324}\" {
  Name \"Weapon_EnableFire\"
  Comment \"\"
  MainPathOnly 0
  UserString \"\"
  UserInt -1
 }" 0 0 "" 0
-  #event 4 "Sound" "AnimSrcEventGeneric \"{651E54C611B5CA59}\" {
+  #event 4 "Sound" "AnimSrcEventGeneric \"{651EF243066B53E5}\" {
  Name \"Sound\"
  Comment \"\"
  MainPathOnly 0
  UserString \"SOUND_RELOAD_BOLT_SLIDE_FWD\"
  UserInt 0
 }" 0 0 "" 0
-  #event 17 "aaWeapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C611B5CA40}\" {
- Name \"aaWeapon_Rack_Bolt\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 18 "EmptyMagAfterReloadCheck" "AnimSrcEventGeneric \"{651E54C611B5CA71}\" {
- Name \"EmptyMagAfterReloadCheck\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 19 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C611B5CA61}\" {
+  #event 17 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651EF243066B538B}\" {
  Name \"Weapon_Rack_Bolt\"
  Comment \"\"
  MainPathOnly 0
  UserString \"\"
  UserInt -1
 }" 0 0 "" 0
-  #event 20 "BlendOut2" "AnimSrcEventGeneric \"{651E54C611B5CA94}\" {
+  #event 18 "EmptyMagAfterReloadCheck" "AnimSrcEventGeneric \"{651EF243066B53BB}\" {
+ Name \"EmptyMagAfterReloadCheck\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 19 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651EF243066B53AA}\" {
+ Name \"Weapon_Rack_Bolt\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 20 "BlendOut2" "AnimSrcEventGeneric \"{651EF243066B53A7}\" {
  Name \"BlendOut2\"
  Comment \"\"
  MainPathOnly 0
