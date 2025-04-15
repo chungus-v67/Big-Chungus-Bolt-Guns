@@ -1,5 +1,5 @@
 $animation "" {
- #version 1.0
+ #version 2
  #fps 30
  #numFrames 38
  $node "Scene_Root" {
@@ -185,11 +185,47 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "BlendIn" "" -1 0 "" 0
-  #event 0 "Weapon_EnableFire" "" -1 0 "" 0
-  #event 8 "Sound" "SOUND_RELOAD_BOLT_PULL" 0 0 "" 0
-  #event 13 "EjectRound" "" -1 0 "" 0
-  #event 23 "Weapon_Rack_Bolt" "" -1 0 "" 0
-  #event 23 "Sound" "SOUND_RELOAD_BOLT_SNAP" 0 0 "" 0
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651E54C6FF6024EF}\" {
+ Name \"Weapon_EnableFire\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 0 "BlendIn" "AnimSrcEventGeneric \"{651E54C6FF60241E}\" {
+ Name \"BlendIn\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 8 "Sound" "AnimSrcEventGeneric \"{651E54C6FF602425}\" {
+ Name \"Sound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"SOUND_RELOAD_BOLT_PULL\"
+ UserInt 0
+}" 0 0 "" 0
+  #event 13 "EjectRound" "AnimSrcEventGeneric \"{651E54C6FF602435}\" {
+ Name \"EjectRound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 23 "Sound" "AnimSrcEventGeneric \"{651E54C6FF602443}\" {
+ Name \"Sound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"SOUND_RELOAD_BOLT_SNAP\"
+ UserInt 0
+}" 0 0 "" 0
+  #event 23 "aaWeapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C6FF602451}\" {
+ Name \"aaWeapon_Rack_Bolt\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
  }
 }

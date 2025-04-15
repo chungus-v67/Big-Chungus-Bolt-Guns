@@ -1,33 +1,33 @@
 $animation "" {
- #version 1.0
+ #version 2
  #fps 30
  #numFrames 42
  $node "Scene_Root" {
-  $keys t q {
+  $keys t q s {
    $frame 0 42 {
    }
   }
   $node "Armature" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
     }
    }
    $node "w_root" {
-    $keys t q {
+    $keys t q s {
      $frame 0 42 {
       #q -0.00000106 -0.00000014 1 0.00000008
      }
     }
     $node "w_bolt_rear" {
-     $keys t q {
+     $keys t q s {
       $frame 0 16 {
-       #t -0 -0.0990709 0.0296288
+       #t 0 -0.0990709 0.0296288
       }
       $frame 17 {
-       #t -0 -0.0990709 0.0234903
+       #t 0 -0.0990709 0.0234903
       }
       $frame 18 {
-       #t -0 -0.0990709 0.0076595
+       #t 0 -0.0990709 0.0076595
       }
       $frame 19 {
        #t 0 -0.0990709 -0.0139866
@@ -57,15 +57,15 @@ $animation "" {
        #t 0 -0.0990709 0.0008989
       }
       $frame 29 {
-       #t -0 -0.0990709 0.0214202
+       #t 0 -0.0990709 0.0214202
       }
       $frame 30 42 {
       }
      }
      $node "w_bolt" {
-      $keys t q {
+      $keys t q s {
        $frame 0 10 {
-        #t -0.0000002 -0 0.0770658
+        #t -0.0000002 0 0.0770658
        }
        $frame 11 {
         #q -0.00000016 -0.00000002 0.07563229 0.99713576
@@ -100,14 +100,14 @@ $animation "" {
      }
     }
     $node "w_sight" {
-     $keys t q {
+     $keys t q s {
       $frame 0 42 {
        #t -0.0000008 -0.1172473 0.3825909
-       #q -0.00002691 0 -0 1
+       #q -0.00002691 0 0 1
       }
      }
      $node "w_sight_slider" {
-      $keys t q {
+      $keys t q s {
        $frame 0 42 {
         #t 0.0000001 0 -0.0672861
        }
@@ -115,7 +115,7 @@ $animation "" {
      }
     }
     $node "w_trigger" {
-     $keys t q {
+     $keys t q s {
       $frame 0 42 {
        #t -0.0000001 -0.0427416 0.0661644
       }
@@ -124,63 +124,63 @@ $animation "" {
    }
   }
   $node "snap_hand_right" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.0500258 0
     }
    }
   }
   $node "snap_hand_left" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.0736769 0.3041216
     }
    }
   }
   $node "slot_optics" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t -0.0318237 0.0928722 0.1337623
     }
    }
   }
   $node "slot_magazine" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.087065 0.1139609
     }
    }
   }
   $node "slot_ironsight_rear" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.123336 0.2983944
     }
    }
   }
   $node "slot_ironsight_front" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.1235641 0.9418106
     }
    }
   }
   $node "eye" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.1234619 0
     }
    }
   }
   $node "barrel_muzzle" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.1009189 0.9759129
     }
    }
   }
   $node "barrel_chamber" {
-   $keys t q {
+   $keys t q s {
     $frame 0 42 {
      #t 0 0.1010761 0.2076129
     }
@@ -188,11 +188,47 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "Weapon_EnableFire" "" -1 0 "" 0
-  #event 0 "BlendIn" "" -1 0 "" 0
-  #event 8 "Sound" "SOUND_RELOAD_BOLT_PULL" 0 0 "" 0
-  #event 15 "EjectRound" "" -1 0 "" 0
-  #event 25 "Weapon_Rack_Bolt" "" -1 0 "" 0
-  #event 26 "Sound" "SOUND_RELOAD_BOLT_SLIDE_FWD" 0 0 "" 0
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651E54C18C3610BE}\" {
+ Name \"Weapon_EnableFire\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 0 "BlendIn" "AnimSrcEventGeneric \"{651E54C18C3610D2}\" {
+ Name \"BlendIn\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 8 "Sound" "AnimSrcEventGeneric \"{651E54C18C3610FF}\" {
+ Name \"Sound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"SOUND_RELOAD_BOLT_PULL\"
+ UserInt 0
+}" 0 0 "" 0
+  #event 15 "EjectRound" "AnimSrcEventGeneric \"{651E54C18C3610EF}\" {
+ Name \"EjectRound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 25 "aaWeapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C18C36111C}\" {
+ Name \"aaWeapon_Rack_Bolt\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"\"
+ UserInt -1
+}" 0 0 "" 0
+  #event 26 "Sound" "AnimSrcEventGeneric \"{651E54C18C361113}\" {
+ Name \"Sound\"
+ Comment \"\"
+ MainPathOnly 0
+ UserString \"SOUND_RELOAD_BOLT_SLIDE_FWD\"
+ UserInt 0
+}" 0 0 "" 0
  }
 }

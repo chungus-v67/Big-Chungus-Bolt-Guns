@@ -1,34 +1,32 @@
-class SCR_BoltAnimationComponentClass : WeaponAnimationComponentClass
-{
-}
+class SCR_BoltAnimationComponentClass : WeaponAnimationComponentClass {}
 
-class SCR_BoltAnimationComponent : WeaponAnimationComponent
-{
+class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 	[Attribute("", UIWidgets.ResourceNamePicker, desc: "The particle effect that you want to play when the bolt is cycled", params: "ptc")]
 	protected ResourceName m_sCasingEjectionAnimation;
-	
+
 	[Attribute(desc: "Effect position")]
-	protected ref PointInfo		m_effectPosition;											//the position of the m_effectPosition
-	
+	protected ref PointInfo m_effectPosition;
+
 	[Attribute("10000", desc: "The max time (in ms) that the reload should be allowed to continue before attempting to exit in case of a bug. Must exceed the longest possible reload time.")]
-	protected int m_sMaxReloadTime;	
-	
+	protected int m_sMaxReloadTime;
+
 	[Attribute("4", desc: "The max ammo of the magazine, not including the chambered round. Used only to reset ammo after reload get interrupted.")]
-	protected int m_sMaxAmmo;											
-	
+	protected int m_sMaxAmmo;
+
 	[Attribute(params: "et")]
 	ResourceName m_sShellPrefab;
-	
+
 	[Attribute("", desc: "Name of bullet mesh that you would like to show/hide")]
 	protected string m_sBulletMesh;
-	
+
 	[Attribute("", desc: "Name of casing mesh that you would like to show/hide")]
 	protected string m_sCasingMesh;
-	
+
+	[Attribute("true", UIWidgets.CheckBox, "Break ADS when racking bolt with trigger press")]
+	protected bool m_bAdsOnRackBolt;
+
 	protected IEntity m_Owner;
-	protected IEntity m_player;
 	protected AnimationEventID m_setAmmoCount = -1;
-	protected AnimationEventID m_getAmmoCount = -1;
 	protected AnimationEventID m_checkMag = -1;
 	protected AnimationEventID m_ejectRound = -1;
 	protected AnimationEventID m_spawnRound = -1;
@@ -37,92 +35,110 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 	protected AnimationEventID m_emptyMagAfterReloadCheck = -1;
 	protected AnimationEventID m_closeBolt = -1;
 	protected AnimationEventID m_startReloadTimer = -1;
-	protected TAnimGraphVariable m_animAmmoCount = -1;
+	protected AnimationEventID m_Weapon_TriggerPulled = -1;
+
 	protected TAnimGraphVariable m_animStopReloading = -1;
 	protected TAnimGraphVariable m_animCloseBoltFlag = -1;
+	protected TAnimGraphVariable m_animTriggerPulled = -1;
 	protected TAnimGraphVariable m_playerAnimStopReloading = -1;
 	protected TAnimGraphVariable m_playerAmmoCount = -1;
 	protected TAnimGraphVariable m_playerAnimCloseBoltFlag = -1;
+
 	protected typename magWellType;
 	protected int currentAmmoCount = 0;
+	protected int m_CMD_Weapon_Reload;
 	protected float m_startTime = -1;
-	IEntity dummyMag = null;
-	protected bool wasMagEmpty = false;
 	protected bool wasMagEmptyAfterReload = false;
 	protected int meshIdx = -1;
-	IEntity mosinRound = null;
 	protected int magSlotIndex = -1;
-	protected MagazineComponent defaultMagComp = null;
-	protected BaseMagazineComponent magazine = null;
 	protected int loopCounter = 0;
+	protected bool m_isWeaponChambered = true;
+	protected bool flag = false;
+
+	protected IEntity mosinRound = null;
+	IEntity dummyMag = null;
+	protected MagazineComponent magazine = null;
 	protected CharacterAnimationComponent animation = null;
 	protected SCR_CharacterControllerComponent controller = null;
-	
-	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent)
-	{
+
+	void SCR_BoltAnimationComponent(IEntityComponentSource src, IEntity ent, IEntity parent) {
 		m_Owner = ent;
-		m_animAmmoCount = BindIntVariable("MosinAmmoCount");
 		m_animStopReloading = BindBoolVariable("MosinStopReloading");
 		m_animCloseBoltFlag = BindBoolVariable("MosinCloseBoltFlag");
+		m_animTriggerPulled = BindBoolVariable("TriggerPulled");
+		m_CMD_Weapon_Reload = BindCommand("CMD_Weapon_Reload");
+
 		m_setAmmoCount = GameAnimationUtils.RegisterAnimationEvent("SetAmmoCount");
 		m_adjustAmmoCount = GameAnimationUtils.RegisterAnimationEvent("AdjustAmmoCount");
-		m_checkMag = GameAnimationUtils.RegisterAnimationEvent("CheckMag"); 
+		m_checkMag = GameAnimationUtils.RegisterAnimationEvent("CheckMag");
 		m_ejectRound = GameAnimationUtils.RegisterAnimationEvent("EjectRound");
 		m_spawnRound = GameAnimationUtils.RegisterAnimationEvent("SpawnRound");
 		m_despawnRound = GameAnimationUtils.RegisterAnimationEvent("DespawnRound");
 		m_emptyMagAfterReloadCheck = GameAnimationUtils.RegisterAnimationEvent("EmptyMagAfterReloadCheck");
 		m_closeBolt = GameAnimationUtils.RegisterAnimationEvent("CloseBolt");
 		m_startReloadTimer = GameAnimationUtils.RegisterAnimationEvent("StartReloadTimer");
+		m_Weapon_TriggerPulled = GameAnimationUtils.RegisterAnimationEvent("Weapon_TriggerPulled");
 	}
 	
 	
-	override event void OnAnimationEvent(AnimationEventID animEventType, AnimationEventID animUserString, int intParam, float timeFromStart, float timeToEnd)
-	{
-		super.OnAnimationEvent(animEventType, animUserString, intParam, timeFromStart, timeToEnd);		
-		
-
-		protected WeaponComponent weapon = WeaponComponent.Cast(m_Owner.FindComponent(WeaponComponent));	
-		ChimeraCharacter character = ChimeraCharacter.Cast(m_Owner.GetParent());		
-		if (character)
-			controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());		
-		else return;
-		if (character && controller)			
-			animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));		
-		else return;
-		protected SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());	
-		if (!magazine){ 
-			magazine = MagazineComponent.Cast(weapon.GetCurrentMagazine());	
-		}
-		
-		if (magazine && magSlotIndex == -1){
-			InventoryMagazineComponent magInvComp = InventoryMagazineComponent.Cast(magazine.GetOwner().FindComponent(InventoryMagazineComponent));
-			if (magInvComp) {
-				magSlotIndex = magInvComp.GetParentSlot().GetID();
-			}
-		}
-		
-		// Init variables
-		// *************************************************************************
-		
-		if (meshIdx == -1) {
-			meshIdx = GameAnimationUtils.FindMeshIndex(weapon.GetOwner(), "Cartridge");
-		} 
+	override event void OnAnimationEvent(AnimationEventID animEventType, AnimationEventID animUserString, int intParam, float timeFromStart, float timeToEnd) {
+		super.OnAnimationEvent(animEventType, animUserString, intParam, timeFromStart, timeToEnd);
 	
-		m_playerAmmoCount = animation.BindVariableInt("MosinAmmoCount");
+		WeaponComponent weapon = WeaponComponent.Cast(m_Owner.FindComponent(WeaponComponent));
+		if (!weapon) return;
+	
+		ChimeraCharacter character = ChimeraCharacter.Cast(m_Owner.GetParent());
+		if (!character) return;
+	
+		controller = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());
+		if (!controller) return;
+	
+		animation = CharacterAnimationComponent.Cast(controller.GetOwner().FindComponent(CharacterAnimationComponent));
+		if (!animation) return;
+	
+		SCR_InventoryStorageManagerComponent invMan = SCR_InventoryStorageManagerComponent.Cast(controller.GetInventoryStorageManager());
+		if (!magazine) magazine = MagazineComponent.Cast(weapon.GetCurrentMagazine());
+	
+		if (magazine && magSlotIndex == -1) {
+			InventoryMagazineComponent magInvComp = InventoryMagazineComponent.Cast(magazine.GetOwner().FindComponent(InventoryMagazineComponent));
+			if (magInvComp) magSlotIndex = magInvComp.GetParentSlot().GetID();
+		}
+	
+		if (meshIdx == -1)
+			meshIdx = GameAnimationUtils.FindMeshIndex(weapon.GetOwner(), "Cartridge");
+	
 		m_playerAnimStopReloading = animation.BindVariableBool("MosinStopReloading");
 		m_playerAnimCloseBoltFlag = animation.BindVariableBool("MosinCloseBoltFlag");
-		m_playerAnimStopReloading = animation.BindVariableBool("MosinStopReloading");
-
-		
-		if (!magWellType) {
-			magWellType.Spawn();
-			if (magazine){
-				magWellType = magazine.GetMagazineWell().Type();
+		m_isWeaponChambered = weapon.GetCurrentMuzzle().IsCurrentBarrelChambered();
+	
+		if (!magWellType && magazine)
+			magWellType = magazine.GetMagazineWell().Type();
+	
+		// Handle trigger reload and calls the Reload command if AdsOnRackBolt is checked
+		if (animEventType == m_Weapon_TriggerPulled) {
+			if (!m_isWeaponChambered && !flag) {
+				flag = true;
+				return;
 			}
+	
+			MuzzleComponent muzzle = MuzzleComponent.Cast(weapon.GetCurrentMuzzle());
+			if (!muzzle) return;
+	
+			if (!muzzle.IsCurrentBarrelChambered() && magazine.GetAmmoCount() > 0) {
+				int reloadCmd = animation.BindCommand("CMD_Weapon_Reload");
+				animation.CallCommand(reloadCmd, 1, 0.0);
+				CallCommand(m_CMD_Weapon_Reload, 1, 0.0);
+				if (m_bAdsOnRackBolt) 
+					controller.ReloadWeapon();
+			}
+	
+			flag = false;
+			return;
 		}
-		// ***************************************************************************
+		if (m_isWeaponChambered && flag) // Edge case if weapon racked manually
+			flag = false;
 		
-		
+
 		// Event that increments ammo count and stores new value to animation variable
 		if (animEventType == m_setAmmoCount) {
 			currentAmmoCount +=1;
@@ -202,10 +218,6 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent
 				animation.SetVariableInt(m_playerAnimStopReloading, true); // no mag?
 				SetIntVariable(m_animStopReloading, true);
 			}
-			
-
-								
-
 		}		
 		
 		// Called on fire animation, before the bolt is racked or reload starts. Used to make adjustments to the ammo count

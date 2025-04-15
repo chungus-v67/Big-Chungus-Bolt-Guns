@@ -77,7 +77,7 @@ AnimSrcGraphFile {
        Condition "IsEvent(\"BlendOut2\")"
        PostEval 1
        Events {
-        AnimSrcEvent "{623D52B9FE1BC69A}" {
+        AnimSrcEventGeneric "{623D52B9FE1BC69A}" {
          Name "CheckMag"
          InitOnly 0
          Condition "true"
@@ -90,7 +90,7 @@ AnimSrcGraphFile {
        Condition "MosinStopReloading == false && IsEvent(\"BlendOut\")"
        PostEval 1
        Events {
-        AnimSrcEvent "{623D52B8B5C43405}" {
+        AnimSrcEventGeneric "{623D52B8B5C43405}" {
          Name "CheckMag"
          InitOnly 0
          Condition "true"
@@ -109,13 +109,13 @@ AnimSrcGraphFile {
        Condition "true"
        PostEval 1
        Events {
-        AnimSrcEvent "{623D528FD4E09FF5}" {
+        AnimSrcEventGeneric "{623D528FD4E09FF5}" {
          Name "StartReloadTimer"
-         UserInt 0
          InitOnly 0
          Condition "true"
+         UserInt 0
         }
-        AnimSrcEvent "{623D52B99C7678E2}" {
+        AnimSrcEventGeneric "{623D52B99C7678E2}" {
          Name "CheckMag"
          InitOnly 0
          Condition "true"
@@ -304,6 +304,7 @@ AnimSrcGraphFile {
      BlendWeight "1.0"
      Child0 "IdleReloadSTM"
      Child1 "SightPose"
+     Optimization "Always eval both"
     }
     AnimSrcNodePose SightPose {
      EditorPos 3.4 -3.2
@@ -402,13 +403,14 @@ AnimSrcGraphFile {
      BlendWeight "1"
      Child0 "SafetySTM"
      Child1 "FingerOnTrigger"
+     Optimization "Always eval both"
     }
     AnimSrcNodeBlendT "Blend T 1" {
      EditorPos 4.6 4.8
      BlendTime "0.2"
      Condition "Low && !IsTag(\"TagRackBolt\")"
      Child0 "WeaponReloadStanceSTM"
-     OptimizeMin 1
+     Optimization "Always eval left"
      PostEval 1
     }
     AnimSrcNodeStateMachine SafetySTM {
@@ -534,8 +536,7 @@ AnimSrcGraphFile {
      Condition "true"
      Child0 "Buffer Use 1"
      Child1 "ModesSTM"
-     OptimizeMin 0
-     OptimizeMax 0
+     Optimization "Always eval both"
      SelectMainPath 1
      PostEval 1
     }
@@ -634,6 +635,7 @@ AnimSrcGraphFile {
      EditorPos -11.9 2.1
      Child0 "IK2 24038"
      Child1 "Queue 1"
+     Optimization "Always eval both"
     }
     AnimSrcNodeSource CloseBolt {
      EditorPos 18.1 22
@@ -648,7 +650,7 @@ AnimSrcGraphFile {
      EditorPos -28.2 4.7
      Child "InspectionInS"
      Events {
-      AnimSrcEvent "{5A44BEDEE5260B4C}" {
+      AnimSrcEventGeneric "{5A44BEDEE5260B4C}" {
        Name "Sound"
        UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
       }
@@ -668,7 +670,7 @@ AnimSrcGraphFile {
      EditorPos -41.2 5.6
      Child "InspectionInS 17380"
      Events {
-      AnimSrcEvent "{5A44BEDEE5260B4C}" {
+      AnimSrcEventGeneric "{5A44BEDEE5260B4C}" {
        Name "Sound"
        UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
       }
@@ -790,7 +792,7 @@ AnimSrcGraphFile {
        Condition "WeaponInspectionState == 0"
        BlendFn S
        Events {
-        AnimSrcEvent "{5A44E711A3CE8E44}" {
+        AnimSrcEventGeneric "{5A44E711A3CE8E44}" {
          Name "Sound"
          UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
         }
@@ -805,7 +807,7 @@ AnimSrcGraphFile {
        BlendFn S
        PostEval 1
        Events {
-        AnimSrcEvent "{5A44E711A6C0A2E5}" {
+        AnimSrcEventGeneric "{5A44E711A6C0A2E5}" {
          Name "Sound"
          UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
         }
@@ -820,7 +822,7 @@ AnimSrcGraphFile {
        BlendFn S
        PostEval 1
        Events {
-        AnimSrcEvent "{5A44E711AD388F52}" {
+        AnimSrcEventGeneric "{5A44E711AD388F52}" {
          Name "Sound"
          UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_IN.RightHand"
         }
@@ -841,7 +843,7 @@ AnimSrcGraphFile {
        Condition "WeaponInspectionState == 0"
        BlendFn S
        Events {
-        AnimSrcEvent "{5A44E711A3CE8E44}" {
+        AnimSrcEventGeneric "{5A44E711A3CE8E44}" {
          Name "Sound"
          UserString "SOUND_CHAR_MOVEMENT_WEAPON_INSPECT_OUT.RightHand"
         }
@@ -1019,12 +1021,12 @@ AnimSrcGraphFile {
        Condition "WeaponInspectionState == 0  && GetStateTime() > 0.1"
        BlendFn S
        Events {
-        AnimSrcEvent "{623E2DAD2A05194F}" {
+        AnimSrcEventGeneric "{623E2DAD2A05194F}" {
          Name "AdjustAmmoCount"
          InitOnly 0
          Condition "!IsTag(\"TagWeaponReload\") "
         }
-        AnimSrcEvent "{623E2DAD4FAD5C10}" {
+        AnimSrcEventGeneric "{623E2DAD4FAD5C10}" {
          Name "Weapon_Rack_Bolt"
          InitOnly 0
          Condition "!IsTag(\"TagWeaponReload\")"
@@ -1123,16 +1125,14 @@ AnimSrcGraphFile {
      BlendWeight "WeaponDeployed"
      Child0 "ModeOnSrc"
      Child1 "ModeOnDepSrc"
-     OptimizeMin 1
-     OptimizeMax 1
+     Optimization "Skip blended out"
     }
     AnimSrcNodeBlend "Blend 13147" {
      EditorPos 15.9 9.8
      BlendWeight "WeaponDeployed"
      Child0 "ModeOffSrc"
      Child1 "ModeOffDepSrc"
-     OptimizeMin 1
-     OptimizeMax 1
+     Optimization "Skip blended out"
     }
     AnimSrcNodeIK2 "IK2 24038" {
      EditorPos -17.655 -7.413
@@ -1154,12 +1154,14 @@ AnimSrcGraphFile {
      Condition "Stance == 1"
      Child0 "Procedural 12138"
      Child1 "Procedural 16614"
+     Optimization "Always eval both"
     }
     AnimSrcNodeBlend "Blend 37113" {
      EditorPos -17.355 0.187
      BlendWeight "1"
      Child0 "Buffer Use 16140"
      Child1 "WeaponInspectionStance"
+     Optimization "Always eval both"
     }
     AnimSrcNodeProcTransform "Procedural 16614" {
      EditorPos -16.055 -4.013
