@@ -2,7 +2,6 @@ MetaFileClass {
  Name "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/mosin_round.xob"
  Configurations {
   FBXResourceClass PC {
-   ExportSkinning 1
    ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{61BD65900F27166F}" {
@@ -14,6 +13,16 @@ MetaFileClass {
     MeshParam Bullet {
     }
     MeshParam Casing {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Body {
+     LayerPreset "TreePart"
+     SurfaceProperties {
+      "{BF7032579F3C450F}Common/Materials/Game/Metal/metal_1mm.gamemat"
+     }
+     Mass 0
+     Margin 0
     }
    }
    Common TXOCommonClass "{61BD65900F238958}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {

@@ -1,15 +1,25 @@
 MetaFileClass {
- Name "{560EBC5C9F4D7A27}Assets/Weapons/Magazines/M40a1/m40a1_casing.xob"
+ Name "{560EBC5C9F4D7A27}Assets/Weapons/Magazines/M40A1/m40a1_casing.xob"
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
     MaterialAssignClass "{62784E4E35193FAB}" {
      SourceMaterial "cartridge_762x51mm"
-     AssignedMaterial "{8F72E0AF32EA37FA}Assets/Weapons/Magazines/M40a1/Data/cartridge_762x51mm.emat"
+     AssignedMaterial "{8F72E0AF32EA37FA}Assets/Weapons/Magazines/M40A1/Data/cartridge_762x51mm.emat"
     }
    }
    MeshParams {
     MeshParam Casing {
+    }
+   }
+   GeometryParams {
+    GeometryParam UCX_Body {
+     LayerPreset "TreePart"
+     SurfaceProperties {
+      "{BF7032579F3C450F}Common/Materials/Game/Metal/metal_1mm.gamemat"
+     }
+     Mass 0
+     Margin 0
     }
    }
    Common TXOCommonClass "{62784E4E351D2527}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {

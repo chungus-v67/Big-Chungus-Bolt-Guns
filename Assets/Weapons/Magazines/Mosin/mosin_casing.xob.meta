@@ -2,6 +2,7 @@ MetaFileClass {
  Name "{C0184C40B6D115CE}Assets/Weapons/Magazines/Mosin/mosin_casing.xob"
  Configurations {
   FBXResourceClass PC {
+   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{623E193A4CB44136}" {
      SourceMaterial "MosinClipMat"

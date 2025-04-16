@@ -20,6 +20,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
      }
      PreviewRenderAttributes "{52D69389645B4E4D}" {
       CameraOffset 0 0 0.05
+      LodModel 0
      }
     }
    }

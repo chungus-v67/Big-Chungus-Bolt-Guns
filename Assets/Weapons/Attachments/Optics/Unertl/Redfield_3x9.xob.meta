@@ -3,7 +3,6 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MergeMeshes 0
-   ExportSkinning 1
    ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{627A6CE8D1C71AC0}" {
@@ -32,7 +31,7 @@ MetaFileClass {
     }
     MeshParam Redfield_real_rear_glass {
     }
-    MeshParam "PIP_LOD0.001" {
+    MeshParam PIP2 {
     }
    }
    GeometryParams {

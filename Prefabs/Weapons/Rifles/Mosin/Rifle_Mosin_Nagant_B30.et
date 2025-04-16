@@ -28,6 +28,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       MaxMagnitude 1
       ADSMagnitudeAngular 8.84 10.6 20
      }
+     PreviewRenderAttributes "{52BAB5E48C906DB8}" {
+      LodModel 0
+     }
     }
    }
   }

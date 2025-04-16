@@ -16,6 +16,7 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
     CustomAttributes {
      PreviewRenderAttributes "{52D2D343138B2397}" {
       CameraDistanceToItem 0.4
+      LodModel 0
      }
     }
    }
