@@ -80,7 +80,6 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 		m_Weapon_TriggerPulled = GameAnimationUtils.RegisterAnimationEvent("Weapon_TriggerPulled");
 	}
 	
-	
 	override event void OnAnimationEvent(AnimationEventID animEventType, AnimationEventID animUserString, int intParam, float timeFromStart, float timeToEnd) {
 		super.OnAnimationEvent(animEventType, animUserString, intParam, timeFromStart, timeToEnd);
 	
@@ -127,18 +126,17 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			if (!muzzle.IsCurrentBarrelChambered() && magazine.GetAmmoCount() > 0) {
 				int reloadCmd = animation.BindCommand("CMD_Weapon_Reload");
 				animation.CallCommand(reloadCmd, 1, 0.0);
-				CallCommand(m_CMD_Weapon_Reload, 1, 0.0);
+				//CallCommand(m_CMD_Weapon_Reload, 1, 0.0);
 				if (m_bAdsOnRackBolt) 
 					controller.ReloadWeapon();
 			}
-	
 			flag = false;
 			return;
 		}
 		if (m_isWeaponChambered && flag) // Edge case if weapon racked manually
 			flag = false;
-		
 
+		
 		// Event that increments ammo count and stores new value to animation variable
 		if (animEventType == m_setAmmoCount) {
 			currentAmmoCount +=1;
@@ -244,7 +242,6 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 		if (animEventType == m_emptyMagAfterReloadCheck) {
 			m_startTime = -1; //This needs to be called at the end of the reload after the loop. Just putting it here for simplicity
 			
-			
 			animation.SetVariableInt(m_playerAnimStopReloading, true);
 			SetIntVariable(m_animStopReloading, true);		
 			
@@ -295,7 +292,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			animation.SetVariableBool(m_playerAnimCloseBoltFlag, false);
 			SetBoolVariable(m_animCloseBoltFlag, false);
 			
-
+			// Replace mag if mag was deleted
 			if (!weapon.GetCurrentMagazine()){
 				MuzzleComponent thisMuzzle = MuzzleComponent.Cast(weapon.FindComponent(MuzzleComponent));
 				Resource defaultMagResource = Resource.Load(thisMuzzle.GetDefaultMagazineOrProjectileName());
@@ -322,5 +319,4 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			}
 		}
 	}
-	
 }

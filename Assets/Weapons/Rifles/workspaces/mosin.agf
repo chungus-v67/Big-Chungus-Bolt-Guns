@@ -1019,7 +1019,7 @@ AnimSrcGraphFile {
       AnimSrcNodeTransition "{54C6A3E4E7702BD7}" {
        FromState "BufferPass6"
        ToState "Idle"
-       Duration "0.3"
+       Duration "0"
        Condition "WeaponInspectionState == 0  && GetStateTime() > 0.1"
        BlendFn S
        Events {
