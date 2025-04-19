@@ -1,55 +1,59 @@
 Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.et" {
  ID "DA5C6308000CDEF2"
  components {
+  LM_SuppressionProjectileComponent "{616B3549311F0818}" {
+   Enabled 0
+  }
   ShellMoveComponent "{851AA4A2AE0A5691}" {
-   InitSpeed 830
+   InitSpeed 840
    InitSpeedVariation 5
-   Mass 0.0096
+   Mass 0.00972
    ProjectileEffects {
     ProjectileDamage "{5168BBF3DBD79134}" {
      DamageValue 160
     }
     ExplosionEffect "{85DB664DDCA5D5B0}" {
+     Enabled 1
+    }
+    ExplosionEffect "{652606D8940F42F4}" {
      Enabled 0
     }
-    ExplosionEffect "{62044E987AF73DAE}" {
-     Enabled 0
-    }
-    SubmunitionEffect "{62044E987AF73DA6}" {
+    SubmunitionEffect "{652606D8940F42E9}" {
      Enabled 0
      Prefab "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/BC_Ammo_B32_Incendiary.et"
     }
-    ProjectileDamage "{62044E987AF73DA1}" {
+    ProjectileDamage "{652606D8940F42EC}" {
      Enabled 0
      DamageValue 30
      DamageType Explosive
      DamageEffects {
-      SCR_ExplosionDamageEffect "{62044E987AF73D9F}" {
+      SCR_ExplosionDamageEffect "{652606D8940F42EE}" {
       }
      }
     }
-    ProjectileDamage "{62044E987AF73D9D}" {
+    ProjectileDamage "{652606D8940F42E0}" {
      Enabled 0
      DamageValue 1
      DamageType Incendiary
      DamageEffects {
-      SCR_IncendiaryBulletDamageEffect "{62044E987AF73D9C}" {
+      SCR_IncendiaryBulletDamageEffect "{652606D8940F42E1}" {
       }
      }
     }
-    ProjectileDamage "{62044E987AF73D9A}" {
+    ProjectileDamage "{652606D8940F42E3}" {
      DamageValue 20
      DamageEffects {
-      SCR_BaseBulletDamageEffect "{62044E987AF74DAE}" {
+      SCR_BaseBulletDamageEffect "{652606D8940F42E4}" {
       }
      }
     }
    }
    BallisticTableConfig "{0471293E3DE1E1DF}Configs/Weapons/AIBallisticTables/AIBT_762x54r_Ball_7N1.conf"
-   AirDrag 0.0000094
-   PenetrationDepth 13.7
+   AirDrag 0.000009
+   PenetrationDepth 12
   }
  }
- coords 192.399 1 140.134
- CartridgeModel "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/mosin_round.xob"
+ coords 1716.523 39.72 2856.801
+ ProjectileModel "{C8461CE54BC35441}Assets/Weapons/Ammo/Bullets/762x51/Bullet_762x51.xob"
+ CartridgeModel "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/m40a1_round.xob"
 }

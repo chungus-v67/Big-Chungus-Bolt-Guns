@@ -381,7 +381,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Angles 0 72.4431 0
      }
      m_sMaxReloadTime 8000
-     m_sShellPrefab "{B3381A4F2F946923}Prefabs/Weapons/Ammo/BC_Ammo_762x51_M40A1_AP.et"
+     m_sShellPrefab "{4ECD2D758E6FED70}Prefabs/Weapons/Ammo/BC_Dummy_Round_762x51_M40A1_AP.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
     }

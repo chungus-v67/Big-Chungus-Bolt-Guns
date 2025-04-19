@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E0DB673C9DE516D1}Prefabs/Weapons/Ammo/BC_Dummy_Round_762x54r_Ball_BS32.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

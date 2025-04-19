@@ -360,7 +360,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       Offset 0 0 0.0417
       Angles 0 72.4431 0
      }
-     m_sShellPrefab "{B3C9AC6567057FF3}Prefabs/Weapons/Ammo/BC_Ammo_762x54r_Ball_BS32.et"
+     m_sShellPrefab "{E0DB673C9DE516D1}Prefabs/Weapons/Ammo/BC_Dummy_Round_762x54r_Ball_BS32.et"
      m_sBulletMesh "Bullet"
      m_sCasingMesh "Casing"
     }
