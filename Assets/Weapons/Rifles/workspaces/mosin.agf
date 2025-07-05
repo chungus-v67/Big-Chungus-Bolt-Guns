@@ -24,7 +24,7 @@ AnimSrcGraphFile {
        Tags {
         "TagWeaponReload"
        }
-       EditorPos 14.3 19.7
+       EditorPos 14.4 19.7
        Child "InsertRound"
        StartCondition "false"
        TimeStorage "Real Time"

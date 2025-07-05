@@ -39,7 +39,9 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 
 	protected TAnimGraphVariable m_animStopReloading = -1;
 	protected TAnimGraphVariable m_animCloseBoltFlag = -1;
+	protected TAnimGraphVariable m_animTriggerPulled = -1;
 	protected TAnimGraphVariable m_playerAnimStopReloading = -1;
+	protected TAnimGraphVariable m_playerAmmoCount = -1;
 	protected TAnimGraphVariable m_playerAnimCloseBoltFlag = -1;
 
 	protected typename magWellType;
@@ -54,7 +56,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 	protected bool flag = false;
 
 	protected IEntity mosinRound = null;
-	IEntity foundMag = null;
+	IEntity dummyMag = null;
 	protected MagazineComponent magazine = null;
 	protected CharacterAnimationComponent animation = null;
 	protected SCR_CharacterControllerComponent controller = null;
@@ -63,6 +65,7 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 		m_Owner = ent;
 		m_animStopReloading = BindBoolVariable("MosinStopReloading");
 		m_animCloseBoltFlag = BindBoolVariable("MosinCloseBoltFlag");
+		//m_animTriggerPulled = BindBoolVariable("TriggerPulled");
 		m_CMD_Weapon_Reload = BindCommand("CMD_Weapon_Reload");
 
 		m_setAmmoCount = GameAnimationUtils.RegisterAnimationEvent("SetAmmoCount");
@@ -100,12 +103,8 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			if (magInvComp) magSlotIndex = magInvComp.GetParentSlot().GetID();
 		}
 	
-		if (meshIdx == -1){	
-			if (weapon)
-				meshIdx = GameAnimationUtils.FindMeshIndex(weapon.GetOwner(), "Cartridge");
-			else
-				return;
-		}
+		if (meshIdx == -1)
+			meshIdx = GameAnimationUtils.FindMeshIndex(weapon.GetOwner(), "Cartridge");
 	
 		m_playerAnimStopReloading = animation.BindVariableBool("MosinStopReloading");
 		m_playerAnimCloseBoltFlag = animation.BindVariableBool("MosinCloseBoltFlag");
@@ -240,7 +239,6 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			}
 		}
 		
-		// The vanilla reload deletes the mag if there is no ammo in it. This adds a dummy round to prevent that. It gets deleted later.
 		if (animEventType == m_emptyMagAfterReloadCheck) {
 			m_startTime = -1; //This needs to be called at the end of the reload after the loop. Just putting it here for simplicity
 			
@@ -249,9 +247,9 @@ class SCR_BoltAnimationComponent : WeaponAnimationComponent {
 			
 			protected SCR_MagazinePredicate predicate = new SCR_MagazinePredicate();
 			predicate.magWellType = magWellType;
-			foundMag = invMan.FindItem(predicate);	
+			dummyMag = invMan.FindItem(predicate);	
 			if (magazine) {
-				if (magazine.GetAmmoCount() == 0 && foundMag == null) {
+				if (magazine.GetAmmoCount() == 0 && dummyMag == null) {
 					magazine.SetAmmoCount(1);
 					wasMagEmptyAfterReload = true;	
 				}

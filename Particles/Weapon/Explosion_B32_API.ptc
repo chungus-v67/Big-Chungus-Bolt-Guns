@@ -1,5 +1,5 @@
 EffectDef {
- Version 1
+ Version 2
  Emitters {
   EmitterDef dust_blast_short {
    ShapeSize 1 0 1
@@ -24,7 +24,7 @@ EffectDef {
    RandomRotDir 0
    VelAngle 0
    RandomAngle 1
-   RandomUFlip 1
+   FlipU Random
    Velocity 0.5
    VelocityRND 0.1
    VelAffect 1.26
@@ -73,7 +73,7 @@ EffectDef {
    RandomRotDir 0
    VelAngle 0
    RandomAngle 1
-   RandomUFlip 1
+   FlipU Random
    Velocity 0
    VelocityRND 0
    AirResistance 11.3
@@ -183,7 +183,7 @@ EffectDef {
    RotRND 2
    RandomRotDir 1
    RandomAngle 1
-   RandomUFlip 1
+   FlipU Random
    Velocity 0
    ParentVelRelToAir 0
    AnimFPS 200
