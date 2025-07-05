@@ -67,6 +67,8 @@ AnimSrcGraph {
    }
    AnimSrcGCTCmd CMD_Weapon_Action_Interrupt {
    }
+   AnimSrcGCTCmd CMD_BC_Weapon_Rack_Bolt {
+   }
   }
   IkChains {
    AnimSrcGCTIkChain RightArmProp {

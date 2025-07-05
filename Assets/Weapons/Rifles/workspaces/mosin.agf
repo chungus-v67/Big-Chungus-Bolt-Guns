@@ -202,7 +202,7 @@ AnimSrcGraphFile {
        }
        EditorPos 20.5 16.8
        Child "RackBoltAnim"
-       StartCondition "GetCommandI(CMD_Weapon_Reload) == 1 && GetCommandF(CMD_Weapon_Reload) == 0.0"
+       StartCondition "(GetCommandI(CMD_Weapon_Reload) == 1 && GetCommandF(CMD_Weapon_Reload) == 0.0) || GetCommandI(CMD_BC_Weapon_Rack_Bolt) == 1"
        TimeStorage "Real Time"
        IsExit 1
       }
@@ -1046,7 +1046,8 @@ AnimSrcGraphFile {
        FromState "Idle"
        ToState "BufferPass5"
        Duration "0.3"
-       Condition "IsCommand(CMD_Weapon_Reload) && GetCommandI(CMD_Weapon_Reload) != 7 && GetCommandI(CMD_Weapon_Reload) != -2"
+       Condition "(IsCommand(CMD_Weapon_Reload) && GetCommandI(CMD_Weapon_Reload) != 7 && GetCommandI(CMD_Weapon_Reload) != -2) ||"\
+       "IsCommand(CMD_BC_Weapon_Rack_Bolt)"
        BlendFn S
       }
       AnimSrcNodeTransition "{54DECEFBBF4FBBFB}" {

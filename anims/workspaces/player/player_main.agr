@@ -21,6 +21,11 @@ AnimSrcGraph {
     MaxValue 5
     Synchronized 1
    }
+   
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_BC_Weapon_Rack_Bolt {
+   }
   }
  }
  DefaultRunNode "MasterControl"
