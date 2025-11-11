@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CA2FC36095B5C142}Assets/Weapons/Rifles/anims/anm/p_rfl_ithaca_erc_open_action.anm"
+ Configurations {
+  TXAResourceClass PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

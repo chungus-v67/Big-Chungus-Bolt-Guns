@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/Ammo_B32_Incendiary.et"
+ Name "{2B46C4A2011CD5D6}Prefabs/Weapons/Ammo/BC_Ammo_B32_Incendiary.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

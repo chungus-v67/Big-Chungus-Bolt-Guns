@@ -15,7 +15,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
     }
     CustomAttributes {
      WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
-      AttachmentType AttachmentOpticsM40A1 "{5D0CCDD062A6250E}" {
+      AttachmentType BC_AttachmentOpticsM40A1 "{66D361D01E64541D}" {
       }
      }
      PreviewRenderAttributes "{52D69389645B4E4D}" {
@@ -26,7 +26,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
    }
   }
   MeshObject "{5D0CC83435B55858}" {
-   Object "{F28CB1F310927824}Assets/Weapons/Attachments/Optics/Unertl/Redfield_3x9.xob"
+   Object "{F28CB1F310927824}Assets/Weapons/Attachments/Optics/Unertl/BC_Redfield_3x9.xob"
    Materials {
     MaterialAssignClass "{627664EDC9CFE774}" {
      SourceMaterial "Optic_lensglass"

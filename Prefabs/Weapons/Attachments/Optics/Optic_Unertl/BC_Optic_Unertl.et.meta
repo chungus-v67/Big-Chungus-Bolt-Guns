@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_PU/Optic_Redfield.et"
+ Name "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{93CC09F8C82AA182}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_B30.et"
+ Name "{93CC09F8C82AA182}Prefabs/Weapons/Ammo/BC_Ammo_762x54r_Ball_B30.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

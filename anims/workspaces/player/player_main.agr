@@ -3,25 +3,14 @@ AnimSrcGraph {
  AnimSyncTable "{D452A6E92D5CF3F1}anims/workspaces/player/Player_SyncTable.asy"
  ControlTemplate AnimSrcGCT "{5190AC4BE1BF436F}" {
   Variables {
-   AnimSrcGCTVarBool MosinCloseBoltFlag {
+   AnimSrcGCTVarBool BoltActionCloseBoltFlag {
     DefaultValue 0
     Synchronized 1
    }
-   AnimSrcGCTVarBool MosinStopReloading {
+   AnimSrcGCTVarBool BoltActionStopReloading {
     DefaultValue 0
     Synchronized 1
    }
-   AnimSrcGCTVarBool MosinLowStanceReloadingFlag {
-    DefaultValue 0
-    Synchronized 1
-   }
-   AnimSrcGCTVarInt MosinAmmoCount {
-    DefaultValue 0
-    MinValue 0
-    MaxValue 5
-    Synchronized 1
-   }
-   
   }
   Commands {
    AnimSrcGCTCmd CMD_BC_Weapon_Rack_Bolt {

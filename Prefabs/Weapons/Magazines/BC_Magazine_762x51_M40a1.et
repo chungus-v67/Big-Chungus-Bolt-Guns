@@ -23,7 +23,7 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
    WeightPerAmmo 0
   }
   MagazineComponent "{CA6BE4D6B4DAFD69}" {
-   MagazineWell MagazineWellM40A1 "{52D8E2D6A14CBDD3}" {
+   MagazineWell BC_MagazineWellM40A1 "{66D361D1DB8C7AFF}" {
    }
    UIInfo MagazineUIInfo "{57126733AA401586}" {
     Name "M40 7.62x51mm M61 AP"
@@ -32,15 +32,15 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
     m_sAmmoType "API"
     m_eAmmoTypeFlags AP
    }
-   ItemModel "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/m40a1_round.xob"
+   ItemModel "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/bc_m40a1_round.xob"
    MaxAmmo 4
-   AmmoConfig "{03422E84ED86FA7E}Configs/Weapons/Ammo/Ammo_762x51_M40a1.conf"
+   AmmoConfig "{03422E84ED86FA7E}Configs/Weapons/Ammo/BC_Ammo_762x51_M40a1.conf"
    AmmoMapping {
     0 0 0 0 0 0
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
-   Object "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/m40a1_round.xob"
+   Object "{F5B2947CAF72D571}Assets/Weapons/Magazines/M40A1/bc_m40a1_round.xob"
   }
   RigidBody "{571B0382401B1385}" {
    Enabled 1

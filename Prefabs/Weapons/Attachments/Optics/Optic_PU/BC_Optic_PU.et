@@ -14,7 +14,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
     }
     CustomAttributes {
      WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
-      AttachmentType AttachmentOpticsMosinPU "{5D0CCDD062A6250E}" {
+      AttachmentType BC_AttachmentOpticsMosinPU "{66D361D011E6A0F8}" {
       }
      }
      PreviewRenderAttributes "{52D69389645B4E4D}" {
@@ -25,7 +25,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
    }
   }
   MeshObject "{5D0CC83435B55858}" {
-   Object "{DB54AAD66E436754}Assets/Weapons/Attachments/Optics/PU/PU scope_2.xob"
+   Object "{DB54AAD66E436754}Assets/Weapons/Attachments/Optics/PU/bc_PU scope.xob"
    Materials {
     MaterialAssignClass "{64F8378BA30F2708}" {
      SourceMaterial "Optic_pip"

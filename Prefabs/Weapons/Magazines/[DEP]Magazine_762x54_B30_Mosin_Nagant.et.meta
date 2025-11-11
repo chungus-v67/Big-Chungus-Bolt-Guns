@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/[DEP]Magazine_762x54_B30_Mosin_Nagant.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

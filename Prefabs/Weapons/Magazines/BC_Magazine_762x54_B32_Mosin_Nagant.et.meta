@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{4A5DC7CD376BCA74}Prefabs/Weapons/Magazines/Magazine_762x54_Mosin_Nagant.et"
+ Name "{4A5DC7CD376BCA74}Prefabs/Weapons/Magazines/BC_Magazine_762x54_B32_Mosin_Nagant.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

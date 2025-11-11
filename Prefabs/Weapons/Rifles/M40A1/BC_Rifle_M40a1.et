@@ -3,11 +3,11 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
  components {
   WeaponSoundComponent "{5A8685198A9AEEDD}" {
    Filenames {
-    "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{D6F0128C743BFEF0}Sounds/Weapons/Rifles/M40A1/Weapons_Rifles_M40A1_Shot.acp" "{C7D56C67EB9E01DA}Sounds/Weapons/Rifles/M40A1/Weapons_Rifles_M40A1_Handling.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp"
+    "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{D6F0128C743BFEF0}Sounds/Weapons/Rifles/M40A1/BC_Weapons_Rifles_M40A1_Shot.acp" "{C7D56C67EB9E01DA}Sounds/Weapons/Rifles/M40A1/BC_Weapons_Rifles_M40A1_Handling.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp"
    }
   }
   MeshObject "{CFBAA4B701F95D69}" {
-   Object "{E305A2CD51E38943}Assets/Weapons/Rifles/m40a1.xob"
+   Object "{E305A2CD51E38943}Assets/Weapons/Rifles/bc_m40a1.xob"
   }
   RigidBody "{5254ACCA96B16F72}" {
    CenterOfMass 0 0.062 0.146
@@ -47,8 +47,6 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       AutoTransform 1
       ChildPivotID "snap_weapon"
       Prefab "{F7C75047E649A419}Prefabs/Weapons/Attachments/Optics/Optic_Unertl/BC_Optic_Unertl.et"
-     }
-     AttachmentType AttachmentOpticsM40A1 "{58E2BCF93BDCA8BA}" {
      }
      AttachmentObstructs 0
     }
@@ -326,7 +324,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
        ManualAction 1
       }
      }
-     MagazineWell MagazineWellM40A1 "{52D8E2D6B49EF12E}" {
+     MagazineWell BC_MagazineWellM40A1 "{66D361D008205133}" {
      }
      WeaponAimModifiers {
       SwayWeaponAimModifier "{521AE9A27BDC1E6F}" {
@@ -356,9 +354,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      }
      MagazineTemplate "{541E6C7E6AF67A89}Prefabs/Weapons/Magazines/BC_Magazine_762x51_M40a1.et"
     }
-    SCR_BoltAnimationComponent "{60B4EA76EB15F6E0}" {
-     AnimGraph "{9591BA316190C870}Assets/Weapons/Rifles/workspaces/m40a1.agr"
-     AnimInstance "{B9FA8AD97278A38D}Assets/Weapons/Rifles/workspaces/m40a1_weapon.asi"
+    BC_BoltAnimationComponent "{60B4EA76EB15F6E0}" {
+     AnimGraph "{9591BA316190C870}Assets/Weapons/Rifles/workspaces/bc_m40a1.agr"
+     AnimInstance "{B9FA8AD97278A38D}Assets/Weapons/Rifles/workspaces/bc_m40a1_weapon.asi"
      AnimVariables {
       AnimationVariableInt "{6276524FCDFBFB4A}" {
        VariableName "MosinAmmoCount"
@@ -367,14 +365,14 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      }
      AlwaysActive 0
      AnimInjection AnimationAttachmentInfo "{532F3A9CB912F2BA}" {
-      AnimGraph "{9591BA316190C870}Assets/Weapons/Rifles/workspaces/m40a1.agr"
-      AnimInstance "{42A41BE8EA79C761}Assets/Weapons/Rifles/workspaces/m40a1_player.asi"
+      AnimGraph "{9591BA316190C870}Assets/Weapons/Rifles/workspaces/bc_m40a1.agr"
+      AnimInstance "{42A41BE8EA79C761}Assets/Weapons/Rifles/workspaces/bc_m40a1_player.asi"
      }
      AutoVariablesBind 1
      AnimVariablesToBind + {
       "MosinAmmoCount"
      }
-     m_sCasingEjectionAnimation "{AF79085C7E79CA95}Particles/Weapon/Casing_762x51_M40a1.ptc"
+     m_sCasingEjectionAnimation "{AF79085C7E79CA95}Particles/Weapon/BC_Casing_762x51_M40a1.ptc"
      m_effectPosition PointInfo "{6276524FCDFBFB49}" {
       PivotID "slot_magazine"
       Offset 0 0 0.0417

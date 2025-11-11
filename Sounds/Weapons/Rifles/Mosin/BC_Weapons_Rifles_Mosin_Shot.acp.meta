@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6F5597365A3E2FFA}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Shot.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

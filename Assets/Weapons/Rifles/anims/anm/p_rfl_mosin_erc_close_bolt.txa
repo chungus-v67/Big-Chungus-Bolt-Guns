@@ -2853,68 +2853,14 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651EF21B1CE048EB}\" {
- Name \"Weapon_EnableFire\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 0 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE048B0}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVEMENT\"
- UserInt 0
-}" 0 0 "" 0
-  #event 1 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE048A5}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"
- UserInt 0
-}" 0 0 "" 0
-  #event 9 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651EF21B1CE04957}\" {
- Name \"Weapon_Rack_Bolt\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 11 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE04946}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVEMENT\"
- UserInt 1
-}" 0 0 "" 0
-  #event 13 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE04973}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVEMENT\"
- UserInt 0
-}" 0 0 "" 0
-  #event 16 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE04961}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"
- UserInt 0
-}" 0 0 "" 0
-  #event 19 "Sound" "AnimSrcEventGeneric \"{651EF21B1CE04910}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_CHAR_HANDGRAB.RightHand\"
- UserInt 0
-}" 0 0 "" 0
-  #event 20 "BlendOut2" "AnimSrcEventGeneric \"{651EF21B1CE0490D}\" {
- Name \"BlendOut2\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric {  Name \"Weapon_EnableFire\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 0 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"SOUND_CHAR_MOVEMENT\"  UserInt 0 }" 0 0 "" 0
+  #event 1 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"  UserInt 0 }" 0 0 "" 0
+  #event 11 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 11  FrameCount 0  UserString \"SOUND_CHAR_MOVEMENT\"  UserInt 1 }" 1 0 "" 0
+  #event 13 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 13  FrameCount 0  UserString \"SOUND_CHAR_MOVEMENT\"  UserInt 0 }" 0 0 "" 0
+  #event 16 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"  UserInt 0 }" 0 0 "" 0
+  #event 19 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 19  FrameCount 0  UserString \"SOUND_CHAR_HANDGRAB.RightHand\"  UserInt 0 }" 0 0 "" 0
+  #event 20 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 20  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 20 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 20  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
 }

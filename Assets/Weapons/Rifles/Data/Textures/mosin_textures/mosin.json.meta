@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{1F4263EF313F86E3}Assets/Weapons/Rifles/Data/Textures/mosin_textures/mosin.json"
+ Configurations {
+  JSONResourceClass PC {
+  }
+  JSONResourceClass XBOX_ONE : PC {
+  }
+  JSONResourceClass XBOX_SERIES : PC {
+  }
+  JSONResourceClass PS4 : PC {
+  }
+  JSONResourceClass PS5 : PC {
+  }
+  JSONResourceClass HEADLESS : PC {
+  }
+ }
+}

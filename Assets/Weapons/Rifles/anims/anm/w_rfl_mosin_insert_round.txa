@@ -122,61 +122,11 @@ $animation "" {
   }
  }
  $events {
-  #event 1 "SpawnRound" "AnimSrcEventGeneric \"{651E54C18C3676B3}\" {
- Name \"SpawnRound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 6 "Sound" "AnimSrcEventGeneric \"{651E54C18C3676F8}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_RELOAD_MAG_INSERT\"
- UserInt 1
-}" 0 0 "" 0
-  #event 15 "SetAmmoCount" "AnimSrcEventGeneric \"{651E54C18C3676E6}\" {
- Name \"SetAmmoCount\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 16 "DespawnRound" "AnimSrcEventGeneric \"{651E54C18C367717}\" {
- Name \"DespawnRound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 19 "CheckMag" "AnimSrcEventGeneric \"{651E54C18C36770B}\" {
- Name \"CheckMag\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 20 "Weapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C18C36773E}\" {
- Name \"Weapon_Rack_Bolt\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 24 "BlendOut" "AnimSrcEventGeneric \"{651E54C18C367729}\" {
- Name \"BlendOut\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 30 "CloseBolt" "AnimSrcEventGeneric \"{651E54C18C36775F}\" {
- Name \"CloseBolt\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
+  #event 1 "BoltActionSpawnRound" "AnimSrcEventGeneric {  Name \"BoltActionSpawnRound\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 6 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 6  FrameCount 0  UserString \"SOUND_RELOAD_MAG_INSERT\"  UserInt 1 }" 1 0 "" 0
+  #event 15 "BoltActionSetAmmoCount" "AnimSrcEventGeneric {  Name \"BoltActionSetAmmoCount\"  MainPathOnly 0  Frame 15  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 24 "BlendOut" "AnimSrcEventGeneric {  Name \"BlendOut\"  MainPathOnly 0  Frame 24  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 30 "BoltActionTransition" "AnimSrcEventGeneric {  Name \"BoltActionTransition\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"\"  UserInt 1 }" 1 0 "" 0
+  #event 30 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
 }

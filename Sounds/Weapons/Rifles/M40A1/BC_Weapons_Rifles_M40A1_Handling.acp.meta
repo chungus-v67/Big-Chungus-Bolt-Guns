@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C7D56C67EB9E01DA}Sounds/Weapons/Rifles/M40A1/BC_Weapons_Rifles_M40A1_Handling.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -188,47 +188,12 @@ $animation "" {
   }
  }
  $events {
-  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric \"{651E54C18C3610BE}\" {
- Name \"Weapon_EnableFire\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 0 "BlendIn" "AnimSrcEventGeneric \"{651E54C18C3610D2}\" {
- Name \"BlendIn\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 8 "Sound" "AnimSrcEventGeneric \"{651E54C18C3610FF}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_RELOAD_BOLT_PULL\"
- UserInt 0
-}" 0 0 "" 0
-  #event 15 "EjectRound" "AnimSrcEventGeneric \"{651E54C18C3610EF}\" {
- Name \"EjectRound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 25 "aaWeapon_Rack_Bolt" "AnimSrcEventGeneric \"{651E54C18C36111C}\" {
- Name \"aaWeapon_Rack_Bolt\"
- Comment \"\"
- MainPathOnly 0
- UserString \"\"
- UserInt -1
-}" 0 0 "" 0
-  #event 26 "Sound" "AnimSrcEventGeneric \"{651E54C18C361113}\" {
- Name \"Sound\"
- Comment \"\"
- MainPathOnly 0
- UserString \"SOUND_RELOAD_BOLT_SLIDE_FWD\"
- UserInt 0
-}" 0 0 "" 0
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric {  Name \"Weapon_EnableFire\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 0 "BlendIn" "AnimSrcEventGeneric {  Name \"BlendIn\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 8 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 8  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_PULL\"  UserInt 0 }" 0 0 "" 0
+  #event 15 "EjectRound" "AnimSrcEventGeneric {  Name \"EjectRound\"  MainPathOnly 0  Frame 15  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 26 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 26  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_SLIDE_FWD\"  UserInt 0 }" 0 0 "" 0
+  #event 42 "BC_PumpActionForward" "AnimSrcEventGeneric {  Name \"BC_PumpActionForward\"  MainPathOnly 0  Frame 42  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 42 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 42  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
 }

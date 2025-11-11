@@ -23,7 +23,7 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
    WeightPerAmmo 0
   }
   MagazineComponent "{CA6BE4D6B4DAFD69}" {
-   MagazineWell MagazineWellMosin "{52D8E2D6A14CBDD3}" {
+   MagazineWell BC_MagazineWellMosin "{52D8E2D6A14CBDD3}" {
    }
    UIInfo MagazineUIInfo "{57126733AA401586}" {
     Name "Mosin 7.62x54 B-32 API Round"
@@ -32,15 +32,15 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
     m_sAmmoType "API"
     m_eAmmoTypeFlags AP
    }
-   ItemModel "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/mosin_round.xob"
-   MaxAmmo 4
-   AmmoConfig "{BD649FF35BF63736}Configs/Weapons/Ammo/Ammo_762x54_Mosin.conf"
+   ItemModel "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/bc_mosin_round.xob"
+   MaxAmmo 5
+   AmmoConfig "{BD649FF35BF63736}Configs/Weapons/Ammo/BC_Ammo_762x54_Mosin.conf"
    AmmoMapping {
     0 0 0 0 0 0
    }
   }
   MeshObject "{CA6BE4D6A23F8EF0}" {
-   Object "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/mosin_round.xob"
+   Object "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/bc_mosin_round.xob"
   }
   RigidBody "{571B0382401B1385}" {
    Enabled 1
