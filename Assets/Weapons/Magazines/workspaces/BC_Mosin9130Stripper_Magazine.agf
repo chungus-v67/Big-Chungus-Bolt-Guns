@@ -1,0 +1,115 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet Master {
+   Nodes {
+    AnimSrcNodeStateMachine MasterControl {
+     EditorPos -4.874 -29.121
+     states {
+      AnimSrcNodeState Reload {
+       EditorPos -0.898 -28.039
+       Child "WeaponReloadStanceSTM"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Idle {
+       EditorPos -4.623 -28.109
+       Child "Source 22470"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{66E15062C1A4181A}" {
+       FromState "Idle"
+       ToState "Reload"
+       Condition "IsCommand(CMD_BC_BoltActionReload)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{66EAF26887240D93}" {
+       FromState "Reload"
+       ToState "Idle"
+       Condition "RemainingTimeLess(0.001) || BC_ReturnToIdle == true"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine WeaponReloadStanceSTM {
+     EditorPos -3.679 -25.516
+     states {
+      AnimSrcNodeState Erc_Cro {
+       EditorPos -5.879 -23.603
+       Child "ReloadErcCroG"
+       StartCondition "Stance == 0 || Stance == 1"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState ReloadPneG {
+       EditorPos -1.579 -23.616
+       Child "ReloadPneG"
+       StartCondition "Stance == 2"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect ReloadErcCroG {
+     EditorPos -5.779 -20.716
+     Child "WeaponReloadSTM"
+     Group "Reload"
+     Column "Erc"
+    }
+    AnimSrcNodeGroupSelect ReloadPneG {
+     EditorPos -1.479 -20.716
+     Child "WeaponReloadSTM"
+     Group "Reload"
+     Column "Pne"
+    }
+    AnimSrcNodeSource InsertMagAnim {
+     EditorPos -4.461 -13.732
+     Source "Reload.Reload_InsertRounds"
+    }
+    AnimSrcNodeStateMachine MagReloadSTM {
+     EditorPos -3.73 -16.103
+     states {
+      AnimSrcNodeState InsertMag {
+       EditorPos -4.413 -15.14
+       Child "InsertMagAnim"
+       StartCondition "!BC_IsStripperClipReload"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState InsertStripper {
+       EditorPos -1.986 -15.141
+       Child "Source 18070"
+       StartCondition "BC_IsStripperClipReload"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine WeaponReloadSTM {
+     Tags {
+      "TagWeaponReload"
+     }
+     EditorPos -3.814 -18.586
+     states {
+      AnimSrcNodeState MagReload {
+       EditorPos -3.757 -17.502
+       Child "MagReloadSTM"
+       StartCondition "true"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 22470" {
+     EditorPos -4.71 -26.561
+     Source "Reload.Erc.Idle"
+    }
+    AnimSrcNodeSource "Source 18070" {
+     EditorPos -1.864 -13.685
+     Source "Reload.Reload_InsertStripper"
+    }
+   }
+  }
+ }
+}

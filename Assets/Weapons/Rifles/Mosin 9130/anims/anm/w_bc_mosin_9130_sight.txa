@@ -1,0 +1,22 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 10
+ $node "w_sight" {
+  $keys q {
+   $frame 0 10 {
+   }
+  }
+  $node "w_sight_slider" {
+   $keys t q {
+    $frame 0 10 {
+     #t 0 0.0000036 -0.0672861
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "723_Weapon_Sight"
+  #custProp "sourceFile" "mosin_26.blend"
+ }
+}

@@ -1,0 +1,5 @@
+MatPBRBasic "{A6C70FF3DEA4AB6D}Assets/Weapons/Rifles/Mosin 9130/data/Mosin9130Mat.emat" {
+ Emissive 0 0 0 1
+ BCRMap "{40B5F69D9DA09431}Assets/Weapons/Rifles/Data/Textures/mosin_textures/Mosin_BCR.edds"
+ NMOMap "{37921BBAAA9CE5CD}Assets/Weapons/Rifles/Data/Textures/mosin_textures/Mosin9130Mat_NMO.edds"
+}

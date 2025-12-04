@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{FF1202C22629B88B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/m_rfl_bc_mosin_9130_insert_rounds.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "Mosin_9130_char_anims_standing_45.blend"
+   SourceProfile "bc_mosin_stripper_clip"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

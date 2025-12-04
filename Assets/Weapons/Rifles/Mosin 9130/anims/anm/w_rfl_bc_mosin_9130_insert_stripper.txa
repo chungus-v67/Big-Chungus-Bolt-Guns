@@ -1,0 +1,33 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 70
+ $node "w_bolt_rear" {
+  $keys t q s {
+   $frame 0 70 {
+    #t 0 0.099071 -0.0817779
+   }
+  }
+  $node "w_bolt" {
+   $keys t q s {
+    $frame 0 70 {
+     #t 0 0 0.0770658
+     #q 0.00000005 0.00000015 0.70710701 0.70710671
+    }
+   }
+  }
+ }
+ $events {
+  #event 22 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 22  FrameCount 0  UserString \"SOUND_RELOAD_STRIPPER_CLIP_INSERT_FOLEY\"  UserInt -1 }" -1 0 "" 1
+  #event 49 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 1  Frame 49  FrameCount 0  UserString \"SOUND_RELOAD_STRIPPER_CLIP_INSERT\"  UserInt -1 }" -1 0 "" 1
+  #event 51 "BC_InsertRound0" "AnimSrcEventGeneric {  Name \"BC_InsertRound0\"  MainPathOnly 0  Frame 51  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 53 "BC_InsertRound1" "AnimSrcEventGeneric {  Name \"BC_InsertRound1\"  MainPathOnly 0  Frame 53  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 55 "BC_InsertRound2" "AnimSrcEventGeneric {  Name \"BC_InsertRound2\"  MainPathOnly 0  Frame 55  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 57 "BC_InsertRound3" "AnimSrcEventGeneric {  Name \"BC_InsertRound3\"  MainPathOnly 0  Frame 57  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 60 "BC_InsertRound4" "AnimSrcEventGeneric {  Name \"BC_InsertRound4\"  MainPathOnly 0  Frame 60  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_bolt"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_36.blend"
+ }
+}

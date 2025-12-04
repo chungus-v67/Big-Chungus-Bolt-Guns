@@ -1,0 +1,16 @@
+AnimSetTemplateSource {
+ Groups {
+  AnimSetTemplateSource_AnimationGroup "{53049245E359E7A3}" {
+   Name "Reload"
+   Animations {
+    "Idle"
+    "Reload_InsertRounds"
+    "Reload_InsertStripper"
+   }
+   Columns {
+    "Erc"
+    "Pne"
+   }
+  }
+ }
+}

@@ -1,0 +1,19 @@
+AnimSetInstanceSource "{5E0473252D1AF5EC}" {
+ Template "{9AE44FB26CDADA67}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Reload.Erc.Idle" {
+   Resource "{45E55375E4F6B842}Assets/Weapons/Rifles/Mosin 9130/anims/anm/m_rfl_bc_mosin_9130_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle" {
+   Resource "{45E55375E4F6B842}Assets/Weapons/Rifles/Mosin 9130/anims/anm/m_rfl_bc_mosin_9130_idle.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertRounds" {
+   Resource "{FF1202C22629B88B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/m_rfl_bc_mosin_9130_insert_rounds.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertStripper" {
+   Resource "{7AC5DB69F6C42A55}Assets/Weapons/Rifles/Mosin 9130/anims/anm/m_rfl_bc_mosin_9130_insert_stripper.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{5C58B720BCE91992}" {
+ }
+}

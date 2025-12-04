@@ -1,0 +1,29 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 0
+ $node "w_fire_mode" {
+  $keys q {
+   $frame 0 {
+   }
+  }
+  $node "w_trigger" {
+   $keys t q {
+    $frame 0 {
+     #t 0 0.0427416 0.0661644
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t q {
+    $frame 0 {
+     #t 0 0.0990709 0.1066946
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "Weapons_Safety"
+  #custProp "sourceFile" "mosin_26.blend"
+ }
+}

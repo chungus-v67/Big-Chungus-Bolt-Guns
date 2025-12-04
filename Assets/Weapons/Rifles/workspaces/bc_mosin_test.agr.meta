@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6B0505F5995CCCBF}Assets/Weapons/Rifles/workspaces/bc_mosin_test.agr"
+ Configurations {
+  AnimGraphResourceClass PC {
+  }
+  AnimGraphResourceClass XBOX_ONE : PC {
+  }
+  AnimGraphResourceClass XBOX_SERIES : PC {
+  }
+  AnimGraphResourceClass PS4 : PC {
+  }
+  AnimGraphResourceClass PS5 : PC {
+  }
+  AnimGraphResourceClass HEADLESS : PC {
+  }
+ }
+}

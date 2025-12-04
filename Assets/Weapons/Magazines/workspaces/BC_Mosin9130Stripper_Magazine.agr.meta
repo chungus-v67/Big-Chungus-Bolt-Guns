@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{881629B25B1F0E94}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.agr"
+ Configurations {
+  AnimGraphResourceClass PC {
+  }
+  AnimGraphResourceClass XBOX_ONE : PC {
+  }
+  AnimGraphResourceClass XBOX_SERIES : PC {
+  }
+  AnimGraphResourceClass PS4 : PC {
+  }
+  AnimGraphResourceClass PS5 : PC {
+  }
+  AnimGraphResourceClass HEADLESS : PC {
+  }
+ }
+}

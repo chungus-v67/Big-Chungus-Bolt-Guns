@@ -1,0 +1,110 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 40
+ $node "w_bolt_rear" {
+  $keys t q s {
+   $frame 0 12 {
+    #t 0 0.0990709 0.0296288
+   }
+   $frame 13 {
+    #t 0 0.0990709 0.0264927
+   }
+   $frame 14 {
+    #t 0 0.0990709 0.0154579
+   }
+   $frame 15 {
+    #t 0 0.0990709 -0.0064967
+   }
+   $frame 16 {
+    #t 0 0.099071 -0.0399818
+   }
+   $frame 17 {
+    #t 0 0.099071 -0.0711637
+   }
+   $frame 18 19 {
+    #t 0 0.0990709 -0.0817779
+   }
+   $frame 20 {
+    #t 0 0.0990709 -0.0735255
+   }
+   $frame 21 {
+    #t 0 0.0990709 -0.0528947
+   }
+   $frame 22 {
+    #t 0 0.0990709 -0.0260746
+   }
+   $frame 23 {
+    #t 0 0.0990709 0.0007456
+   }
+   $frame 24 {
+    #t 0 0.0990709 0.0213764
+   }
+   $frame 25 40 {
+   }
+  }
+  $node "w_bolt" {
+   $keys t q s {
+    $frame 0 8 {
+     #t 0 0 0.0770658
+    }
+    $frame 9 {
+     #q 0 0 0.0756323 0.99713582
+    }
+    $frame 10 {
+     #q -0.00000001 0 0.2674067 0.96358377
+    }
+    $frame 11 {
+     #q -0.00000002 0.00000001 0.49227154 0.87044179
+    }
+    $frame 12 {
+     #q -0.00000002 0.00000003 0.65160143 0.75856167
+    }
+    $frame 13 14 {
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+    $frame 15 {
+     #t 0 0.0000001 0.0770658
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+    $frame 16 21 {
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+    $frame 22 {
+     #t 0 0.0000001 0.0770658
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+    $frame 23 25 {
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+    $frame 26 {
+     #q 0.00000006 0.0000001 0.65160149 0.75856155
+    }
+    $frame 27 {
+     #q 0.00000006 0.00000009 0.49227148 0.87044179
+    }
+    $frame 28 {
+     #q 0.00000007 0.00000008 0.26740676 0.96358377
+    }
+    $frame 29 {
+     #q 0.00000007 0.00000008 0.07563234 0.99713582
+    }
+    $frame 30 40 {
+    }
+   }
+  }
+ }
+ $events {
+  #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric {  Name \"Weapon_EnableFire\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 0 "BlendIn" "AnimSrcEventGeneric {  Name \"BlendIn\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 7 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 7  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_OPEN_FAST\"  UserInt 0 }" 0 0 "" 0
+  #event 13 "BC_BoltActionEjectRound" "AnimSrcEventGeneric {  Name \"BC_BoltActionEjectRound\"  MainPathOnly 0  Frame 13  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 16 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_CLOSE_FAST\"  UserInt 0 }" 0 0 "" 0
+  #event 40 "BC_BoltActionForward" "AnimSrcEventGeneric {  Name \"BC_BoltActionForward\"  MainPathOnly 0  Frame 40  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 40 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 40  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_bolt"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_5.blend"
+ }
+}

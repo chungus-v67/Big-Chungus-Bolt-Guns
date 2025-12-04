@@ -123,6 +123,5 @@ $animation "" {
  }
  $events {
   #event 12 "BlendOut" "AnimSrcEventGeneric {  Name \"BlendOut\"  MainPathOnly 0  Frame 12  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 12 "BoltActionTransition" "AnimSrcEventGeneric {  Name \"BoltActionTransition\"  MainPathOnly 0  Frame 12  FrameCount 0  UserString \"\"  UserInt 0 }" 0 0 "" 0
  }
 }

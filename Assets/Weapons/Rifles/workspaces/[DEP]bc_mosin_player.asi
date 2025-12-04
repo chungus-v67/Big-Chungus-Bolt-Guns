@@ -1,0 +1,265 @@
+AnimSetInstanceSource "{61C21E8679F88256}" {
+ Template "{6EAF77BD7CC86979}Assets/Weapons/Rifles/workspaces/[DEP]bc_mosin.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Reload.Erc.Fire" {
+   Resource "{C692BD09D0DC1382}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Fire" {
+   Resource "{93D5BEFAFE6F5A5B}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertRound" {
+   Resource "{C0A63D811A6D38A0}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_insert_round.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_InsertRound" {
+   Resource "{200ED1F74239024B}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_insert_round.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_GrabRound" {
+   Resource "{BCDCD5795BF45EF9}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_grab_round.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_OpenBolt" {
+   Resource "{9D5F48A2F3D6400B}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_open_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Dep_On" {
+   Resource "{7D8A1AA73703373A}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_dep_modes_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_RackBolt" {
+   Resource "{431F1A222BA94325}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_rack_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle" {
+   Resource "{53A1C05C8CA2F994}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_ik.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle" {
+   Resource "{53A1C05C8CA2F994}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_ik.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Safety" {
+   Resource "{2D873588124C2D75}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Safety" {
+   Resource "{2D873588124C2D75}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
+   Resource "{C692BD09D0DC1382}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
+   Resource "{93D5BEFAFE6F5A5B}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Sight" {
+   Resource "{076F8DA84E5F76EB}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_sight.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Sight" {
+   Resource "{076F8DA84E5F76EB}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_sight.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.FireLast" {
+   Resource "{C285920382034C9E}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire_last.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.FireLast" {
+   Resource "{C285920382034C9E}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire_last.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_in" {
+   Resource "{6EFF6EB2B6875B6A}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_trigger_finger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_in" {
+   Resource "{1DD407FCD28746F9}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_finger_trigger_in.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Finger_trigger_out" {
+   Resource "{33F5401E73BE2768}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_trigger_finger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Finger_trigger_out" {
+   Resource "{AFCFA753D2D340C3}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_finger_trigger_out.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Idle_finger" {
+   Resource "{A93BE44B45F7F861}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_trigger_finger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Idle_finger" {
+   Resource "{D84E9E1AD7849722}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_finger_trigger_pose.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.IKOffset" {
+   Resource "{05B16F558D2D7AB5}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_offset.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.IKOffset" {
+   Resource "{05B16F558D2D7AB5}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_offset.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
+   Resource "{F1CFF7089B104FE6}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_switch_mode_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Off" {
+   Resource "{2279CB80950A2001}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_modes_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_On" {
+   Resource "{F1CFF7089B104FE6}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_switch_mode_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_On" {
+   Resource "{7498AA2BC60FCB43}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_modes_on.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionIn" {
+   Resource "{B224B2804F4710EB}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionOut" {
+   Resource "{8BFBD9780D7ED2F2}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionLoop" {
+   Resource "{73BD21382DE6B27E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionIn" {
+   Resource "{61EDD9F193B33C29}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionOut" {
+   Resource "{CF4315B204D39B4A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionLoop" {
+   Resource "{58478F616481C78E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionIn" {
+   Resource "{E37E6A3BF2C58E0A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionOut" {
+   Resource "{2FEBF9C45C87A1A1}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionLoop" {
+   Resource "{102EEF13862672B2}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_CloseBolt" {
+   Resource "{63654DB81D818BA4}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_close_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_CloseBolt" {
+   Resource "{D7F250015222AF00}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_close_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionIn" {
+   Resource "{B224B2804F4710EB}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionLoop" {
+   Resource "{73BD21382DE6B27E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionOut" {
+   Resource "{8BFBD9780D7ED2F2}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.Left2Right" {
+   Resource "{1195680812A320A9}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.Left2Right" {
+   Resource "{1195680812A320A9}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.Right2Left" {
+   Resource "{918CC20A0C5BC24E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.Right2Left" {
+   Resource "{918CC20A0C5BC24E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionIn" {
+   Resource "{61EDD9F193B33C29}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionLoop" {
+   Resource "{58478F616481C78E}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionOut" {
+   Resource "{CF4315B204D39B4A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.Left2Right" {
+   Resource "{B0CC42E690B7CB56}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.Left2Right" {
+   Resource "{B0CC42E690B7CB56}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.Right2Left" {
+   Resource "{30D5E8E48E4F29B1}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.Right2Left" {
+   Resource "{30D5E8E48E4F29B1}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionIn" {
+   Resource "{E37E6A3BF2C58E0A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionLoop" {
+   Resource "{102EEF13862672B2}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionOut" {
+   Resource "{2FEBF9C45C87A1A1}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.Left2Right" {
+   Resource "{EE892546EC6FBFBB}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.Right2Left" {
+   Resource "{6E908F44F2975D5C}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.Right2Left" {
+   Resource "{6E908F44F2975D5C}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_to_left_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.Left2Right" {
+   Resource "{EE892546EC6FBFBB}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_left_to_right_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionIn" {
+   Resource "{F90A683C1904117F}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionIn" {
+   Resource "{F90A683C1904117F}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionLoop" {
+   Resource "{A39D21A30ECADFFE}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionLoop" {
+   Resource "{A39D21A30ECADFFE}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionOut" {
+   Resource "{2A53898D42A8E5D6}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionOut" {
+   Resource "{2A53898D42A8E5D6}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_cro_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionIn" {
+   Resource "{BDB2A4F610A958C7}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionIn" {
+   Resource "{BDB2A4F610A958C7}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionLoop" {
+   Resource "{C03E67A3AEC7A62B}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionLoop" {
+   Resource "{C03E67A3AEC7A62B}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionOut" {
+   Resource "{01A927D40BCF9026}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionOut" {
+   Resource "{01A927D40BCF9026}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_erc_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionIn" {
+   Resource "{5D1A488048FD622C}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionIn" {
+   Resource "{5D1A488048FD622C}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_in_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionLoop" {
+   Resource "{E13DDBDEFF9B62BA}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionLoop" {
+   Resource "{E13DDBDEFF9B62BA}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_loop_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionOut" {
+   Resource "{49C047A6E968251A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionOut" {
+   Resource "{49C047A6E968251A}Assets/Weapons/Rifles/M14/anims/anm/p_M21_weapon_inspection_pne_right_out_ras.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Dep_Off" {
+   Resource "{E05F6A102C99B72D}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_dep_modes_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Dep_Off" {
+   Resource "{E05F6A102C99B72D}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_dep_modes_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Dep_On" {
+   Resource "{7D8A1AA73703373A}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_dep_modes_on.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_OpenBolt" {
+   Resource "{771CDDA63D602FC5}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_open_bolt.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Reload_RackBolt" {
+   Resource "{958FA7D1B62B2B4B}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_bolt_rack.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Reload_GrabRound" {
+   Resource "{084BC8C014577A5D}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_pne_grab_round.anm"
+  }
+ }
+ RBF AnimSetInstanceSourceRBFArray "{59F8875C18E224D3}" {
+ }
+}

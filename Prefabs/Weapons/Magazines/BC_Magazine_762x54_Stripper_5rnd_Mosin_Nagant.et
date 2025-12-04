@@ -1,0 +1,109 @@
+GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  BCC_StripperClipImpactSoundComponent "{66E134288A41AA92}" {
+   m_sSoundEventName "SOUND_STRIPPER_CLIP_BOUNCE"
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "Mosin 7.62x54 5rnd Stripper Clip"
+     Description "asdasdasdasdsad"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{52ACC797D8C70448}" {
+     Weight 0.022
+     ItemDimensions 3 1 1
+     ItemVolume 3.4000001
+     PivotBoneName "snap_magazine"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52D2D343138B2397}" {
+      CameraDistanceToItem 0.4
+      IsDynamicObject 0
+      PreviewModel ""
+      AnimationInstance "{657C7C6947165C7A}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.asi"
+      LodModel 0
+     }
+    }
+   }
+   WeightPerAmmo 0
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell BCC_MagazineWellMosin "{66E134297973F574}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "Mosin 7.62x54 5rnd Stripper Clip"
+    Description "asdasdsadsad"
+    m_sAmmoCaliber "7.62x54"
+    m_sAmmoType "API"
+    m_eAmmoTypeFlags AP
+   }
+   ItemModel "{BD6D59C29D9059B3}Assets/Weapons/Magazines/Mosin/BC_Mosin_Stripper_Clip.xob"
+   MaxAmmo 5
+   AmmoConfig "{BD649FF35BF63736}Configs/Weapons/Ammo/BC_Ammo_762x54_Mosin.conf"
+   AmmoMapping {
+    0 0 0 0 0
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{BD6D59C29D9059B3}Assets/Weapons/Magazines/Mosin/BC_Mosin_Stripper_Clip.xob"
+  }
+  RigidBody "{571B0382401B1385}" {
+   Enabled 1
+   Mass 1
+   CenterOfMass 0 0.035 0.019
+   LinearDamping 0.01
+   AngularDamping 0.05
+   SimState None
+   ResponseIndex "Normal"
+  }
+  SCR_SoundDataComponent "{5B18D200EBB5EA25}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{66F8E3880761D3BF}" {
+     m_sSoundProject "{00AB0532CCEE5B13}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Handling.acp"
+     m_sSoundEventName "SOUND_STRIPPER_CLIP_BOUNCE"
+    }
+   }
+  }
+  ActionsManagerComponent "{F092E6B0537754FD}" {
+   additionalActions {
+    BaseUserAction "{5A1E58F7D9256374}" {
+     UIInfo SCR_ActionUIInfo "{5A1E58F7D137DE75}" {
+      Name " "
+      m_sIconName " "
+     }
+     VisibilityRange 0
+     "Inventory action" 0
+    }
+   }
+  }
+  BCC_StripperClipMagazineAnimationComponent "{66E134288A41AA91}" {
+   AnimGraph "{881629B25B1F0E94}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.agr"
+   AnimInstance "{657C7C6947165C7A}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.asi"
+   AlwaysActive 1
+   AutoVariablesBind 1
+   ResetOnDeactivation 0
+   DeactivationDelay 0
+   SleepAfterInactivity 0
+   SleepTimeout 10
+   AnimatedMesh "{BD6D59C29D9059B3}Assets/Weapons/Magazines/Mosin/BC_Mosin_Stripper_Clip.xob"
+   BulletMeshesToHide {
+   }
+   m_sClipMesh "Clip"
+   m_aBulletMeshes {
+    "Bullet01" "Bullet02" "Bullet03" "Bullet04" "Bullet05"
+   }
+   m_stripEjectPoint PointInfo "{66F7000AB6DB3FDD}" {
+    PivotID "snap_weapon"
+    Offset 0.0031 -0.0165 0.0002
+    Angles 60 0 0
+   }
+   m_fStripperEjectForce 2.5
+  }
+  Hierarchy "{5122ECC99BB2EE56}" {
+   AutoTransform 1
+   MergePhysics 0
+  }
+ }
+ coords 1723.232 39 2858.031
+}

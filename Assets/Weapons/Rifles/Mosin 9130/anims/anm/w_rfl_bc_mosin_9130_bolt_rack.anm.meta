@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{35FD2BC6973EE503}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_bolt_rack.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "Mosin_9130_char_anims_standing_5.blend"
+   SourceProfile "bc_mosin_bolt"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

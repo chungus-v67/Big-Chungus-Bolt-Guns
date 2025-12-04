@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{79F763F5AE99184C}Assets/Weapons/Rifles/workspaces/bc_mosin_test.ast"
+ Configurations {
+  AnimSetTemplateResourceClass PC {
+  }
+  AnimSetTemplateResourceClass XBOX_ONE : PC {
+  }
+  AnimSetTemplateResourceClass XBOX_SERIES : PC {
+  }
+  AnimSetTemplateResourceClass PS4 : PC {
+  }
+  AnimSetTemplateResourceClass PS5 : PC {
+  }
+  AnimSetTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

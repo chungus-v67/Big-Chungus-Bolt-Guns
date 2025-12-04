@@ -1,0 +1,52 @@
+AnimSrcGraph {
+ AnimSetTemplate "{9AE44FB26CDADA67}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.ast"
+ ControlTemplate AnimSrcGCT "{524EDA67FB107888}" {
+  Variables {
+   AnimSrcGCTVarBool TriggerPulled {
+   }
+   AnimSrcGCTVarBool Empty {
+   }
+   AnimSrcGCTVarBool Cocked {
+   }
+   AnimSrcGCTVarInt Stance {
+    MaxValue 2
+   }
+   AnimSrcGCTVarBool Firing {
+   }
+   AnimSrcGCTVarBool LastBullet {
+   }
+   AnimSrcGCTVarFloat AimX {
+    MinValue -180
+    MaxValue 180
+   }
+   AnimSrcGCTVarBool Bipod {
+   }
+   AnimSrcGCTVarFloat AimY {
+    MinValue -90
+    MaxValue 90
+   }
+   AnimSrcGCTVarFloat SightElevation {
+    DefaultValue 0.1
+    MaxValue 1
+   }
+   AnimSrcGCTVarBool BC_ReturnToIdle {
+   }
+   AnimSrcGCTVarBool BC_IsStripperClipReload {
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_Weapon_Action_Interrupt {
+   }
+   AnimSrcGCTCmd CMD_Weapon_Reload {
+   }
+   AnimSrcGCTCmd CMD_BC_BoltActionReload {
+   }
+  }
+ }
+ Debug AnimSrcGD "{524EDA67FB107800}" {
+ }
+ GraphFilesResourceNames {
+  "{A7183708C5BC67A4}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

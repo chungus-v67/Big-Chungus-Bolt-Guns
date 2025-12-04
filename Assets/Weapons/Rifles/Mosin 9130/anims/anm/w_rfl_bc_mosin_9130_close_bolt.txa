@@ -1,0 +1,64 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 42
+ $node "w_bolt_rear" {
+  $keys t q s {
+   $frame 0 13 {
+    #t 0 0.099071 -0.0817779
+   }
+   $frame 14 {
+    #t 0 0.099071 -0.0701916
+   }
+   $frame 15 {
+    #t 0 0.099071 -0.0425628
+   }
+   $frame 16 {
+    #t 0 0.099071 -0.0095863
+   }
+   $frame 17 {
+    #t 0 0.099071 0.0180425
+   }
+   $frame 18 42 {
+    #t 0 0.099071 0.0296288
+   }
+  }
+  $node "w_bolt" {
+   $keys t q s {
+    $frame 0 14 {
+     #t 0 0.0000001 0.0770658
+     #q 0.00000005 0.00000014 0.70710701 0.70710671
+    }
+    $frame 15 {
+     #t 0 0.0000002 0.0770657
+    }
+    $frame 16 17 {
+     #t 0 0 0.0770657
+    }
+    $frame 18 {
+    }
+    $frame 19 {
+     #q 0.00000006 0.00000012 0.62108564 0.78374279
+    }
+    $frame 20 {
+     #q 0.00000007 0.0000001 0.38268343 0.9238795
+    }
+    $frame 21 {
+     #q 0.00000007 0.00000008 0.11501575 0.99336374
+    }
+    $frame 22 42 {
+     #q 0 0 0 1.00000012
+    }
+   }
+  }
+ }
+ $events {
+  #event 10 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 10  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_CLOSE\"  UserInt 0 }" 0 0 "" 0
+  #event 12 "BC_EjectSound" "AnimSrcEventGeneric {  Name \"BC_EjectSound\"  MainPathOnly 1  Frame 12  FrameCount 0  UserString \"SOUND_RELOAD_STRIPPER_CLIP_EJECT\"  UserInt -1 }" -1 0 "" 1
+  #event 26 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 26  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_bolt"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_37.blend"
+ }
+}

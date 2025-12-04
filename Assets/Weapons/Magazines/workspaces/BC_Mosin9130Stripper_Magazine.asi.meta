@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{657C7C6947165C7A}Assets/Weapons/Magazines/workspaces/BC_Mosin9130Stripper_Magazine.asi"
+ Configurations {
+  AnimSetInstanceResourceClass PC {
+  }
+  AnimSetInstanceResourceClass XBOX_ONE : PC {
+  }
+  AnimSetInstanceResourceClass XBOX_SERIES : PC {
+  }
+  AnimSetInstanceResourceClass PS4 : PC {
+  }
+  AnimSetInstanceResourceClass PS5 : PC {
+  }
+  AnimSetInstanceResourceClass HEADLESS : PC {
+  }
+ }
+}

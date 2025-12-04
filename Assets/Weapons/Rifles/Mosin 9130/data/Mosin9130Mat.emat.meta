@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A6C70FF3DEA4AB6D}Assets/Weapons/Rifles/Mosin 9130/data/Mosin9130Mat.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -14,7 +14,7 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
     }
     CustomAttributes {
      WeaponAttachmentAttributes "{5284D858FFF9BE66}" {
-      AttachmentType BC_AttachmentOpticsMosinPU "{66D361D011E6A0F8}" {
+      AttachmentType BCC_AttachmentOpticsMosinPU "{5D0CCDD062A6250E}" {
       }
      }
      PreviewRenderAttributes "{52D69389645B4E4D}" {

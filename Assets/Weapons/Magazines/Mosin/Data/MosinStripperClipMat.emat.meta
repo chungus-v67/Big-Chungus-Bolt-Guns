@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D0338B9082758E3A}Assets/Weapons/Magazines/Mosin/Data/MosinStripperClipMat.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

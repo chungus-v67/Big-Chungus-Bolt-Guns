@@ -122,11 +122,10 @@ $animation "" {
   }
  }
  $events {
-  #event 1 "BoltActionSpawnRound" "AnimSrcEventGeneric {  Name \"BoltActionSpawnRound\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 6 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 6  FrameCount 0  UserString \"SOUND_RELOAD_MAG_INSERT\"  UserInt 1 }" 1 0 "" 0
   #event 15 "BoltActionSetAmmoCount" "AnimSrcEventGeneric {  Name \"BoltActionSetAmmoCount\"  MainPathOnly 0  Frame 15  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 24 "BlendOut" "AnimSrcEventGeneric {  Name \"BlendOut\"  MainPathOnly 0  Frame 24  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 30 "BoltActionTransition" "AnimSrcEventGeneric {  Name \"BoltActionTransition\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"\"  UserInt 1 }" 1 0 "" 0
+  #event 30 "BC_TransitionLock" "AnimSrcEventGeneric {  Name \"BC_TransitionLock\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"\"  UserInt 1 }" 1 0 "" 0
   #event 30 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
 }

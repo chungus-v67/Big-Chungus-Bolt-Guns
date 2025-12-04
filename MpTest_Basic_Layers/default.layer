@@ -1,0 +1,180 @@
+GenericWorldPPEffect PP_SSR {
+ coords 114.399 0 106.482
+ Priority 0
+ Profile 4
+ {
+  $grp GenericWorldPPEffect {
+   GodRays {
+    Priority 1
+    Profile 1
+   }
+   UnderWater {
+    Priority 2
+    Profile 5
+   }
+   SSDO {
+    Priority 14
+    Profile 3
+   }
+   HBAO {
+    Priority 15
+    Profile 0
+   }
+   HDR {
+    Priority 16
+    Profile 2
+   }
+   RainEffect {
+    coords 2522.945 78.034 1718.33
+    Priority 3
+    Material "{FA4DE95A7276143D}Common/Postprocess/rain.emat"
+   }
+   PPAA {
+    Priority 17
+    Profile 6
+   }
+  }
+ }
+}
+SCR_DestructionManager : "{E5B570B5F32A7BAE}Prefabs/Systems/Destruction/DestructionManager.et" {
+ coords 0 0 0
+}
+GenericWorldFogEntity Fog_Haze {
+ coords 3331.667 0.003 3067.172
+ FakeDistFog 1
+ HeightDensity 0.94
+ DistanceDensity 0.362
+ HeightOffset 0
+ Color 0.5 0.5 0.5 0
+ ColorBack 0.4 0.4 0.4 0
+}
+GenericWorldLightEntity Lighting {
+ coords 114.399 0 106.482
+ angles -45 -155 0
+ DirectLightLV 15
+ DirectLightColor 1 1 1 0
+ IndirectLightLV 14
+ IndirectLightColor 1 1 1 0
+ ShadowFactor 1
+ PenumbraMultiplier 50
+ TargetEV 1.7
+ TargetEVLimitBright 1
+ TargetEVLimitDark 0
+ ManualHDRBrightnessLV 13
+}
+SCR_BaseGameMode GameMode_Plain1 : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ components {
+  SCR_TaskManagerUIComponent "{647892ABBB73840C}" {
+  }
+ }
+ coords 120.757 1.001 156.387
+ m_aDisabledResourceTypes {
+  SUPPLIES
+ }
+}
+SCR_CameraManager SCR_CameraManager : "{33F9FD881E3700CC}Prefabs/World/Game/SCR_CameraManager.et" {
+ coords 0 0 0
+ DefaultViewPosition 350 200 -100
+ DefaultViewAngles -30 -45 0
+}
+SCR_FactionManager FactionManager : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 0 0 0
+}
+TimeAndWeatherManagerEntity TimeAndWeatherManager : "{A3BAF78F6F03315B}Prefabs/World/Game/TimeAndWeatherManager.et" {
+ coords 114.399 0 106.482
+ "Internal variant transition" 0
+ "Internal subvariant 0" 0
+ "Internal subvariant 1" 0
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
+ coords 114.399 1 106.482
+}
+ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ Flags 0 0x3
+ coords 0 0 0
+}
+$grp GenericEntity : "{08DB30914359361E}Prefabs/Weapons/Magazines/BC_Magazine_762x54_Stripper_5rnd_Mosin_Nagant.et" {
+ {
+  coords 130.784 1 128.611
+ }
+ {
+  coords 130.813 1 128.609
+ }
+ {
+  coords 130.817 1 128.562
+ }
+ {
+  coords 130.817 1 128.562
+ }
+ {
+  coords 130.817 1 128.562
+ }
+ {
+  coords 130.817 1 128.562
+ }
+ {
+  coords 130.817 1 128.562
+ }
+}
+SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
+ coords 128 1 129
+ angles 0 -180 0
+}
+SCR_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ coords 128 1 127
+}
+GenericEntity : "{6EDAE05DF7CC8E78}Prefabs/Weapons/Rifles/M14/Rifle_M21_OliveGreen_Sand_Stripes.et" {
+ coords 129.63 1 129.828
+}
+SoundWorld : "{8A8604E158704937}Prefabs/Sounds/SoundWorld/SoundWorld_Eden.et" {
+ coords 112.224 1 139.175
+}
+SCR_LoadoutManager LoadoutManager : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loadouts/LoadoutManager_USxUSSR.et" {
+ coords 0 0 0
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{56B2B461C34A570F}" {
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{5A2494BE3D648F60}" {
+   m_sLoadoutName "#AR-Role_Rifleman"
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{56B2B461C275B309}" {
+   m_sLoadoutName "#AR-Role_Rifleman"
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{56B2B461C7495F41}" {
+   m_sLoadoutName "#AR-Role_Rifleman"
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{56B2B461C047DCDA}" {
+   m_sLoadoutName "#AR-Role_Rifleman"
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+  SCR_FactionPlayerLoadout "{56B2B4613C48D08E}" {
+   m_sLoadoutName "#AR-Role_Rifleman"
+   m_sLoadoutResource "{9BDC3AC0BDB50019}Prefabs/Characters/Campaign/Final/OPFOR/USSR_Army/Regular/Campaign_USSR_Player_Rifleman.et"
+   m_sLoadoutImage "{6A8FF7A3F9007CD0}UI/Textures/EditorPreviews/Characters/OPFOR/USSR_Army/Character_USSR_Rifleman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+ }
+}
+SCR_MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
+ coords 0 0 0
+}
+GameEntity : "{A03B33641708422A}Prefabs/Weapons/Attachments/Optics/Optic_PU/BC_Optic_PU.et" {
+ coords 129.797 1 128.006
+}
+GenericEntity : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_9130.et" {
+ coords 130.165 1.006 128.171
+}

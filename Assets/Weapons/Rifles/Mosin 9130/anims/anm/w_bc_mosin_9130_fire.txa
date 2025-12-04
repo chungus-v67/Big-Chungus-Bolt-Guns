@@ -1,0 +1,22 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 3
+ $node "Scene_Root" {
+  $keys t q {
+   $frame 0 3 {
+   }
+  }
+ }
+ $events {
+  #event 0 "Weapon_TriggerPulled" "AnimSrcEventGeneric {  Name \"Weapon_TriggerPulled\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 1 "AdjustAmmoCount" "AnimSrcEventGeneric {  Name \"AdjustAmmoCount\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 1 "LoopIn" "AnimSrcEventGeneric {  Name \"LoopIn\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 2 "LoopOut" "AnimSrcEventGeneric {  Name \"LoopOut\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 2 "Weapon_TriggerReleased" "AnimSrcEventGeneric {  Name \"Weapon_TriggerReleased\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "999_Empty"
+  #custProp "sourceFile" "mosin_26.blend"
+ }
+}

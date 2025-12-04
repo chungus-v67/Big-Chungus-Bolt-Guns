@@ -1,0 +1,50 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 172
+ $node "m_bullet01" {
+  $keys t q {
+   $frame 0 172 {
+    #t 0 -0.0288786 0.0013932
+   }
+  }
+  $node "m_bullet02" {
+   $keys t q {
+    $frame 0 172 {
+     #t 0 -0.0144656 0.0013932
+    }
+   }
+  }
+  $node "m_bullet03" {
+   $keys t q {
+    $frame 0 172 {
+     #t 0 0 0.0013932
+    }
+   }
+  }
+  $node "m_bullet04" {
+   $keys t q {
+    $frame 0 172 {
+     #t 0 0.0145857 0.0013932
+    }
+   }
+  }
+  $node "m_bullet05" {
+   $keys t q {
+    $frame 0 172 {
+     #t 0 0.0290365 0.0013932
+    }
+   }
+  }
+  $node "m_clip" {
+   $keys t q {
+    $frame 0 172 {
+    }
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_stripper_clip"
+  #custProp "sourceFile" "mosin_stripper_4.blend"
+ }
+}

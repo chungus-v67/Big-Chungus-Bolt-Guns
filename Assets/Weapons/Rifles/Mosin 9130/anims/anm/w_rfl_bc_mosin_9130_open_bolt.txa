@@ -1,0 +1,64 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 40
+ $node "w_bolt_rear" {
+  $keys t q s {
+   $frame 0 13 {
+    #t 0 0.0990709 0.0296288
+   }
+   $frame 14 {
+    #t 0 0.0990709 0.0266133
+   }
+   $frame 15 {
+    #t 0 0.099071 0.0167078
+   }
+   $frame 16 {
+    #t 0 0.0990709 -0.0011484
+   }
+   $frame 17 {
+    #t 0 0.0990709 -0.0263966
+   }
+   $frame 18 {
+    #t 0 0.0990709 -0.0540327
+   }
+   $frame 19 {
+    #t 0 0.0990709 -0.0746597
+   }
+   $frame 20 40 {
+    #t 0 0.0990709 -0.0817779
+   }
+  }
+  $node "w_bolt" {
+   $keys t q s {
+    $frame 0 9 {
+     #t 0 0 0.0770658
+    }
+    $frame 10 {
+     #q 0 0 0.0756323 0.99713582
+    }
+    $frame 11 {
+     #q -0.00000001 0 0.2674067 0.96358377
+    }
+    $frame 12 {
+     #q -0.00000002 0.00000001 0.49227154 0.87044179
+    }
+    $frame 13 {
+     #q -0.00000002 0.00000003 0.65160143 0.75856167
+    }
+    $frame 14 40 {
+     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    }
+   }
+  }
+ }
+ $events {
+  #event 7 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 7  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_OPEN\"  UserInt 0 }" 0 0 "" 0
+  #event 16 "BC_BoltActionEjectRound" "AnimSrcEventGeneric {  Name \"BC_BoltActionEjectRound\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 40 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 40  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_bolt"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_37.blend"
+ }
+}

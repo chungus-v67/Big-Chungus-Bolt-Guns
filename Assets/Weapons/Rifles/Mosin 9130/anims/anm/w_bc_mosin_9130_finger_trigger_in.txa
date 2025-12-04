@@ -1,0 +1,15 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 0
+ $node "Scene_Root" {
+  $keys t q {
+   $frame 0 {
+   }
+  }
+ }
+ $custProps {
+  #custProp "profile" "999_Empty"
+  #custProp "sourceFile" "mosin_26.blend"
+ }
+}

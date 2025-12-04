@@ -1,5 +1,5 @@
 EffectDef {
- Version 1
+ Version 2
  Emitters {
   EmitterDef BulletCase {
    ShapeType Point
@@ -12,7 +12,7 @@ EffectDef {
    LodMax 0
    ParticleType Prefab
    Material "{D2FD66DE0DF6BC58}Particles/_Materials/Solid/BulletCase_MachineGun.emat"
-   Prefab "{D9E1241E63D70AFE}Prefabs/Particles/Bullet_Case/Bullet_Case_762x54_Mosin.et"
+   Prefab "{D9E1241E63D70AFE}Prefabs/Particles/Bullet_Case/BC_Bullet_Case_762x54_Mosin.et"
    StretchMultiplier 1
    StreakFullUV 0
    SizeMultiplier 1
@@ -27,7 +27,7 @@ EffectDef {
    BillboardingType Full
    VelAngle 0
    RandomAngle 1
-   Velocity 2.5
+   Velocity 1.5
    VelocityRND 1
    VelAffect 0.7
    AirResistance 0.1

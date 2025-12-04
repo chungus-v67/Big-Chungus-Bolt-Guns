@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{807B5F52FA0A06FC}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_erc_insert_stripper.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "Mosin_9130_char_anims_standing_43.blend"
+   SourceProfile "252_UpperbodyADD_ArmsABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

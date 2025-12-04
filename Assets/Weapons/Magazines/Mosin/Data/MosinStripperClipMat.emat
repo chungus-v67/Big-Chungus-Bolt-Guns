@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ EmissiveMap "{89781A41C691AA28}Assets/Weapons/Magazines/Mosin/Data/Textures/MosinStripperClipMat_NMO.edds"
+ BCRMap "{B1A0A1D31FE6F8B6}Assets/Weapons/Magazines/Mosin/Data/Textures/MosinStripperClipMat_BCR.edds"
+}
