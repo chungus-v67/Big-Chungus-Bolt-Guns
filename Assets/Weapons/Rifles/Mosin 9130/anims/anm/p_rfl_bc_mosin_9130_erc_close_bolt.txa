@@ -5453,6 +5453,7 @@ $animation "" {
   }
  }
  $events {
+  #event 0 "BC_DropRounds" "AnimSrcEventGeneric {  Name \"BC_DropRounds\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 1 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"SOUND_CHAR_MOVE_WPN_GENERIC.RightHand\"  UserInt 0 }" 0 0 "" 0
   #event 11 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 11  FrameCount 0  UserString \"SOUND_CHAR_MOVEMENT\"  UserInt 1 }" 1 0 "" 0
   #event 13 "BC_EjectStripperClip" "AnimSrcEventGeneric {  Name \"BC_EjectStripperClip\"  MainPathOnly 0  Frame 13  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0

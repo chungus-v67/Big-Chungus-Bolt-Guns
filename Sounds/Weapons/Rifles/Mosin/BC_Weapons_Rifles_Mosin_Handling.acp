@@ -1441,10 +1441,12 @@ AudioClass {
    name "LoadRound"
    version 7
    tl -1082.051 646.43
-   Volume -10
+   Volume -12
    Pitch 1
    "Pitch variance" 0.5
    Resampler FIR_8
+   "Fade out function" SCurve
+   "Fade out time" 520
    Samples {
     AudioBankSampleClass "MosinLoadRound06-1.wav" {
      Filename "{64B15D7EDC30B938}Sounds/Weapons/Rifles/Mosin/sounds/MosinLoadRound06-1.wav"

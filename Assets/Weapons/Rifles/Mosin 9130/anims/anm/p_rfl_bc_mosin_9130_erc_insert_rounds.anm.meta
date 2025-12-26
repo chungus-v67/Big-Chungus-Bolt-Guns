@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{E982AA6149823D32}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_erc_insert_rounds.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_9130_char_anims_standing_45.blend"
+   SourcePath "Mosin_9130_char_anims_standing_60.blend"
    SourceProfile "252_UpperbodyADD_ArmsABS"
   }
   TXAResourceClass XBOX_ONE : PC {

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{ACEB0443A3AAB140}Sounds/Weapons/_SharedData/Shells/BC_Mosin_Round_Impact.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

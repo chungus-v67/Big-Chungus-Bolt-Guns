@@ -1,0 +1,4450 @@
+AudioClass {
+ signals {
+  SignalClass "110605" {
+   id 110605
+   name "Occlusion"
+   tl -1094.996 1044.374
+   res "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
+   inputsport {
+    2 36 53 100
+   }
+   outputsport {
+    5 42
+   }
+   inputvalues {
+    0 0 688.6 0
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 10000 1
+   }
+   path "{6DFC123D28CCC546}Sounds/_SharedData/Signals/Weapons/Weapon_Occlusion.sig"
+  }
+  SignalClass "116749" {
+   id 116749
+   name "EarFatigueComp_Wetness"
+   tl 1360 768
+   res "{8A11B1E11E2A595D}Sounds/_SharedData/Signals/Weapons/Weapon_EarFatigueComp_Wetness.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 8
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "117772:1" {
+         id 117772
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 9
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "117772:2" {
+         id 117772
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 8 9 10
+   }
+   outputsport {
+    3
+   }
+   inputvalues {
+    0 0 0 0
+   }
+   inputvaluesmin {
+    0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1
+   }
+   path "{8A11B1E11E2A595D}Sounds/_SharedData/Signals/Weapons/Weapon_EarFatigueComp_Wetness.sig"
+  }
+  SignalClass "186381" {
+   id 186381
+   name "EnvLayer Manager"
+   tl -500.167 1403.595
+   res "{EC33DE93193EDA55}Sounds/_SharedData/Signals/Weapons/Weapon_EnvLayerManager_NewCrossfade_SuppressedSupersonic.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 6
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass "220173:3" {
+         id 220173
+         port 3
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 22
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass "220173:4" {
+         id 220173
+         port 4
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 60
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass "110605:5" {
+         id 110605
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 220
+     conn {
+      ConnectionsClass connections {
+       id 26
+       links {
+        ConnectionClass "436254:65" {
+         id 436254
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 6 7 22 27 49 60 67 208 220
+   }
+   outputsport {
+    32 33 64 110 111 112 113 114 115 116 120 123 124 127 130 139 140 141 142 143 144 145 146 147 148 149
+   }
+   inputvalues {
+    300 1 0 0 0 0 0 0 1 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    300 1 1 1 1 1 1 150 1 1
+   }
+   path "{EC33DE93193EDA55}Sounds/_SharedData/Signals/Weapons/Weapon_EnvLayerManager_NewCrossfade_SuppressedSupersonic.sig"
+  }
+  SignalClass "220173" {
+   id 220173
+   name "MeadowsToHillsRatio"
+   tl -720.923 1475.915
+   res "{3A46DB30EA321604}Sounds/_SharedData/Signals/Weapons/Weapon_MeadowsToHillsRatio.sig"
+   inputsport {
+    1 13 14
+   }
+   outputsport {
+    3 4
+   }
+   inputvalues {
+    1 0 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    1 800 1
+   }
+   path "{3A46DB30EA321604}Sounds/_SharedData/Signals/Weapons/Weapon_MeadowsToHillsRatio.sig"
+  }
+  SignalClass "282637" {
+   id 282637
+   name "AutoFireTimeToOffset"
+   tl -500.167 -1209.389
+   res "{0569C96D6F61CF6E}Sounds/_SharedData/Signals/Weapons/Weapons_AutoFireTimeToOffset.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:1" {
+         id 283660
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:2" {
+         id 283660
+         port 2
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:3" {
+         id 283660
+         port 3
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 5
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:4" {
+         id 283660
+         port 4
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 13
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:5" {
+         id 283660
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 16
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "283660:6" {
+         id 283660
+         port 6
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 2 3 4 5 13 16
+   }
+   outputsport {
+    7
+   }
+   inputvalues {
+    0 0 0 0 0 0 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 1 1 1
+   }
+   path "{0569C96D6F61CF6E}Sounds/_SharedData/Signals/Weapons/Weapons_AutoFireTimeToOffset.sig"
+  }
+  SignalClass "305165" {
+   id 305165
+   name "P Cntrl 1P 3P cam"
+   tl -500.167 -917.416
+   res "{B0940E284D98C2C1}Sounds/_SharedData/Signals/Weapons/Weapon_UnderPlayerControl_1p_3p_Cam.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 28
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "356364:1" {
+         id 356364
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 31
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "356364:2" {
+         id 356364
+         port 2
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 34
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "384012:1" {
+         id 384012
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    7 21 28 31 34 36
+   }
+   outputsport {
+    2 6 8 9 12 26 30 33 40 43 45 46
+   }
+   inputvalues {
+    0 0 0 0 0 0
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 9999 1 1 1 1
+   }
+   path "{B0940E284D98C2C1}Sounds/_SharedData/Signals/Weapons/Weapon_UnderPlayerControl_1p_3p_Cam.sig"
+  }
+  SignalClass "334861" {
+   id 334861
+   name "BodyManager3Distances"
+   tl -512 -240
+   res "{6E22054999BBE610}Sounds/_SharedData/Signals/Weapons/Weapon_BodyManager_3_Distances_SuppressedSuperSonic.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 116
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass "110605:5" {
+         id 110605
+         port 5
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 125
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "356364:2" {
+         id 356364
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 114 116 125 162 178 209 228
+   }
+   outputsport {
+    6 7 8 58 59 104 121 123 158 212 214 227 229 230 244
+   }
+   inputvalues {
+    0 1 0 1 0 0 203 0.5
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    999 1 1 1 1 1 10000 1
+   }
+   path "{6E22054999BBE610}Sounds/_SharedData/Signals/Weapons/Weapon_BodyManager_3_Distances_SuppressedSuperSonic.sig"
+  }
+  SignalClass "393229" {
+   id 393229
+   name "Multiply_2_inputs"
+   tl -500.167 3118.436
+   res "{F07C266FDCFE110E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "390156:1" {
+         id 390156
+         port 1
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass "186381:115" {
+         id 186381
+         port 115
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 3
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{F07C266FDCFE110E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
+  }
+  SignalClass "403469" {
+   id 403469
+   name "Signal 394"
+   tl -1293.112 767.666
+   res "{43C50EB8DB8DE747}Sounds/_SharedData/Signals/Weapons/Weapon_Shooting_Directivity.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    5
+   }
+   inputvalues {
+    40
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    500
+   }
+   path "{43C50EB8DB8DE747}Sounds/_SharedData/Signals/Weapons/Weapon_Shooting_Directivity.sig"
+  }
+  SignalClass "405517" {
+   id 405517
+   name "Distance High Pass"
+   tl 1360 688
+   res "{FBFE5A427917A8B8}Sounds/_SharedData/Signals/Weapons/Weapon_Distance_HighPass_Global.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    1
+   }
+   path "{FBFE5A427917A8B8}Sounds/_SharedData/Signals/Weapons/Weapon_Distance_HighPass_Global.sig"
+  }
+  SignalClass "407565" {
+   id 407565
+   name "Pitch St To Gain"
+   tl -500.167 1317.143
+   res "{FBD98737879FB9A0}Sounds/_SharedData/Signals/SimpleHelpers/PitchStToGain_01.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 2
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "175116:2" {
+         id 175116
+         port 2
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    2
+   }
+   outputsport {
+    1
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    -12
+   }
+   inputvaluesmax {
+    12
+   }
+   path "{FBD98737879FB9A0}Sounds/_SharedData/Signals/SimpleHelpers/PitchStToGain_01.sig"
+  }
+  SignalClass "416781" {
+   id 416781
+   name "Weapon_InteriorTailSpatiality"
+   tl -496 160
+   res "{7445F7FFC97C5515}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapon_InteriorTailSpatiality.sig"
+   inputsport {
+    1 6 25
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    7.7 1365.9 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    30 16000 1
+   }
+   path "{7445F7FFC97C5515}Sounds/_SharedData/Signals/Weapons/Spatiality/Weapon_InteriorTailSpatiality.sig"
+  }
+  SignalClass "421901" {
+   id 421901
+   name "Signal UnderPlayerControl"
+   tl 1856 592
+   res "{96AFB8206E4CF0E6}Sounds/_SharedData/Signals/OneSignal/UnderPlayerControl.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    0
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    1
+   }
+   path "{96AFB8206E4CF0E6}Sounds/_SharedData/Signals/OneSignal/UnderPlayerControl.sig"
+  }
+  SignalClass "441357" {
+   id 441357
+   name "Reverb Wpn Suppressed"
+   tl 1856 784
+   res "{93CA6AFD3FE95BC5}Sounds/_SharedData/Signals/Reverb/Reverb_Weapons_Suppressed.sig"
+   inputsport {
+    1 35 112
+   }
+   outputsport {
+    39 106 107 110
+   }
+   inputvalues {
+    100 0.8 6000
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    100 1 16000
+   }
+   path "{93CA6AFD3FE95BC5}Sounds/_SharedData/Signals/Reverb/Reverb_Weapons_Suppressed.sig"
+  }
+ }
+ filters {
+  FilterClass "131094" : "{1EC28CF01E5AAC05}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_LongRange_HiPass_SmallArms.conf" {
+   id 131094
+   version 5
+   tl 1536 672
+   parent "{1EC28CF01E5AAC05}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_LongRange_HiPass_SmallArms.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "405517:2" {
+       id 405517
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+  FilterClass "185366" {
+   id 185366
+   name "Tails EQ"
+   version 5
+   tl 358.954 1750.724
+   pi {
+    1 0
+   }
+   wetDry 0
+   DSPObject Equalizer4DSPTypeClass dsp {
+    gain1 -2
+    gain2 2
+    gain3 4
+    gain4 1
+    fc1 300
+    fc2 400
+    fc3 1000
+    fc4 3163
+    qfactor2 1
+   }
+  }
+  FilterClass "284694" {
+   id 284694
+   name "EFCompressor"
+   version 5
+   tl 1536 752
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "116749:3" {
+       id 116749
+       port 3
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   wetDry 0
+   DSPObject CompressorDSPTypeClass dsp {
+    threshold -25
+    ratio 2.1
+    attack 30
+    release 291
+   }
+  }
+  FilterClass "335894" {
+   id 335894
+   name "Forest Close EQ"
+   version 5
+   tl -65 1650.31
+   pi {
+    1 0
+   }
+   DSPObject Equalizer4DSPTypeClass dsp {
+    gain1 -1
+    gain3 1
+    gain4 1
+    fc1 170
+    fc2 700
+   }
+  }
+  FilterClass "380950" : "{73435DDF68A42FA3}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_3p_LowCut_556.conf" {
+   id 380950
+   version 5
+   tl 352 -912
+   parent "{73435DDF68A42FA3}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_3p_LowCut_556.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "305165:33" {
+       id 305165
+       port 33
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+  }
+  FilterClass "382998" {
+   id 382998
+   name "1k +1dB"
+   version 5
+   tl 352 -848
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "305165:26" {
+       id 305165
+       port 26
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   DSPObject BiquadDSPTypeClass dsp {
+    biquadType PeakingEQ
+    Q 1
+    gain 1
+   }
+  }
+  FilterClass "392214" : "{13961E4C7CBDD9DE}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_SlapBack_Small_LoCut.conf" {
+   id 392214
+   version 5
+   tl -65 3180.667
+   ctl 0 -21
+   parent "{13961E4C7CBDD9DE}Sounds/_SharedData/Configs/Filter/Weapons/Filter_Weapons_SlapBack_Small_LoCut.conf"
+   pi {
+    1 0
+   }
+  }
+  FilterClass "424982" : "{75FB6A8AA2CCBD78}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Suppressed_SuperSonic_LowMidRemoval.conf" {
+   id 424982
+   version 5
+   tl -1120 256
+   parent "{75FB6A8AA2CCBD78}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Suppressed_SuperSonic_LowMidRemoval.conf"
+   pi +{
+   }
+   volume_dB 4
+  }
+  FilterClass "431126" {
+   id 431126
+   name "AL Close EQ Spprs"
+   version 5
+   tl 64 -880
+   pi {
+    3 0
+   }
+   volume_dB 8
+   DSPObject Equalizer4DSPTypeClass dsp {
+    gain1 -4
+    gain2 -18
+    gain3 -12
+    gain4 -6
+    fc2 200
+    fc3 1900
+    fc4 4000
+    qfactor2 0.707
+    qfactor3 0.707
+   }
+  }
+  FilterClass "434198" {
+   id 434198
+   name "1p LowEnd Adjustment"
+   version 5
+   tl -96 -624
+   pi {
+    3 0
+   }
+   DSPObject BiquadDSPTypeClass dsp {
+    biquadType LowShelf
+    fc 100
+    gain -2
+   }
+  }
+  FilterClass "435222" {
+   id 435222
+   name "Filter 425"
+   version 5
+   tl 222.5 -1216.111
+   pi {
+    1 0
+   }
+   DSPObject BiquadDSPTypeClass dsp {
+    biquadType PeakingEQ
+    fc 800
+    Q 0.5
+    gain 9
+   }
+  }
+ }
+ filter_chain {
+  FilterChainClass "114711" {
+   id 114711
+   name "FilterChain 112"
+   version 5
+   tl 1536 832
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "284694:65" {
+       id 284694
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "131094:65" {
+       id 131094
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    6 0
+   }
+  }
+  FilterChainClass "381975" {
+   id 381975
+   name "FilterChain 373"
+   version 5
+   tl 352 -784
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "380950:65" {
+       id 380950
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "382998:65" {
+       id 382998
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    14 0
+   }
+  }
+ }
+ vars {
+  VariableClass "436254" {
+   id 436254
+   name "EL_Delay"
+   version 5
+   tl -704 1632
+   varName "W_EL_Delay_Medium"
+   varResource "{A60F08955792B575}Sounds/_SharedData/Variables/GlobalVariables.conf"
+  }
+ }
+ sounds {
+  SoundClass "5129" : "{D2C763FBEE2B777A}Sounds/_SharedData/Configs/Sound/Weapons/Sound_Weapons_Suppressed_Shot_556.conf" {
+   id 5129
+   version 5
+   tl 1538.011 928
+   ctl 0 -21
+   parent "{D2C763FBEE2B777A}Sounds/_SharedData/Configs/Sound/Weapons/Sound_Weapons_Suppressed_Shot_556.conf"
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "334861:158" {
+       id 334861
+       port 158
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "114711:65" {
+       id 114711
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "201746:65" {
+       id 201746
+       port 65
+      }
+      ConnectionClass "287762:65" {
+       id 287762
+       port 65
+      }
+      ConnectionClass "341010:65" {
+       id 341010
+       port 65
+      }
+      ConnectionClass "342034:65" {
+       id 342034
+       port 65
+      }
+      ConnectionClass "3090:65" {
+       id 3090
+       port 65
+      }
+      ConnectionClass "148498:65" {
+       id 148498
+       port 65
+      }
+      ConnectionClass "439314:65" {
+       id 439314
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    54 0
+   }
+  }
+ }
+ buses {
+  BusClass "90119" {
+   id 90119
+   name "Body Bus"
+   version 7
+   tl 352 -608
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:58" {
+       id 334861
+       port 58
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "381975:65" {
+       id 381975
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "319492:65" {
+       id 319492
+       port 65
+      }
+      ConnectionClass "313348:65" {
+       id 313348
+       port 65
+      }
+      ConnectionClass "314372:65" {
+       id 314372
+       port 65
+      }
+      ConnectionClass "432135:65" {
+       id 432135
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+   channels "1"
+  }
+  BusClass "169991" {
+   id 169991
+   name "Forest Close EQ"
+   version 7
+   tl -65 1734.049
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "335894:65" {
+       id 335894
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "166916:65" {
+       id 166916
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+  }
+  BusClass "197639" {
+   id 197639
+   name "EnvLayer Far Bus"
+   version 7
+   tl -65 740.614
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "193540:65" {
+       id 193540
+       port 65
+      }
+      ConnectionClass "178180:65" {
+       id 178180
+       port 65
+      }
+      ConnectionClass "188420:65" {
+       id 188420
+       port 65
+      }
+      ConnectionClass "192516:65" {
+       id 192516
+       port 65
+      }
+     }
+    }
+   }
+  }
+  BusClass "231431" {
+   id 231431
+   name "EnvLayer Bus"
+   version 7
+   tl 368 336
+   ctl -2.5 -23.5
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "424982:65" {
+       id 424982
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "197639:65" {
+       id 197639
+       port 65
+      }
+      ConnectionClass "408583:65" {
+       id 408583
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+  }
+  BusClass "343047" {
+   id 343047
+   name "Narrow Tails Bus"
+   version 7
+   tl 358.954 2045.002
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:59" {
+       id 334861
+       port 59
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "185366:65" {
+       id 185366
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "194564:65" {
+       id 194564
+       port 65
+      }
+      ConnectionClass "179204:65" {
+       id 179204
+       port 65
+      }
+      ConnectionClass "196612:65" {
+       id 196612
+       port 65
+      }
+      ConnectionClass "169991:65" {
+       id 169991
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  BusClass "345095" {
+   id 345095
+   name "Wide Tails Bus"
+   version 7
+   tl 358.954 1832.886
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:59" {
+       id 334861
+       port 59
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "185366:65" {
+       id 185366
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "171012:65" {
+       id 171012
+       port 65
+      }
+      ConnectionClass "182276:65" {
+       id 182276
+       port 65
+      }
+      ConnectionClass "167940:65" {
+       id 167940
+       port 65
+      }
+      ConnectionClass "190468:65" {
+       id 190468
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  BusClass "388103" {
+   id 388103
+   name "SlapBack EQ Bus"
+   comment "-6 dB suppressed"
+   version 7
+   tl -65 3260.667
+   ctl 0 -24
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "392214:65" {
+       id 392214
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "387076:65" {
+       id 387076
+       port 65
+      }
+      ConnectionClass "389124:65" {
+       id 389124
+       port 65
+      }
+      ConnectionClass "391172:65" {
+       id 391172
+       port 65
+      }
+      ConnectionClass "386052:65" {
+       id 386052
+       port 65
+      }
+      ConnectionClass "385028:65" {
+       id 385028
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   volume 0.501
+   volume_dB -6
+  }
+  BusClass "408583" {
+   id 408583
+   name "EnvLayer Close Bus"
+   version 7
+   tl -65 337
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "177156:65" {
+       id 177156
+       port 65
+      }
+      ConnectionClass "195588:65" {
+       id 195588
+       port 65
+      }
+      ConnectionClass "309252:65" {
+       id 309252
+       port 65
+      }
+      ConnectionClass "168964:65" {
+       id 168964
+       port 65
+      }
+     }
+    }
+   }
+  }
+  BusClass "415751" {
+   id 415751
+   name "IntReverb Bus"
+   version 7
+   tl -81 -163.127
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "412676:65" {
+       id 412676
+       port 65
+      }
+      ConnectionClass "411652:65" {
+       id 411652
+       port 65
+      }
+     }
+    }
+   }
+  }
+  BusClass "430087" {
+   id 430087
+   name "AL Close EQ Spprs"
+   version 7
+   tl 64 -784
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "431126:65" {
+       id 431126
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "300036:65" {
+       id 300036
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   channels "2"
+  }
+  BusClass "432135" {
+   id 432135
+   name "1p EQ"
+   version 7
+   tl 64 -688
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "434198:65" {
+       id 434198
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "210948:65" {
+       id 210948
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   channels "1"
+  }
+ }
+ mixers {
+  MixerClass "423947" {
+   id 423947
+   name "OutputState"
+   version 4
+   tl 2128 864
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass "con:7175" {
+     id 7175
+     links {
+      ConnectionClass "422946:2048740186" {
+       id 422946
+       port 2048740186
+      }
+     }
+    }
+    ConnectionsClass "con:300039" {
+     id 300039
+     links {
+      ConnectionClass "417821:65" {
+       id 417821
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:301063" {
+     id 301063
+     links {
+      ConnectionClass "420893:65" {
+       id 420893
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:302087" {
+     id 302087
+     links {
+      ConnectionClass "418845:65" {
+       id 418845
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:326663" {
+     id 326663
+     links {
+      ConnectionClass "422946:1460041493" {
+       id 422946
+       port 1460041493
+      }
+     }
+    }
+   }
+   pi {
+    503316482 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb_Small" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin" "VON_Reverb_Medium" "VON_Reverb_Large"
+   }
+  }
+ }
+ constants {
+  ConstantClass "117772" {
+   id 117772
+   name "Constant 115"
+   version 5
+   tl 1184 784
+   "Constant values" {
+    IOPConstantsValueClass FADEIN_START_S {
+     Key "FADEIN_START_S"
+     Value 0.15
+     Port 1
+    }
+    IOPConstantsValueClass FADEIN_END_S {
+     Key "FADEIN_END_S"
+     Value 0.3
+     Port 2
+    }
+   }
+  }
+  ConstantClass "175116" {
+   id 175116
+   name "Environment Pitch / Delay"
+   version 5
+   tl -720 1312
+   "Constant values" {
+    IOPConstantsValueClass PITCH_ST {
+     Key "PITCH_ST"
+     Value 1.2
+     Port 2
+    }
+    IOPConstantsValueClass EL_Delay {
+     Key "EL_Delay"
+     Value 40
+     Port 3
+    }
+   }
+  }
+  ConstantClass "283660" {
+   id 283660
+   name "Constant 277"
+   version 5
+   tl -720.923 -1186.737
+   "Constant values" {
+    IOPConstantsValueClass TIME_MIN {
+     Key "TIME_MIN"
+     Value 0.1
+     Port 1
+    }
+    IOPConstantsValueClass TIME_MAX {
+     Key "TIME_MAX"
+     Value 3
+     Port 2
+    }
+    IOPConstantsValueClass PRESILENCE__MIN {
+     Key "PRESILENCE__MIN"
+     Value 22
+     Port 3
+    }
+    IOPConstantsValueClass PRESILENCE_MAX {
+     Key "PRESILENCE_MAX"
+     Value 10
+     Port 4
+    }
+    IOPConstantsValueClass RANDOM_MS {
+     Key "RANDOM_MS"
+     Value 1.5
+     Port 5
+    }
+    IOPConstantsValueClass CurveExponent {
+     Key "CurveExponent"
+     Value 1.5
+     Port 6
+    }
+   }
+  }
+  ConstantClass "320524" {
+   id 320524
+   name "Constant 313"
+   version 5
+   tl -707.023 -328.284
+   "Constant values" {
+    IOPConstantsValueClass PreSilence {
+     Key "PreSilence"
+     Value 20
+     Port 1
+    }
+   }
+  }
+  ConstantClass "356364" {
+   id 356364
+   name "Constant 348"
+   version 5
+   tl -720.923 -847.371
+   "Constant values" {
+    IOPConstantsValueClass InCabin {
+     Key "InCabin"
+     Port 1
+    }
+    IOPConstantsValueClass NotInCabin {
+     Key "NotInCabin"
+     Value 1
+     Port 2
+    }
+   }
+  }
+  ConstantClass "384012" {
+   id 384012
+   name "Dummy_Signal"
+   version 5
+   tl -720.923 -708.686
+   "Constant values" {
+    IOPConstantsValueClass "0" {
+     Key "0"
+     Port 1
+    }
+    IOPConstantsValueClass FPAddLayerPreSilence {
+     Key "FPAddLayerPreSilence"
+     Port 2
+    }
+   }
+  }
+  ConstantClass "390156" {
+   id 390156
+   name "0.5"
+   version 5
+   tl -720.923 3130.436
+   "Constant values" {
+    IOPConstantsValueClass "0.5" {
+     Key "0.5"
+     Value 0.5
+     Port 1
+    }
+   }
+  }
+  ConstantClass "427020" {
+   id 427020
+   name "Constant 412"
+   version 5
+   tl -1120 400
+   "Constant values" {
+    IOPConstantsValueClass SilencerOffsetEnv {
+     Key "SilencerOffsetEnv"
+     Value 20
+     Port 1
+    }
+    IOPConstantsValueClass SilencerOffsetBody {
+     Key "SilencerOffsetBody"
+     Value 3
+     Port 2
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass "3090" {
+   id 3090
+   name "Bodies Shader"
+   version 5
+   tl 608 -608
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "165916:65" {
+       id 165916
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "6163:65" {
+       id 6163
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "404501:65" {
+       id 404501
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "90119:65" {
+       id 90119
+       port 65
+      }
+      ConnectionClass "430087:65" {
+       id 430087
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+  ShaderClass "148498" {
+   id 148498
+   name "Mechanics Shader"
+   version 5
+   tl 608 -1312
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "165916:65" {
+       id 165916
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "285715:65" {
+       id 285715
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "365589:65" {
+       id 365589
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "435222:65" {
+       id 435222
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "218116:65" {
+       id 218116
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass "201746" {
+   id 201746
+   name "Interior Tail"
+   version 5
+   tl 592.627 -114.964
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "200732:65" {
+       id 200732
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "6163:65" {
+       id 6163
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "406549:65" {
+       id 406549
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "424982:65" {
+       id 424982
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "415751:65" {
+       id 415751
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+   ITD 0
+  }
+  ShaderClass "287762" {
+   id 287762
+   name "EnvLayer Shader"
+   version 5
+   tl 608 336
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "398364:65" {
+       id 398364
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "6163:65" {
+       id 6163
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "406549:65" {
+       id 406549
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "231431:65" {
+       id 231431
+       port 65
+      }
+      ConnectionClass "388103:65" {
+       id 388103
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass "341010" {
+   id 341010
+   name "Wide Tails Shader"
+   version 5
+   tl 608 1840
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "353308:65" {
+       id 353308
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "6163:65" {
+       id 6163
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "406549:65" {
+       id 406549
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "424982:65" {
+       id 424982
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "345095:65" {
+       id 345095
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+   ITD 0
+  }
+  ShaderClass "342034" {
+   id 342034
+   name "Narrow Tails Shader"
+   version 5
+   tl 608.627 2131.415
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "344092:65" {
+       id 344092
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "6163:65" {
+       id 6163
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "406549:65" {
+       id 406549
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "424982:65" {
+       id 424982
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "343047:65" {
+       id 343047
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+   ITD 0
+  }
+  ShaderClass "439314" {
+   id 439314
+   name "Gas Release Shader"
+   version 5
+   tl 608 -752
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "165916:65" {
+       id 165916
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "440339:65" {
+       id 440339
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "404501:65" {
+       id 404501
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "438276:65" {
+       id 438276
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass "6163" : "{2B9E461CE9ADF8F1}Sounds/_SharedData/Configs/Amplitude/_SharedData/Weapons/Amplitude_-16LUFS_to_-15LUFS_SuppressedSuperSonic.conf" {
+   id 6163
+   version 5
+   tl -1104 672
+   ctl 0 -21
+   parent "{2B9E461CE9ADF8F1}Sounds/_SharedData/Configs/Amplitude/_SharedData/Weapons/Amplitude_-16LUFS_to_-15LUFS_SuppressedSuperSonic.conf"
+   outerRange 4200
+   slopeFactor 42
+  }
+  AmplitudeClass "285715" : "{778C82C228A55EF9}Sounds/_SharedData/Configs/Amplitude/Weapons/Amplitude_Weapons_Mechanics_Smallarms.conf" {
+   id 285715
+   version 5
+   tl 608.627 -1376
+   parent "{778C82C228A55EF9}Sounds/_SharedData/Configs/Amplitude/Weapons/Amplitude_Weapons_Mechanics_Smallarms.conf"
+  }
+  AmplitudeClass "440339" : "{BB2C3E08E227AB28}Sounds/_SharedData/Configs/Amplitude/Weapons/Directional/Amplitude_Weapons_Directional_Gas_Release_Suppressor.conf" {
+   id 440339
+   version 5
+   tl 608 -832
+   parent "{BB2C3E08E227AB28}Sounds/_SharedData/Configs/Amplitude/Weapons/Directional/Amplitude_Weapons_Directional_Gas_Release_Suppressor.conf"
+  }
+ }
+ frequency {
+  FrequencyClass "365589" : "{93741F3CB05AC4F0}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_SmallArms_Mech.conf" {
+   id 365589
+   version 5
+   tl -1095.373 866.577
+   parent "{93741F3CB05AC4F0}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_SmallArms_Mech.conf"
+   ins {
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "110605:42" {
+       id 110605
+       port 42
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+  }
+  FrequencyClass "404501" : "{F76ACB5CC9912D9E}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_BodyLayer_Directivity.conf" {
+   id 404501
+   version 5
+   tl -1095.373 942.154
+   parent "{F76ACB5CC9912D9E}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_BodyLayer_Directivity.conf"
+   ins {
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "305165:43" {
+       id 305165
+       port 43
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "110605:42" {
+       id 110605
+       port 42
+      }
+     }
+    }
+   }
+   pi {
+    20 0
+   }
+   directivityFactor 0.5
+  }
+  FrequencyClass "406549" : "{D947C5701B157919}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Main.conf" {
+   id 406549
+   version 5
+   tl -1095.373 767
+   ins {
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "403469:5" {
+       id 403469
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "110605:42" {
+       id 110605
+       port 42
+      }
+     }
+    }
+   }
+   pi {
+    20 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass "166916" {
+   id 166916
+   name "Tail Forest Close"
+   version 7
+   tl -246.114 1737.305
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:144" {
+       id 186381
+       port 144
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 1
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Fade in time" 200
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Close_01.wav" {
+     Filename "{E8FED28CE26C4615}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Close_02.wav" {
+     Filename "{71E06B15FF8B7785}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Close_03.wav" {
+     Filename "{06EA039D0B2998F5}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "167940" {
+   id 167940
+   name "Tail Hills Close"
+   version 7
+   tl -246.114 2051.559
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:146" {
+       id 186381
+       port 146
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Close_01.wav" {
+     Filename "{2F644C876EBCF235}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Close_02.wav" {
+     Filename "{B67AF51E735BC3A5}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Close_03.wav" {
+     Filename "{C1709D9687F92CD5}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "168964" {
+   id 168964
+   name "EL Houses Close"
+   version 7
+   tl -256 624
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:140" {
+       id 186381
+       port 140
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Pitch variance" 1.521
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Close_01.wav" {
+     Filename "{D283C90A79C5FF78}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Close_02.wav" {
+     Filename "{4B9D70936422CEE8}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Close_03.wav" {
+     Filename "{3C97181B90802198}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Close_04.wav" {
+     Filename "{3B50E24AF6069B55}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Close_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Close_05.wav" {
+     Filename "{4C5A8AC202A47424}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Close_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "171012" {
+   id 171012
+   name "Tail Meadows Close"
+   version 7
+   tl -246.114 1442.095
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:142" {
+       id 186381
+       port 142
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume -0.75
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Close_01.wav" {
+     Filename "{DECE345A2C109149}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Close_02.wav" {
+     Filename "{47D08DC331F7A0D9}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Close_03.wav" {
+     Filename "{30DAE54BC5554FA9}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "177156" {
+   id 177156
+   name "EL Forest Close"
+   version 7
+   tl -256 336
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:124" {
+       id 186381
+       port 124
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Pitch variance" 1.012
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Close_01.wav" {
+     Filename "{10FE1907B8AFB3BE}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Close_02.wav" {
+     Filename "{89E0A09EA548822E}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Close_03.wav" {
+     Filename "{FEEAC81651EA6D5E}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Close_04.wav" {
+     Filename "{F92D3247376CD79F}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Close_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Close_05.wav" {
+     Filename "{8E275ACFC3CE38EE}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Close_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "178180" {
+   id 178180
+   name "EL Forest Far"
+   version 7
+   tl -256 912
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:127" {
+       id 186381
+       port 127
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Pitch variance" 0.7
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Far_01.wav" {
+     Filename "{ED4C90C8D08E4FBA}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Far_02.wav" {
+     Filename "{74522951CD697E2A}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Far_03.wav" {
+     Filename "{035841D939CB915A}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Forest_Far_04.wav" {
+     Filename "{049FBB885F4D2B9B}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Forest_Far_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "179204" {
+   id 179204
+   name "Tail Houses Close"
+   version 7
+   tl -246.114 2352
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:148" {
+       id 186381
+       port 148
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 1.3
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Close_01.wav" {
+     Filename "{2A83028123060ADF}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Close_02.wav" {
+     Filename "{B39DBB183EE13B4F}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Close_03.wav" {
+     Filename "{C497D390CA43D43F}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "182276" {
+   id 182276
+   name "Tail Meadows Far"
+   version 7
+   tl -246.114 1568
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:143" {
+       id 186381
+       port 143
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 8.35
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Fade in time" 200
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Far_01.wav" {
+     Filename "{136651A69DB6C12E}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Far_02.wav" {
+     Filename "{8A78E83F8051F0BE}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Meadows_Far_03.wav" {
+     Filename "{FD7280B774F31FCE}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Meadows_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "188420" {
+   id 188420
+   name "EL Houses Far"
+   version 7
+   tl -256 1200
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:141" {
+       id 186381
+       port 141
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Volume variance" 0.2
+   "Pitch variance" 0.7
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Far_01.wav" {
+     Filename "{9C018CD9FD9799FE}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Far_02.wav" {
+     Filename "{051F3540E070A86E}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Far_03.wav" {
+     Filename "{72155DC814D2471E}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Houses_Far_04.wav" {
+     Filename "{75D2A7997254FDDF}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Houses_Far_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "190468" {
+   id 190468
+   name "Tail Hills Far"
+   version 7
+   tl -246.114 2171.154
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:147" {
+       id 186381
+       port 147
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 7
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Far_01.wav" {
+     Filename "{8E7EE61767294479}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Far_02.wav" {
+     Filename "{17605F8E7ACE75E9}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Hills_Far_03.wav" {
+     Filename "{606A37068E6C9A99}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Hills_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "192516" {
+   id 192516
+   name "EL Hills Far"
+   version 7
+   tl -256 1056
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:139" {
+       id 186381
+       port 139
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Volume variance" 0.2
+   "Pitch variance" 0.7
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Far_01.wav" {
+     Filename "{A1671E4261198A89}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Far_02.wav" {
+     Filename "{3879A7DB7CFEBB19}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Far_03.wav" {
+     Filename "{4F73CF53885C5469}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Far_04.wav" {
+     Filename "{48B43502EEDAEEAC}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Far_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "193540" {
+   id 193540
+   name "EL Meadows Far"
+   version 7
+   tl -256 768
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:123" {
+       id 186381
+       port 123
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Volume variance" 0.3
+   "Pitch variance" 0.7
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Far_01.wav" {
+     Filename "{292391EB4B1271E3}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Far_02.wav" {
+     Filename "{B03D287256F54073}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Far_03.wav" {
+     Filename "{C73740FAA257AF03}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Far_04.wav" {
+     Filename "{C0F0BAABC4D115C2}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Far_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "194564" {
+   id 194564
+   name "Tail Forest Far"
+   version 7
+   tl -246.114 1857.424
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:145" {
+       id 186381
+       port 145
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 6
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Fade in time" 200
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Far_01.wav" {
+     Filename "{248ABCC2297ADAB4}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Far_02.wav" {
+     Filename "{BD94055B349DEB24}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Forest_Far_03.wav" {
+     Filename "{CA9E6DD3C03F0454}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Forest_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "195588" {
+   id 195588
+   name "EL Hills Close"
+   version 7
+   tl -256 480
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:130" {
+       id 186381
+       port 130
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Pitch variance" 2.012
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Close_01.wav" {
+     Filename "{15218CCAB81842FC}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Close_02.wav" {
+     Filename "{8C3F3553A5FF736C}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Close_03.wav" {
+     Filename "{FB355DDB515D9C1C}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Close_04.wav" {
+     Filename "{FCF2A78A37DB26D9}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Close_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Hills_Close_05.wav" {
+     Filename "{8BF8CF02C379C9A8}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Hills_Close_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "196612" {
+   id 196612
+   name "Tail Houses Far"
+   version 7
+   tl -246.114 2487.416
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:149" {
+       id 186381
+       port 149
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:116" {
+       id 186381
+       port 116
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   "Pitch variance" 1
+   "Termination Fade Out" 334
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Far_01.wav" {
+     Filename "{55C7A0D304630CF8}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Far_02.wav" {
+     Filename "{CCD9194A19843D68}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "BaseTail_SmallArms_Houses_Far_03.wav" {
+     Filename "{BBD371C2ED26D218}Sounds/Weapons/_SharedData/WeaponTails/BaseTail_SmallArms/BaseTail_SmallArms_Houses_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "210948" {
+   id 210948
+   name "Body FP"
+   version 7
+   tl -256 -688
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:6" {
+       id 334861
+       port 6
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   Volume 12.71
+   "Volume variance" 0.5
+   Pitch -1
+   "Pitch variance" 1
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_01.wav" {
+     Filename "{0A18C5701EBAC10F}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_02.wav" {
+     Filename "{93067CE9035DF09F}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_03.wav" {
+     Filename "{E40C1461F7FF1FEF}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_04.wav" {
+     Filename "{E3CBEE309179A52C}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_05.wav" {
+     Filename "{94C186B865DB4A5C}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_06.wav" {
+     Filename "{0DDF3F21783C7BCC}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_FP_Suppressed_SuperSonic_07.wav" {
+     Filename "{7AD557A98C9E94BC}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_FP_Suppressed_SuperSonic_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "218116" {
+   id 218116
+   name "Mechanics"
+   version 7
+   tl -240 -1360
+   ctl 2 0
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:104" {
+       id 334861
+       port 104
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "282637:7" {
+       id 282637
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    33 0
+   }
+   Volume 1
+   "Volume variance" 1
+   "Pitch variance" 0.2
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade out function" SCurve
+   "Fade out time" 95
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "AK74_Mechanics_01.wav" {
+     Filename "{C08403BF10A0F85E}Sounds/Weapons/Rifles/AK-74/Samples/AK74_Mechanics_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AK74_Mechanics_02.wav" {
+     Filename "{599ABA260D47C9CE}Sounds/Weapons/Rifles/AK-74/Samples/AK74_Mechanics_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AK74_Mechanics_03.wav" {
+     Filename "{2E90D2AEF9E526BE}Sounds/Weapons/Rifles/AK-74/Samples/AK74_Mechanics_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "300036" {
+   id 300036
+   name "AL AK Close"
+   version 7
+   tl -256 -880
+   ctl 1.607 -19
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:6" {
+       id 334861
+       port 6
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "384012:2" {
+       id 384012
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    33 0
+   }
+   Volume -10
+   Pitch -1
+   "Pitch variance" 1
+   Resampler FIR_4
+   Silence 30
+   "Fade in function" SCurve
+   "Fade in time" 5
+   "Fade out time" 500
+   Samples {
+    AudioBankSampleClass "AddLayer_1p_AK.wav" {
+     Filename "{E5F7BEE290DFCBBB}Sounds/Weapons/_SharedData/AddLayers/1p_AddLayer/AddLayer_1p_AK.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "309252" {
+   id 309252
+   name "EL Meadows Close"
+   version 7
+   tl -256 192
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:120" {
+       id 186381
+       port 120
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "407565:1" {
+       id 407565
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:1" {
+       id 427020
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:64" {
+       id 186381
+       port 64
+      }
+     }
+    }
+   }
+   pi {
+    51 0
+   }
+   "Pitch variance" 1.012
+   "Termination Fade Out" 47
+   Resampler FIR_4
+   "Fade in function" SCurve
+   "Fade in time" 45
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Close_01.wav" {
+     Filename "{CADB1D5FD51C3A26}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Close_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Close_02.wav" {
+     Filename "{53C5A4C6C8FB0BB6}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Close_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Close_03.wav" {
+     Filename "{24CFCC4E3C59E4C6}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Close_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Close_04.wav" {
+     Filename "{2308361F5ADF5E07}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Close_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "EnvLayer_SmallMid_Meadows_Close_05.wav" {
+     Filename "{54025E97AE7DB176}Sounds/Weapons/_SharedData/EnvLayer/SmallMid/EnvLayer_SmallMid_Meadows_Close_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "313348" {
+   id 313348
+   name "Body Mid"
+   comment "-28.5 LUFS, default 12.2 dB"
+   version 7
+   tl -256 -576
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:7" {
+       id 334861
+       port 7
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   Volume 10
+   "Volume variance" 1
+   "Pitch variance" 1.2
+   Resampler FIR_4
+   "Fade in function" Exp
+   "Fade in time" 3
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_01.wav" {
+     Filename "{717170E5FFF73ED9}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_02.wav" {
+     Filename "{E86FC97CE2100F49}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_03.wav" {
+     Filename "{9F65A1F416B2E039}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_04.wav" {
+     Filename "{98A25BA570345AFA}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_05.wav" {
+     Filename "{EFA8332D8496B58A}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_06.wav" {
+     Filename "{76B68AB49971841A}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Mid_Suppressed_SuperSonic_07.wav" {
+     Filename "{01BCE23C6DD36B6A}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Mid_Suppressed_SuperSonic_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "314372" {
+   id 314372
+   name "Body Far"
+   comment "12.712000"
+   version 7
+   tl -256 -480
+   ctl 0 -21
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:8" {
+       id 334861
+       port 8
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "427020:2" {
+       id 427020
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    17 0
+   }
+   Volume 10
+   "Volume variance" 1.5
+   "Pitch variance" 1.7
+   Resampler FIR_4
+   "Fade in time" 5
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "Weapons_545_556_Far_01.wav" {
+     Filename "{9726BE10C5B5D0BA}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_02.wav" {
+     Filename "{0E380789D852E12A}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_03.wav" {
+     Filename "{79326F012CF00E5A}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_04.wav" {
+     Filename "{7EF595504A76B499}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_05.wav" {
+     Filename "{09FFFDD8BED45BE9}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_06.wav" {
+     Filename "{90E14441A3336A79}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_07.wav" {
+     Filename "{E7EB2CC957918509}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_08.wav" {
+     Filename "{9F6EB0E36E3E1FFF}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_09.wav" {
+     Filename "{E864D86B9A9CF08F}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_09.wav"
+     Probability 100
+     Index 8
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_545_556_Far_10.wav" {
+     Filename "{142491003CCA57BE}Sounds/Weapons/_SharedData/Calibre/545/Weapons_545_556_Far_10.wav"
+     Probability 100
+     Index 9
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "319492" {
+   id 319492
+   name "DistZap Lo"
+   version 7
+   tl -256 -384
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:7" {
+       id 334861
+       port 7
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "320524:1" {
+       id 320524
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    33 0
+   }
+   Volume -12.5
+   "Volume variance" 2
+   Pitch 2
+   "Pitch variance" 0.75
+   Resampler FIR_4
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "AddLayer_DistZap_Lo_01.wav" {
+     Filename "{D84FD3B950D0B909}Sounds/Weapons/_SharedData/AddLayers/AddLayer_DistZap_Lo_01.wav"
+     Probability 6
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_DistZap_Lo_02.wav" {
+     Filename "{41516A204D378899}Sounds/Weapons/_SharedData/AddLayers/AddLayer_DistZap_Lo_02.wav"
+     Probability 6
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_DistZap_Lo_03.wav" {
+     Filename "{365B02A8B99567E9}Sounds/Weapons/_SharedData/AddLayers/AddLayer_DistZap_Lo_03.wav"
+     Probability 6
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_DistZap_Lo_04.wav" {
+     Filename "{319CF8F9DF13DD2A}Sounds/Weapons/_SharedData/AddLayers/AddLayer_DistZap_Lo_04.wav"
+     Probability 6
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_DistZap_Lo_05.wav" {
+     Filename "{469690712BB1325A}Sounds/Weapons/_SharedData/AddLayers/AddLayer_DistZap_Lo_05.wav"
+     Probability 6
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Silence_0.05s.wav" {
+     Filename "{A8CF5C88255C2E4C}Sounds/_SharedData/Samples/Silence/Silence_0.05s.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "385028" {
+   id 385028
+   name "SlapBack Urban Small"
+   version 7
+   tl -246.114 3298.436
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:114" {
+       id 186381
+       port 114
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "186381:110" {
+       id 186381
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "393229:2" {
+       id 393229
+       port 2
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume 3
+   Pitch 3.586
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_01.wav" {
+     Filename "{8007101F3D2D0C9A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_02.wav" {
+     Filename "{1919A98620CA3D0A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_03.wav" {
+     Filename "{6E13C10ED468D27A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_04.wav" {
+     Filename "{69D43B5FB2EE68B9}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "386052" {
+   id 386052
+   name "SlapBack Urban Small"
+   version 7
+   tl -246.114 3417.756
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:114" {
+       id 186381
+       port 114
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "186381:110" {
+       id 186381
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:115" {
+       id 186381
+       port 115
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Pitch 3.586
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_01.wav" {
+     Filename "{8007101F3D2D0C9A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_02.wav" {
+     Filename "{1919A98620CA3D0A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_03.wav" {
+     Filename "{6E13C10ED468D27A}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Urban_Small_04.wav" {
+     Filename "{69D43B5FB2EE68B9}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Urban_Small_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "387076" {
+   id 387076
+   name "SlapBack Hills Small"
+   version 7
+   tl -246.114 3537.073
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:113" {
+       id 186381
+       port 113
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "186381:110" {
+       id 186381
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:115" {
+       id 186381
+       port 115
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume -1
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "AddLayer_SlapBack_Hills_Small_01.wav" {
+     Filename "{FE30732528BD354D}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Hills_Small_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Hills_Small_02.wav" {
+     Filename "{672ECABC355A04DD}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Hills_Small_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Hills_Small_03.wav" {
+     Filename "{1024A234C1F8EBAD}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Hills_Small_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Hills_Small_04.wav" {
+     Filename "{17E35865A77E516E}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Hills_Small_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "389124" {
+   id 389124
+   name "SlapBack Meadows Small"
+   version 7
+   tl -246.114 3059.799
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:111" {
+       id 186381
+       port 111
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "186381:110" {
+       id 186381
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:115" {
+       id 186381
+       port 115
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume -4
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "AddLayer_SlapBack_Meadows_Small_01.wav" {
+     Filename "{DF1413A8EEED59FF}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Meadows_Small_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Meadows_Small_02.wav" {
+     Filename "{460AAA31F30A686F}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Meadows_Small_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Meadows_Small_03.wav" {
+     Filename "{3100C2B907A8871F}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Meadows_Small_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Meadows_Small_04.wav" {
+     Filename "{36C738E8612E3DDC}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Meadows_Small_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "391172" {
+   id 391172
+   name "SlapBack Forest Small"
+   version 7
+   tl -246.114 3179.117
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "186381:112" {
+       id 186381
+       port 112
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "186381:110" {
+       id 186381
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:5" {
+     id 5
+     links {
+      ConnectionClass "186381:115" {
+       id 186381
+       port 115
+      }
+     }
+    }
+   }
+   pi {
+    35 0
+   }
+   Volume -2.7
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "AddLayer_SlapBack_Forest_Small_01.wav" {
+     Filename "{98A31A343A828923}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Forest_Small_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Forest_Small_02.wav" {
+     Filename "{01BDA3AD2765B8B3}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Forest_Small_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Forest_Small_03.wav" {
+     Filename "{76B7CB25D3C757C3}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Forest_Small_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_SlapBack_Forest_Small_04.wav" {
+     Filename "{71703174B541ED00}Sounds/Weapons/_SharedData/AddLayers/SlapBack/AddLayer_SlapBack_Forest_Small_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "411652" {
+   id 411652
+   name "AL InteriorTail Small"
+   version 7
+   tl -256 -208
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:229" {
+       id 334861
+       port 229
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "334861:214" {
+       id 334861
+       port 214
+      }
+     }
+    }
+    ConnectionsClass "con:9" {
+     id 9
+     links {
+      ConnectionClass "334861:227" {
+       id 334861
+       port 227
+      }
+     }
+    }
+    ConnectionsClass "con:10" {
+     id 10
+     links {
+      ConnectionClass "334861:212" {
+       id 334861
+       port 212
+      }
+     }
+    }
+   }
+   pi {
+    1553 0
+   }
+   Volume -7
+   Pitch 1.7
+   "Pitch variance" 0.4
+   Resampler FIR_4
+   "Fade out function" SCurve
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "AddLayer_InteriorTail_General_01.wav" {
+     Filename "{197F11F66E9C7DEE}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_General_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_InteriorTail_General_02.wav" {
+     Filename "{8061A86F737B4C7E}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_General_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_InteriorTail_General_03.wav" {
+     Filename "{F76BC0E787D9A30E}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_General_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "412676" {
+   id 412676
+   name "AL InteriorTail Large"
+   version 7
+   tl -256 -48
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:230" {
+       id 334861
+       port 230
+      }
+     }
+    }
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "334861:214" {
+       id 334861
+       port 214
+      }
+     }
+    }
+    ConnectionsClass "con:9" {
+     id 9
+     links {
+      ConnectionClass "334861:227" {
+       id 334861
+       port 227
+      }
+     }
+    }
+    ConnectionsClass "con:10" {
+     id 10
+     links {
+      ConnectionClass "334861:212" {
+       id 334861
+       port 212
+      }
+     }
+    }
+   }
+   pi {
+    1553 0
+   }
+   Volume 11.5
+   Pitch 1.7
+   "Pitch variance" 0.4
+   Resampler FIR_4
+   "Fade out function" SCurve
+   "Disable streaming" 1
+   Samples {
+    AudioBankSampleClass "AddLayer_InteriorTail_Large_01.wav" {
+     Filename "{01219CBE0FCA9D14}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_Large_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_InteriorTail_Large_02.wav" {
+     Filename "{983F2527122DAC84}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_Large_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "AddLayer_InteriorTail_Large_03.wav" {
+     Filename "{EF354DAFE68F43F4}Sounds/Weapons/_SharedData/AddLayers/AddLayer_InteriorTail_Large_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "438276" {
+   id 438276
+   name "Gas Release"
+   version 7
+   tl -256 -768
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "334861:244" {
+       id 334861
+       port 244
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   Volume 11.5
+   Pitch -1
+   "Pitch variance" 0.3
+   Silence 32
+   Offset 10
+   "Fade out time" 80
+   Samples {
+    AudioBankSampleClass "Weapons_Suppressor_Gas_Release_USSR_02.wav" {
+     Filename "{748A9F2CE0A7F51D}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_USSR_02.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Suppressor_Gas_Release_USSR_03.wav" {
+     Filename "{0380F7A414051A6D}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_USSR_03.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Suppressor_Gas_Release_USSR_04.wav" {
+     Filename "{04470DF57283A0AE}Sounds/Weapons/_SharedData/AddLayers/Suppressors/Weapons_Suppressor_Gas_Release_USSR_04.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass "165916" : "{E7A5A6AD7326FC7B}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal.conf" {
+   id 165916
+   version 5
+   tl 608.627 -1440
+   parent "{E7A5A6AD7326FC7B}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "305165:9" {
+       id 305165
+       port 9
+      }
+     }
+    }
+   }
+   pi + {
+    0
+   }
+  }
+  SpatialityClass "200732" : "{06EE9E12D2EEF99E}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_InteriorTails_Default.conf" {
+   id 200732
+   version 5
+   tl 592.627 -184.254
+   parent "{06EE9E12D2EEF99E}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_InteriorTails_Default.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "416781:2" {
+       id 416781
+       port 2
+      }
+     }
+    }
+   }
+  }
+  SpatialityClass "344092" : "{04E7F4A846454C97}Sounds/_SharedData/Configs/Spatiality/Weapons/Suppressed/Spatiality_Weapons_BaseTails_Narrow_Suppressed.conf" {
+   id 344092
+   name "Spatiality_BaseTails_Narrow"
+   version 5
+   tl 608.627 2060.748
+   parent "{04E7F4A846454C97}Sounds/_SharedData/Configs/Spatiality/Weapons/Suppressed/Spatiality_Weapons_BaseTails_Narrow_Suppressed.conf"
+  }
+  SpatialityClass "353308" : "{E5082F46FA78E2B7}Sounds/_SharedData/Configs/Spatiality/Weapons/Suppressed/Spatiality_Weapons_BaseTails_Wide_Suppressed.conf" {
+   id 353308
+   name "Spatiality_BaseTails_Wide"
+   version 5
+   tl 608 1760
+   parent "{E5082F46FA78E2B7}Sounds/_SharedData/Configs/Spatiality/Weapons/Suppressed/Spatiality_Weapons_BaseTails_Wide_Suppressed.conf"
+  }
+  SpatialityClass "398364" : "{56B0C8A256B52EAA}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_EnvLayer.conf" {
+   id 398364
+   version 5
+   tl 608 272
+   parent "{56B0C8A256B52EAA}Sounds/_SharedData/Configs/Spatiality/Weapons/Spatiality_Weapons_EnvLayer.conf"
+  }
+ }
+ auxOuts {
+  AuxOutClass "417821" {
+   id 417821
+   name "AuxOut Rev Small"
+   version 5
+   tl 1856 960
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "5129:5" {
+       id 5129
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "441357:107" {
+       id 441357
+       port 107
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "441357:39" {
+       id 441357
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 300039
+  }
+  AuxOutClass "418845" {
+   id 418845
+   name "AuxOut Rev Large"
+   version 5
+   tl 1856 1216
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "5129:5" {
+       id 5129
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "441357:110" {
+       id 441357
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "441357:39" {
+       id 441357
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 302087
+  }
+  AuxOutClass "420893" {
+   id 420893
+   name "AuxOut Rev Medium"
+   version 5
+   tl 1856 1088
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "5129:5" {
+       id 5129
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "441357:106" {
+       id 441357
+       port 106
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "441357:39" {
+       id 441357
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 301063
+  }
+ }
+ auxSelectors {
+  AuxSelectorClass "422946" : "{2D3EF4E6E18BD154}Sounds/_SharedData/Configs/AuxSelector/_SharedData/AuxSelector_Player.conf" {
+   id 422946
+   version 5
+   tl 1856 672
+   parent "{2D3EF4E6E18BD154}Sounds/_SharedData/Configs/AuxSelector/_SharedData/AuxSelector_Player.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "421901:2" {
+       id 421901
+       port 2
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "5129:65" {
+       id 5129
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1460041493" {
+     id 1460041493
+     links {
+      ConnectionClass "423947:326663" {
+       id 423947
+       port 326663
+      }
+     }
+    }
+    ConnectionsClass "con:2048740186" {
+     id 2048740186
+     links {
+      ConnectionClass "423947:7175" {
+       id 423947
+       port 7175
+      }
+     }
+    }
+   }
+  }
+ }
+ groups {
+  GroupClass {
+   id 346115
+   name "Mechanics"
+   children {
+    218116 165916 148498 285715 435222
+   }
+   parent -1
+   Color 1 0.333 1 0.251
+  }
+  GroupClass {
+   id 347139
+   name "Bodies"
+   children {
+    230422 310300 3090 210948 233495 229383 382998 313348 319492 234518 300036 90119 314372 352268 360452 361490 362517 364563 370695 372743 380950 381975 428054 429060 430087 431126 433174 432135 434180 434198 438276 439314 440339
+   }
+   parent -1
+   Color 0.667 0 0 0.251
+  }
+  GroupClass {
+   id 348163
+   name "EnvLayer"
+   children {
+    324612 231431 294940 287762 197639 309252 325636 192516 330770 188420 293900 195588 336918 168964 333836 178180 180231 326660 327684 354316 328711 177156 193540 317459 366596 369668 367620 368644 396310 397334 398364 407556 408583
+   }
+   parent -1
+   Color 0 0.333 0 0.251
+  }
+  GroupClass {
+   id 349187
+   name "Tails"
+   children {
+    344092 341010 169991 182276 343047 171012 190468 335894 185366 275469 342034 339996 179204 345095 194564 167940 277516 241687 196612 166916 276502 353308
+   }
+   parent -1
+   Color 0 0.333 1 0.251
+  }
+  GroupClass {
+   id 350211
+   name "BaseSignals"
+   children {
+    334861 305165 238604 282637 236557 322572 186381 248844 283660 307212 175116 249869 407565 384012 394253 220173 393229 390156 356364 320524 416781 436254
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 395267
+   name "Slapback"
+   children {
+    396318 388103 385028 389124 392214 386052 391172 387076
+   }
+   parent -1
+   Color 0.6 0.6 0.6 0.251
+  }
+  GroupClass {
+   id 357379
+   name "AL"
+   children {
+    217092 200732 201746 371719 373767 412676 411652 415751
+   }
+   parent -1
+   Color 1 1 0 0.251
+  }
+ }
+ version 1
+ sourcesLimit 2
+}

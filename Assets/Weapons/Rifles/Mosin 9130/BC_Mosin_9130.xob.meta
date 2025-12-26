@@ -31,6 +31,10 @@ MetaFileClass {
     }
     MeshParam Trigger {
     }
+    MeshParam CockingKnobSlider {
+    }
+    MeshParam "Frame_LOD0.001" {
+    }
    }
    GeometryParams {
     GeometryParam UCX_Body {

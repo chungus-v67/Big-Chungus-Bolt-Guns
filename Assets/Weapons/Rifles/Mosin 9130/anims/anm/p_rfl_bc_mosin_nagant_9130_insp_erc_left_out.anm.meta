@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{02660E8FC9AB6B63}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_nagant_9130_insp_erc_left_out.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_Nagant_9130_Inspection_Animations_6.blend"
+   SourcePath "Mosin_Nagant_9130_Inspection_Animations_10.blend"
    SourceProfile "240_UpperbodyADD_HeadADD_ArmsABS"
   }
   TXAResourceClass XBOX_ONE : PC {

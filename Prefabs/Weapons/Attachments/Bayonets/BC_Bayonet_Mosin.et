@@ -1,0 +1,68 @@
+GameEntity : "{9CB58C6DD96AF131}Prefabs/Weapons/Attachments/Bayonets/Bayonet_Base.et" {
+ ID "50989DC991E68512"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{6708F50F43CF63F4}" {
+    ItemDisplayName UIInfo "{6708F50F43CF6A42}" {
+     Name "Mosin 91/30 Bayonet"
+     Description "Soviet-made spike bayonet for the Mosin Nagant 91/30 rifles."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6708F50F43CF6A79}" {
+     Weight 0.5
+     SizeSetupStrategy Manual
+     ItemDimensions 10 10 15
+     ItemVolume 150
+     RestingUP Right
+     ActivePhysicalSimulation None
+    }
+    CustomAttributes {
+     SCR_WeaponAttachmentBayonetAttributes "{6708F50F43CF6A70}" {
+      AttachmentType BCC_AttachmentBayonetMosin "{6708F50F43CF6A68}" {
+      }
+      m_fDamageModificationFactor 5
+      m_fRangeModificationFactor 1.5
+      m_fPrecisionModificationFactor 0.3
+      m_fExtraObstructionLength 0.4
+     }
+     PreviewRenderAttributes "{6708F50F43CF6A6F}" {
+      CameraPreset Right
+      CameraOrbitAngles 0 0 0
+      CameraDistanceToItem 0.2
+      CameraOffset 0 0 0
+      ItemRenderRotation 0 0 0
+     }
+     SCR_WeaponAttachmentObstructionAttributes "{6708F50F43CF6A62}" {
+      AttachmentType BCC_AttachmentBayonetMosin "{6708F50F43CF6A65}" {
+      }
+      m_aObstructedAttachmentTypes {
+       BCC_AttachmentMuzzleMosin "{6708F50F43CF6A18}" {
+       }
+      }
+     }
+    }
+    CommonItemType "BAYONET"
+    m_Size SLOT_2x1
+   }
+  }
+  MeshObject "{60A894809670984D}" {
+   Object "{51FE20048370D656}Assets/Weapons/Attachments/Bayonet/BC_Mosin_Bayonet.xob"
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   ActionContexts {
+    UserActionContext "{60ECB1E8B72F02DA}" {
+     ContextName "bayonet"
+     Position PointInfo "{60ECB1E8B9487FF3}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_EquipWeaponAttachment "{5284E0EFDA00C63B}" {
+     UIInfo SCR_ActionUIInfo "{5284E0EFD09FA6F2}" {
+      Name "Attach: "
+     }
+    }
+   }
+  }
+ }
+}

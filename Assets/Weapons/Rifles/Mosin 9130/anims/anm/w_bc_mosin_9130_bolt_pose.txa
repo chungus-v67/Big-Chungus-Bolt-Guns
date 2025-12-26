@@ -2,7 +2,7 @@ $animation "" {
  #version 2
  #fps 30
  #numFrames 0
- $node "w_bolt_rear" {
+ $node "w_safety" {
   $keys t q {
    $frame 0 {
     #t 0 0.0990709 0.0296288
@@ -11,13 +11,13 @@ $animation "" {
   $node "w_bolt" {
    $keys t q {
     $frame 0 {
-     #t 0 0 0.0770658
+     #t 0 0.0990709 0.1066946
     }
    }
   }
  }
  $custProps {
   #custProp "profile" "bc_mosin_bolt"
-  #custProp "sourceFile" "mosin_26.blend"
+  #custProp "sourceFile" "mosin_28.blend"
  }
 }

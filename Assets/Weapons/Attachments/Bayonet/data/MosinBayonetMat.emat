@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Emissive 0 0 0 1
+ BCRMap "{095C27DF72A4CBC5}Assets/Weapons/Attachments/Bayonet/data/Textures/MosinBayonetMat_BCR.edds"
+ NMOMap "{31849C4DABD3995B}Assets/Weapons/Attachments/Bayonet/data/Textures/MosinBayonetMat_NMO.edds"
+}

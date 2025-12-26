@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{4DC5A16AF81B430B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/2_rfl_bc_mosin_9130_erc_safety_on.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "Mosin_9130_char_anims_standing_58.blend"
+   SourceProfile "bc_mosin_bolt"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

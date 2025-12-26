@@ -1,0 +1,35 @@
+Projectile : "{AC29AE3D5ECD6390}Prefabs/Weapons/Ammo/Ammo_762x54r_Ball_57N323S.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  ShellMoveComponent "{851AA4A2AE0A5691}" {
+   InitSpeed 835
+   InitSpeedVariation 5
+   Mass 0.0096
+   ProjectileEffects {
+    ProjectileDamage "{5168BBF3DBD79134}" {
+     DamageValue 0
+    }
+    ExplosionEffect "{85DB664DDCA5D5B0}" {
+    }
+    ProjectileDamage "{670EED362D4CF778}" {
+     Enabled 1
+     DamageValue 100
+     DamageType Collision
+     DamageEffects {
+      SCR_ConcussionDamageEffect "{670EED3659D958B7}" {
+      }
+     }
+    }
+   }
+   BallisticTableConfig "{0471293E3DE1E1DF}Configs/Weapons/AIBallisticTables/AIBT_762x54r_Ball_7N1.conf"
+   AirDrag 0.0000103
+   Diameter 14
+   MushroomingDamageMultiplier 0.25
+   PenetrationDepth 8.5
+   PenetrationDensity 7.62
+   PenetrationSpeed 780
+  }
+ }
+ coords 1722.827 39 2856.806
+ CartridgeModel "{067A8C415CD56234}Assets/Weapons/Magazines/Mosin/bc_mosin_round.xob"
+}

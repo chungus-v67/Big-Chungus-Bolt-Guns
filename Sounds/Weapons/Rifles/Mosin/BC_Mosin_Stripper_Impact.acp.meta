@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{1774A622DF74F6D9}Sounds/Weapons/_SharedData/Shells/BC_Mosin_Stripper_Impact.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

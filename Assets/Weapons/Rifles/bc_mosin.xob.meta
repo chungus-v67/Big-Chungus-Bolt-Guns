@@ -7,11 +7,11 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{61DE34A721A8B472}" {
      SourceMaterial "Mosin9130Mat"
-     AssignedMaterial "{0C65312F2BA9C645}Assets/Weapons/Rifles/Data/Mosin9130Mat.emat"
+     AssignedMaterial "{A6C70FF3DEA4AB6D}Assets/Weapons/Rifles/Mosin 9130/data/Mosin9130Mat.emat"
     }
     MaterialAssignClass "{61DE34A75819C17A}" {
      SourceMaterial "MosinClipMat"
-     AssignedMaterial "{28E2706EC151B38E}Assets/Weapons/Magazines/Mosin/Data/MosinClipMat.emat"
+     AssignedMaterial "{2F0921F9C4580F97}Assets/Weapons/Rifles/Mosin 9130/data/MosinClipMat.emat"
     }
    }
    MeshParams {
@@ -33,19 +33,19 @@ MetaFileClass {
     }
    }
    GeometryParams {
+    GeometryParam UCX_Body {
+     LayerPreset "Weapon"
+     SurfaceProperties {
+      "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
     GeometryParam UTM_FireGeo {
      LayerPreset "FireGeo"
      SurfaceProperties {
       "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
       "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
-     }
-     Mass 0
-     Margin 0
-    }
-    GeometryParam UCX_Body {
-     LayerPreset "Weapon"
-     SurfaceProperties {
-      "{DA78F418A40D883C}Common/Materials/Game/WeaponParts/weapon_wood.gamemat"
      }
      Mass 0
      Margin 0

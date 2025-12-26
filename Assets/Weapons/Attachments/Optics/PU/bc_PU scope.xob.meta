@@ -8,38 +8,51 @@ MetaFileClass {
      SourceMaterial "Optic_pip"
      AssignedMaterial "{1C8A9AC4A0AE4921}Assets/Weapons/Attachments/Optics/Shared/SightsPIPMaterial.emat"
     }
-    MaterialAssignClass "{61E8DA7EBB0479B3}" {
+    MaterialAssignClass "{61E904237A1E3473}" {
+     SourceMaterial "Optic_lensglass"
+     AssignedMaterial "{B779BF924DD731FC}Assets/Weapons/Attachments/Optics/PU/Data/Optic_lensglass.emat"
+    }
+    MaterialAssignClass "{6718F124678CFEEE}" {
      SourceMaterial "PUScopeMat"
      AssignedMaterial "{F565341D15EBCCBA}Assets/Weapons/Attachments/Optics/PU/Data/PUScopeMat.emat"
     }
-    MaterialAssignClass "{61E8DA7EBB0479A0}" {
+    MaterialAssignClass "{6718F124678CFE9A}" {
      SourceMaterial "Optic_physical_lensglass"
-     AssignedMaterial "{C6AC8F3731B71E88}Assets/Weapons/Attachments/Optics/PU/Data/Optic_physical_lensglass.emat"
+     AssignedMaterial "{10AD1FDD7A92A636}Assets/Weapons/Attachments/Optics/Shared/OpticCapMaterial.emat"
     }
-    MaterialAssignClass "{61E904237A1E3473}" {
-     SourceMaterial "Optic_lensglass"
-     AssignedMaterial "{39C2A3A521FE9A1B}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_ARTII_Lensglass.emat"
+    MaterialAssignClass "{6718F124678CFE9D}" {
+     SourceMaterial "attachment_mosin_pumount"
+     AssignedMaterial "{13F43F53426D5C98}Assets/Weapons/Attachments/Optics/PU/Data/attachment_mosin_pumount.emat"
     }
    }
    MeshParams {
     MeshParam PIP {
     }
-    MeshParam PUScope {
+    MeshParam PUScope_front_glass {
     }
     MeshParam PUScopeBase {
     }
-    MeshParam PUScope_front_glass {
+    MeshParam PUScopeRings {
+    }
+    MeshParam PUScope_real_rear_glass {
     }
     MeshParam PUScope_rear_glass {
     }
-    MeshParam PUScope_real_front_glass {
+    MeshParam PUScopeNew_SideKnob {
     }
-    MeshParam PUScope_real_rear_glass {
+    MeshParam PUScopeNew_TopKnob {
+    }
+    MeshParam PUScopeNew_Tube {
+    }
+    MeshParam PUScopeNew_TubePatch {
+    }
+    MeshParam PUScope_front_glass_opaque {
+    }
+    MeshParam "PUScope_front_glass_opaque_LOD0.001" {
     }
    }
    GeometryParams {
     GeometryParam UTM_mosin_firegeo {
-     LayerPreset "FireGeo"
      SurfaceProperties {
       "{3B2D2687F56BB4EF}Common/Materials/Game/WeaponParts/weapon_metal.gamemat"
      }

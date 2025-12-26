@@ -1,0 +1,944 @@
+AudioClass {
+ signals {
+  SignalClass "59405" {
+   id 59405
+   name "Signal Occlusion"
+   tl 572.091 -560
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   inputsport {
+    23 52
+   }
+   outputsport {
+    37
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+  SignalClass "60429" {
+   id 60429
+   name "Signal Surface"
+   tl 331.645 -354
+   res "{A7D67203F4146DC7}Sounds/_SharedData/Signals/OneSignal/Surface.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    1250
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    10000
+   }
+   path "{A7D67203F4146DC7}Sounds/_SharedData/Signals/OneSignal/Surface.sig"
+  }
+  SignalClass "61453" {
+   id 61453
+   name "Signal Reverb"
+   tl 998.381 -206.057
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   inputsport {
+    1 35 112
+   }
+   outputsport {
+    39 105 107 106 110
+   }
+   inputvalues {
+    100 0 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    100 1 1
+   }
+   path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+ }
+ sounds {
+  SoundClass "57353" {
+   id 57353
+   name "SOUND_BULLET_CASING"
+   version 5
+   tl 790.714 -277
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "62482:65" {
+       id 62482
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    48 0
+   }
+   priority 20
+   outState 58379
+   outStatePort 6151
+  }
+ }
+ selectors {
+  SelectorClass "56326" : "{F8F27BEEFF79417E}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletCasingsImpacts.conf" {
+   id 56326
+   name "Selector Surface"
+   version 5
+   tl 334.571 -276
+   parent "{F8F27BEEFF79417E}Sounds/_SharedData/Configs/Selector/Weapons/Selector_Weapons_BulletCasingsImpacts.conf"
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "60429:2" {
+       id 60429
+       port 2
+      }
+     }
+    }
+    ConnectionsClass "con:132921920" {
+     id 132921920
+     links {
+      ConnectionClass "18436:65" {
+       id 18436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:132921921" {
+     id 132921921
+     links {
+      ConnectionClass "18436:65" {
+       id 18436
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:168128003" {
+     id 168128003
+     links {
+      ConnectionClass "44036:65" {
+       id 44036
+       port 65
+      }
+      ConnectionClass "43012:65" {
+       id 43012
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:394279825" {
+     id 394279825
+     links {
+      ConnectionClass "17412:65" {
+       id 17412
+       port 65
+      }
+      ConnectionClass "22532:65" {
+       id 22532
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:847183085" {
+     id 847183085
+     links {
+      ConnectionClass "19460:65" {
+       id 19460
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1015906935" {
+     id 1015906935
+     links {
+      ConnectionClass "17412:65" {
+       id 17412
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1081337070" {
+     id 1081337070
+     links {
+      ConnectionClass "17412:65" {
+       id 17412
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1081337072" {
+     id 1081337072
+     links {
+      ConnectionClass "17412:65" {
+       id 17412
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1081337073" {
+     id 1081337073
+     links {
+      ConnectionClass "17412:65" {
+       id 17412
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1239820240" {
+     id 1239820240
+     links {
+      ConnectionClass "20484:65" {
+       id 20484
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   ports {
+    PortClass Asphalt1 {
+    }
+    PortClass Dirt1 {
+    }
+    PortClass Grass1 {
+    }
+    PortClass Asphal2 {
+    }
+    PortClass Dirt2 {
+    }
+    PortClass Asphalt3 {
+    }
+    PortClass Metal1 {
+    }
+    PortClass MetalMesh1 {
+    }
+    PortClass Asphalt4 {
+    }
+    PortClass Water {
+     volume_dB -1
+    }
+   }
+  }
+ }
+ mixers {
+  MixerClass "58379" {
+   id 58379
+   name "OutputState"
+   version 4
+   tl 1231.05 -278.85
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass "con:6151" {
+     id 6151
+     links {
+      ConnectionClass "57353:65" {
+       id 57353
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:197639" {
+     id 197639
+     links {
+      ConnectionClass "68637:65" {
+       id 68637
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:300039" {
+     id 300039
+     links {
+      ConnectionClass "66589:65" {
+       id 66589
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:301063" {
+     id 301063
+     links {
+      ConnectionClass "65565:65" {
+       id 65565
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:302087" {
+     id 302087
+     links {
+      ConnectionClass "67613:65" {
+       id 67613
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    239075329 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb_Small" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin" "VON_Reverb_Medium" "VON_Reverb_Large"
+   }
+  }
+ }
+ shaders {
+  ShaderClass "62482" {
+   id 62482
+   name "Shader"
+   version 5
+   tl 572.091 -278
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "64540:65" {
+       id 64540
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "40979:65" {
+       id 40979
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "63509:65" {
+       id 63509
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "56326:65" {
+       id 56326
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass "40979" : "{C97DEFA6B88F6DE9}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-55LUFS_to_-50LUFS.conf" {
+   id 40979
+   version 5
+   tl 63.937 308.28
+   parent "{C97DEFA6B88F6DE9}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-55LUFS_to_-50LUFS.conf"
+  }
+ }
+ frequency {
+  FrequencyClass "63509" : "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf" {
+   id 63509
+   version 5
+   tl 572.091 -364.444
+   parent "{CA912C59A9267045}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_Base.conf"
+   ins {
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "59405:37" {
+       id 59405
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass "17412" {
+   id 17412
+   name "Asphalt_7.62"
+   version 7
+   tl 58.111 -393.679
+   Volume -20
+   Pitch -2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_01.wav" {
+     Filename "{ECE9725A671F476F}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_02.wav" {
+     Filename "{75F7CBC37AF876FF}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_03.wav" {
+     Filename "{02FDA34B8E5A998F}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_04.wav" {
+     Filename "{053A591AE8DC234C}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_05.wav" {
+     Filename "{723031921C7ECC3C}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_06.wav" {
+     Filename "{EB2E880B0199FDAC}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_07.wav" {
+     Filename "{9C24E083F53B12DC}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_asphalt_762_08.wav" {
+     Filename "{E4A17CA9CC94882A}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_asphalt_762_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "18436" {
+   id 18436
+   name "Dirt_7.62"
+   version 7
+   tl 58.111 -293.596
+   Volume -20
+   Pitch -2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_dirt_762_01.wav" {
+     Filename "{32DBD104AB8650CB}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_02.wav" {
+     Filename "{ABC5689DB661615B}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_03.wav" {
+     Filename "{DCCF001542C38E2B}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_04.wav" {
+     Filename "{DB08FA44244534E8}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_05.wav" {
+     Filename "{AC0292CCD0E7DB98}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_06.wav" {
+     Filename "{351C2B55CD00EA08}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_07.wav" {
+     Filename "{421643DD39A20578}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_dirt_762_08.wav" {
+     Filename "{3A93DFF7000D9F8E}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_dirt_762_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "19460" {
+   id 19460
+   name "Grass+7.62"
+   version 7
+   tl 58.111 -190.179
+   Volume -20
+   Pitch -2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_grass_762_01.wav" {
+     Filename "{4A0CD732A7A57DD4}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_02.wav" {
+     Filename "{D3126EABBA424C44}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_03.wav" {
+     Filename "{A41806234EE0A334}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_04.wav" {
+     Filename "{A3DFFC72286619F7}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_05.wav" {
+     Filename "{D4D594FADCC4F687}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_06.wav" {
+     Filename "{4DCB2D63C123C717}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_07.wav" {
+     Filename "{3AC145EB35812867}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_grass_762_08.wav" {
+     Filename "{4244D9C10C2EB291}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_grass_762_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "20484" {
+   id 20484
+   name "Metal_7.62"
+   version 7
+   tl 58.111 -89.207
+   Volume -16
+   Pitch -2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_01.wav" {
+     Filename "{F07B6A679F5CC3AD}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_02.wav" {
+     Filename "{6965D3FE82BBF23D}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_03.wav" {
+     Filename "{1E6FBB7676191D4D}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_04.wav" {
+     Filename "{19A84127109FA78E}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_05.wav" {
+     Filename "{6EA229AFE43D48FE}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_06.wav" {
+     Filename "{F7BC9036F9DA796E}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_07.wav" {
+     Filename "{80B6F8BE0D78961E}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Sheet_762_08.wav" {
+     Filename "{F833649434D70CE8}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Sheet_762_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "22532" {
+   id 22532
+   name "MetalMesh_7.62"
+   version 7
+   tl 58.111 11.071
+   Volume -20
+   Pitch -2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_01.wav" {
+     Filename "{91AD6C2652E60D3F}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_02.wav" {
+     Filename "{08B3D5BF4F013CAF}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_03.wav" {
+     Filename "{7FB9BD37BBA3D3DF}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_04.wav" {
+     Filename "{787E4766DD25691C}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_05.wav" {
+     Filename "{0F742FEE2987866C}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_06.wav" {
+     Filename "{966A96773460B7FC}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_07.wav" {
+     Filename "{E160FEFFC0C2588C}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Metal_Mesh_762_08.wav" {
+     Filename "{99E562D5F96DC27A}Sounds/Weapons/_SharedData/Shells/Samples/7_62/Weapons_Shells_Metal_Mesh_762_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "43012" {
+   id 43012
+   name "Water_Out"
+   version 7
+   tl 58.111 208.778
+   Volume -21
+   Pitch -2
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_Water_556_Out_01.wav" {
+     Filename "{7C9EB5A779236D0F}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_Out_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_Out_02.wav" {
+     Filename "{E5800C3E64C45C9F}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_Out_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_Out_03.wav" {
+     Filename "{928A64B69066B3EF}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_Out_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_Out_04.wav" {
+     Filename "{954D9EE7F6E0092E}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_Out_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_Out_05.wav" {
+     Filename "{E247F66F0242E65E}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_Out_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "44036" {
+   id 44036
+   name "Water_In"
+   version 7
+   tl 60.111 109.222
+   Volume -27
+   Pitch -2
+   "Pitch variance" 2
+   Samples {
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_01.wav" {
+     Filename "{B03B4D715607F146}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_01.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_02.wav" {
+     Filename "{2925F4E84BE0C0D6}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_02.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_03.wav" {
+     Filename "{5E2F9C60BF422FA6}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_03.wav"
+     Probability 100
+     Index 2
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_04.wav" {
+     Filename "{59E86631D9C49567}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_04.wav"
+     Probability 100
+     Index 3
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_05.wav" {
+     Filename "{2EE20EB92D667A17}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_05.wav"
+     Probability 100
+     Index 4
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_06.wav" {
+     Filename "{B7FCB72030814B87}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_06.wav"
+     Probability 100
+     Index 5
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_07.wav" {
+     Filename "{C0F6DFA8C423A4F7}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_07.wav"
+     Probability 100
+     Index 6
+     SampleMetadata ""
+    }
+    AudioBankSampleClass "Weapons_Shells_Water_556_In_08.wav" {
+     Filename "{B8734382FD8C3E01}Sounds/Weapons/_SharedData/Shells/Samples/5_56/Weapons_Shells_Water_556_In_08.wav"
+     Probability 100
+     Index 7
+     SampleMetadata ""
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass "64540" {
+   id 64540
+   name "Spatiality 3D"
+   version 5
+   tl 572.091 -640.184
+   spatialFactor 1
+  }
+ }
+ auxOuts {
+  AuxOutClass "65565" {
+   id 65565
+   name "AuxOut Rev Medium"
+   version 5
+   tl 1001.035 118.333
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "57353:5" {
+       id 57353
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "61453:106" {
+       id 61453
+       port 106
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "61453:39" {
+       id 61453
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 301063
+  }
+  AuxOutClass "66589" {
+   id 66589
+   name "AuxOut Rev Small"
+   version 5
+   tl 1001.035 -9.667
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "57353:5" {
+       id 57353
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "61453:107" {
+       id 61453
+       port 107
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "61453:39" {
+       id 61453
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 300039
+  }
+  AuxOutClass "67613" {
+   id 67613
+   name "AuxOut Rev Large"
+   version 5
+   tl 1001.035 246.333
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "57353:5" {
+       id 57353
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "61453:110" {
+       id 61453
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "61453:39" {
+       id 61453
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 302087
+  }
+  AuxOutClass "68637" {
+   id 68637
+   name "AuxOut Rev Exterior"
+   version 5
+   tl 1001.002 371.177
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "57353:5" {
+       id 57353
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "61453:105" {
+       id 61453
+       port 105
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 197639
+  }
+ }
+ groups {
+  GroupClass {
+   id 55299
+   name "Sounds/Weapons/_SharedData/Shells/Weapon_Shells_Template.acp"
+   children {
+    56326 57353 58379 59405 60429 61453 62482 63509 64540 65565 66589 67613 68637
+   }
+   parent -1
+   Color 1 0.502 0 0.1
+  }
+ }
+ version 1
+ sourcesLimit 2
+}

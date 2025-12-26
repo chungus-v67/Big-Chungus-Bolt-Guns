@@ -16,7 +16,7 @@ AnimSrcGraphFile {
      Looptype "No Loop"
     }
     AnimSrcNodeSource RackBoltAnim {
-     EditorPos 20.6 18.717
+     EditorPos 11.736 16.935
      Source "Reload.Reload_RackBolt"
      Looptype "No Loop"
      BonesInterpolatedInModelSpace {
@@ -42,9 +42,9 @@ AnimSrcGraphFile {
      EditorPos 5.7 13.3
      states {
       AnimSrcNodeState MagReload {
-       EditorPos 13.691 17.194
+       EditorPos 8.862 15.448
        Child "MagReloadSTM 13459"
-       StartCondition "!IsCommand(CMD_BC_WeaponRackBolt)"
+       StartCondition "!IsCommand(CMD_BC_WeaponRackBolt) && GetCommandI(CMD_BC_BoltActionReload) != -1"
        TimeStorage "Real Time"
        IsExit 1
       }
@@ -52,11 +52,26 @@ AnimSrcGraphFile {
        Tags {
         "TagRackBolt"
        }
-       EditorPos 20.5 16.8
+       EditorPos 11.696 15.396
        Child "RackBoltAnim"
        StartCondition "IsCommand(CMD_BC_WeaponRackBolt)"
        TimeStorage "Real Time"
        IsExit 1
+      }
+      AnimSrcNodeState "State 10869" {
+       EditorPos 5.768 15.468
+       Child "Event 27609"
+       StartCondition "!IsCommand(CMD_BC_WeaponRackBolt) && GetCommandI(CMD_BC_BoltActionReload) == -1"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{673557BD65BFF90C}" {
+       FromState "State 10869"
+       ToState "MagReload"
+       Condition "true"
+       PostEval 1
       }
      }
     }
@@ -79,19 +94,19 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodeQueue "Queue 1" {
-     EditorPos -4 5.7
+     EditorPos -3.985 5.74
      Child "Blend 1"
      QueueItems {
       AnimSrcNodeQueueItem "{5196ADA7F769B195}" {
        Child "Firing_STM"
        StartExpr "true"
        InterruptExpr "HasVariableChanged(State)"
-       EnqueueMethod Ignore
+       EnqueueMethod Enqueue
       }
       AnimSrcNodeQueueItem "{5538C86ED529BB5A}" {
        Child "ModeIK 2"
        StartExpr "HasVariableChanged(State)"
-       EnqueueMethod Ignore
+       EnqueueMethod InterruptAll
       }
      }
     }
@@ -273,16 +288,17 @@ AnimSrcGraphFile {
      EditorPos 13.4 6.7
      states {
       AnimSrcNodeState ModeOn {
-       EditorPos 11.5 7.9
+       EditorPos 11.487 7.9
        Child "Blend 22457"
        StartCondition "HasVariableChangedTo(State, -1) "
        TimeStorage "Real Time"
        IsExit 1
       }
       AnimSrcNodeState ModeOff {
-       EditorPos 15.1 7.9
+       EditorPos 16.324 7.926
        Child "Blend 13147"
-       StartCondition "HasVariableChangedTo(State, 0) "
+       StartCondition "HasVariableChangedTo(State, 2) || HasVariableChangedTo(State, 1) "
+       StartTime "1.0"
        TimeStorage "Real Time"
        IsExit 1
       }
@@ -366,23 +382,23 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodeStateMachine Firing_STM {
-     EditorPos -4.1 7.5
+     EditorPos -4.087 7.513
      states {
       AnimSrcNodeState SlideOpen {
        Tags {
         "TagBoltBack"
        }
-       EditorPos -0.5 8.7
+       EditorPos -0.487 8.713
        Child "Queue 2"
        StartCondition "true && Empty"
       }
       AnimSrcNodeState SlideClosed {
-       EditorPos -7.5 8.7
+       EditorPos -7.487 8.713
        Child "Queue 3"
        StartCondition "true && !Empty"
       }
       AnimSrcNodeState FireLast {
-       EditorPos -4.1 8.7
+       EditorPos -4.087 8.713
        Child "FireLastAnim_1"
        TimeStorage "Real Time"
       }
@@ -431,7 +447,7 @@ AnimSrcGraphFile {
      Optimization "Always eval both"
     }
     AnimSrcNodeSource InspectionOut {
-     EditorPos -23.8 5.6
+     EditorPos -23.537 5.613
      Source "Inspection.LeftInspectionOut"
     }
     AnimSrcNodeEvent Sound_Inspect_In {
@@ -763,7 +779,7 @@ AnimSrcGraphFile {
         "TagWeaponReload"
        }
        EditorPos 4.7 1
-       Child "Blend T 1"
+       Child "ModeIK 18720"
        StartCondition ""
        TimeStorage "Real Time"
        IsExit 1
@@ -828,7 +844,7 @@ AnimSrcGraphFile {
        FromState "Reload"
        ToState "BufferPass6"
        Duration "0.3"
-       Condition "(RemainingTimeLess(0.01)|| GetCommandI(CMD_Weapon_Reload) == -20) && WeaponInspectionState == 0"
+       Condition "RemainingTimeLess(0.01) && WeaponInspectionState == 0"
        BlendFn "Ease In"
        PostEval 1
       }
@@ -836,7 +852,7 @@ AnimSrcGraphFile {
        FromState "WeaponInspection"
        ToState "BufferPass3"
        Duration "0.8"
-       Condition "RemainingTimeLess(0.25) || WeaponInspectionState == -2 || WeaponInspectionState == 0"
+       Condition "RemainingTimeLess(0.25) || WeaponInspectionState == -2"
        PostEval 1
       }
       AnimSrcNodeTransition "{5A1083911CE2AB3C}" {
@@ -875,7 +891,7 @@ AnimSrcGraphFile {
        FromState "Reload"
        ToState "BufferPass6"
        Duration "0.3"
-       Condition " (RemainingTimeLess(0.5) || GetCommandI(CMD_Weapon_Reload) == -20) &&  WeaponInspectionState != 0"
+       Condition "RemainingTimeLess(0.5) &&  WeaponInspectionState != 0"
        BlendFn "Ease In"
        PostEval 1
       }
@@ -905,7 +921,7 @@ AnimSrcGraphFile {
      Optimization "Skip blended out"
     }
     AnimSrcNodeBlend "Blend 13147" {
-     EditorPos 15.9 9.8
+     EditorPos 15.911 9.789
      BlendWeight "WeaponDeployed"
      Child0 "ModeOffSrc"
      Child1 "ModeOffDepSrc"
@@ -1015,36 +1031,29 @@ AnimSrcGraphFile {
      Child "MasterControl"
     }
     AnimSrcNodeStateMachine "MagReloadSTM 13459" {
-     EditorPos 13.66 20.647
+     EditorPos 8.846 18.888
      states {
       AnimSrcNodeState OpenBolt {
-       EditorPos 11.118 22.788
+       EditorPos 6.304 21.029
        Child "Source 20480"
-       StartCondition "GetCommandI(CMD_BC_BoltActionReload) != -1"
+       StartCondition "true"
        TimeStorage "Real Time"
       }
       AnimSrcNodeState InsertRounds {
-       EditorPos 13.826 24.753
+       EditorPos 9.012 22.994
        Child "Source 23723"
        TimeStorage "Real Time"
       }
       AnimSrcNodeState "Close Bolt" {
-       EditorPos 16.77 22.879
+       EditorPos 11.956 21.12
        Child "Source 21219"
        TimeStorage "Real Time"
        IsExit 1
       }
       AnimSrcNodeState InsertStripper {
-       EditorPos 13.746 21.91
+       EditorPos 8.932 20.151
        Child "Source 33947"
        TimeStorage "Real Time"
-      }
-      AnimSrcNodeState EmergencyFixMag {
-       EditorPos 7.241 22.727
-       Child "Event 37901"
-       StartCondition "GetCommandI(CMD_BC_BoltActionReload) == -1"
-       TimeStorage "Real Time"
-       IsExit 1
       }
      }
      transitions {
@@ -1060,9 +1069,10 @@ AnimSrcGraphFile {
        FromState "InsertRounds"
        ToState "Close Bolt"
        Duration "0.1"
-       Condition "IsCommand(CMD_BC_TransitionUnlock) && "\
+       Condition "IsCommand(CMD_BC_TransitionUnlock) && ("\
        "GetCommandI(CMD_BC_TransitionUnlock) == BC_BoltActionReloadAmmoCount ||"\
-       "GetCommandI(CMD_BC_TransitionUnlock) == -1"
+       "GetCommandI(CMD_BC_TransitionUnlock) == -1 ||"\
+       "BC_InterruptReload == true)"
        PostEval 1
       }
       AnimSrcNodeTransition "{66F2ECB7BE1AE431}" {
@@ -1082,49 +1092,95 @@ AnimSrcGraphFile {
      }
     }
     AnimSrcNodeSource "Source 20480" {
-     EditorPos 11.244 26.292
+     EditorPos 6.43 24.533
      Source "Reload.Reload_OpenBolt"
      BonesInterpolatedInModelSpace {
       "RightHandProp"
      }
     }
     AnimSrcNodeSource "Source 23723" {
-     EditorPos 13.819 26.207
+     Tags {
+      "BC_TagIsLoadingAmmo"
+     }
+     EditorPos 9.032 24.458
      Source "Reload.Reload_InsertRounds"
      BonesInterpolatedInModelSpace {
       "RightHandProp"
      }
     }
     AnimSrcNodeSource "Source 21219" {
-     EditorPos 16.717 26.242
+     EditorPos 11.903 24.483
      Source "Reload.Reload_CloseBolt"
     }
     AnimSrcNodeSource "Source 33947" {
-     EditorPos 13.727 22.905
+     EditorPos 8.913 21.146
      Source "Reload.Reload_InsertStripper"
     }
-    AnimSrcNodeEvent "Event 37901" {
-     EditorPos 7.267 23.745
-     Child "RackBoltAnim 34970"
+    AnimSrcNodeIK2 "ModeIK 18720" {
+     EditorPos 10.046 0.349
+     Child "ModesIKTarget 28109"
+     Chains {
+      AnimSrcIkBinding "{551C9263359110AC}" {
+       IkTarget "RPropTarget"
+       IkChain "LeftArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{5B20F094EFDD0AB2}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeBlendT "ModesBufferB 40538" {
+     EditorPos 9.846 2.349
+     BlendTime "0"
+     Condition "true"
+     Child0 "Buffer Use 42110"
+     Child1 "WeaponReloadStanceSTM"
+     Optimization "Always eval both"
+     SelectMainPath 1
+     PostEval 1
+    }
+    AnimSrcNodeIK2Target "ModesIKTarget 28109" {
+     EditorPos 10.046 1.349
+     Child "ModesBufferB 40538"
+     Chains {
+      AnimSrcIkTargetBinding "{551C9263EBA2B7C7}" {
+       IkTarget "RPropTarget"
+       IkChain "RightArmProp"
+       LocalSpaceOffset AnimSrcTransformOffset "{60DCB7D6EF31D87B}" {
+        Position 0 0 0
+        Rotation 0 0 0
+        Pose "Reload.IKOffset"
+        FromBone "righthandprop"
+        ToBone "lefthand"
+        FromFrame 0
+        ToFrame 0
+        BonesAreInModelSpace 0
+       }
+      }
+     }
+    }
+    AnimSrcNodeBufferUse "Buffer Use 42110" {
+     EditorPos 7.246 2.649
+     BufferName "FullBody"
+    }
+    AnimSrcNodeEvent "Event 27609" {
+     EditorPos 5.934 16.875
+     Child ""
      Events {
       AnimSrcEventGeneric "{66FCE96B2C9123F0}" {
        Name "Weapon_SpawnMagazine"
-       InitOnly 0
        Condition "true"
       }
       AnimSrcEventGeneric "{66FCE96B62457A97}" {
        Name "Weapon_AttachMagazine"
-       InitOnly 0
        Condition "true"
       }
-     }
-    }
-    AnimSrcNodeSource "RackBoltAnim 34970" {
-     EditorPos 7.266 26.437
-     Source "Reload.Reload_RackBolt"
-     Looptype "No Loop"
-     BonesInterpolatedInModelSpace {
-      "RightHandProp"
+      AnimSrcEventGeneric "{67352D10E796DB08}" {
+       Name "BC_ResetMagazine"
+       Condition "true"
+      }
      }
     }
    }

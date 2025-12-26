@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9EE4A47D49D3805F}Sounds/Weapons/Rifles/AK-74/BC_Weapons_Rifles_Mosin_Shot_Suppressed_SuperSonic.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

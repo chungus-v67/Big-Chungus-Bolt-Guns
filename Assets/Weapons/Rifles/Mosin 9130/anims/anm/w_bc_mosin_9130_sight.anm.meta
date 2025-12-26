@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{98B89FEF2B16096B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_sight.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "mosin_26.blend"
+   SourcePath "mosin_31.blend"
    SourceProfile "723_Weapon_Sight"
   }
   TXAResourceClass XBOX_ONE : PC {

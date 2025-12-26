@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{D26B1C408C480186}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_nagant_9130_insp_cro_left_to_right.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "Mosin_Nagant_9130_Inspection_Animations_10.blend"
+   SourceProfile "240_UpperbodyADD_HeadADD_ArmsABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

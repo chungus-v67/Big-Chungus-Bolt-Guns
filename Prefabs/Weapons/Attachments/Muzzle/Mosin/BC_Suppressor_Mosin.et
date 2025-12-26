@@ -1,0 +1,47 @@
+GenericEntity : "{5677861A692ED3EB}Prefabs/Weapons/Attachments/Muzzle/Suppressor_PBS4/Suppressor_PBS4_base.et" {
+ ID "4BA426CBAED42A14"
+ components {
+  InventoryItemComponent "{52627A1F45CD4EB6}" {
+   Attributes SCR_ItemAttributeCollection "{52627A1EBB0698FD}" {
+    ItemDisplayName UIInfo "{618A843C8BC776C7}" {
+     Name "Mosin 91/30 Bramit Suppressor"
+     Description "Soviet made Mosin Nagant suppressor."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{618A8428E1E08833}" {
+     Weight 0.51
+    }
+    CustomAttributes {
+     SCR_WeaponAttachmentSuppressorAttributes "{5284D858FFF9BE66}" {
+      AttachmentType BCC_AttachmentMuzzleMosin "{618A843CE28C7529}" {
+      }
+     }
+     SCR_WeaponAttachmentObstructionAttributes "{61B08C885494492B}" {
+      AttachmentType BCC_AttachmentMuzzleMosin "{61B08C8FA3FA3ADE}" {
+      }
+      m_aObstructedAttachmentTypes {
+       BCC_AttachmentBayonetMosin "{61B485C90019DB63}" {
+       }
+      }
+     }
+    }
+   }
+  }
+  MeshObject "{5C46D45E03D7AD12}" {
+   Object "{53C073EDEDABF3A8}Assets/Weapons/Attachments/Suppressors/BC_Mosin_Suppressor.xob"
+  }
+  ActionsManagerComponent "{5284E0EFF569AD07}" {
+   additionalActions {
+    SCR_AttachementAction "{618A842EE43D889E}" {
+     UIInfo UIInfo "{5CB8A0964428CA7A}" {
+      Name "Detach: "
+     }
+    }
+    SCR_AttachItemFromInventoryAction "{618A842E0B4638A3}" {
+     UIInfo UIInfo "{5CB8A09647770950}" {
+      Name "Attach: "
+     }
+    }
+   }
+  }
+ }
+}

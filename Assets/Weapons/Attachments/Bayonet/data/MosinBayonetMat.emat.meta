@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{539D3193AE73F136}Assets/Weapons/Attachments/Bayonet/data/MosinBayonetMat.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

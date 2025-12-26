@@ -68,7 +68,7 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
    Resource "{98B89FEF2B16096B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_sight.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
-   Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
+   Resource "{3B1AAE89D3A239C3}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_on.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Off" {
    Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
@@ -77,7 +77,7 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
    Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_On" {
-   Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
+   Resource "{3B1AAE89D3A239C3}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_on.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.BoltPose" {
    Resource "{00A3F5323EFA460A}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_bolt_pose.anm"
@@ -93,6 +93,42 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
   }
   AnimSetInstanceSource_Line "Reload.Erc.Reload_InsertStripper" {
    Resource "{1D788A53589401C0}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_insert_stripper.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.LeftInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Cro.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.CroRas.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Erc.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.ErcRas.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.Pne.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionOut" {
+   Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{59F8875C18E23C38}" {

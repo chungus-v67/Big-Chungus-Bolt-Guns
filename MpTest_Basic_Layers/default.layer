@@ -116,6 +116,12 @@ $grp GenericEntity : "{08DB30914359361E}Prefabs/Weapons/Magazines/BC_Magazine_76
   coords 130.817 1 128.562
  }
 }
+GenericEntity : "{3B96FAC169E27037}Prefabs/Weapons/Attachments/Muzzle/Suppressor_PBS4/Suppressor_PBS4.et" {
+ coords 131.941 1 129.755
+}
+GameEntity : "{4788E8C5C04D2A49}Prefabs/Weapons/Attachments/Bayonets/BC_Bayonet_Mosin.et" {
+ coords 131.635 1 129.89
+}
 SCR_SpawnPoint : "{4FEA25583D0975F7}Prefabs/MP/Spawning/SpawnPoint_USSR.et" {
  coords 128 1 129
  angles 0 -180 0
@@ -125,6 +131,9 @@ SCR_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
 }
 GenericEntity : "{6EDAE05DF7CC8E78}Prefabs/Weapons/Rifles/M14/Rifle_M21_OliveGreen_Sand_Stripes.et" {
  coords 129.63 1 129.828
+}
+GenericEntity : "{8231579E96735D40}Prefabs/Weapons/Attachments/Muzzle/Mosin/BC_Suppressor_Mosin.et" {
+ coords 131.53 1.022 129.366
 }
 SoundWorld : "{8A8604E158704937}Prefabs/Sounds/SoundWorld/SoundWorld_Eden.et" {
  coords 112.224 1 139.175
@@ -169,12 +178,27 @@ SCR_LoadoutManager LoadoutManager : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loado
   }
  }
 }
+GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayonet_6Kh4.et" {
+ coords 130.858 1 130.973
+}
 SCR_MPDestructionManager : "{9BB369F2803C6F71}Prefabs/MP/MPDestructionManager.et" {
  coords 0 0 0
 }
 GameEntity : "{A03B33641708422A}Prefabs/Weapons/Attachments/Optics/Optic_PU/BC_Optic_PU.et" {
  coords 129.797 1 128.006
 }
+GameEntity : "{A3E996BF5DD24564}Prefabs/Weapons/Attachments/Bayonets/Bayonet_VZ58/Bayonet_VZ58_base.et" {
+ coords 132.223 1 129.332
+}
+GenericEntity : "{BE62E95430C0E28F}Prefabs/Structures/Walls/Brick/BrickWall_02/dst/Brick_wall_02_2m_dst_01_base.et" {
+ coords 129.565 1 126.921
+}
 GenericEntity : "{C1B4F7B87B720EE8}Prefabs/Weapons/Rifles/Mosin/BC_Rifle_Mosin_Nagant_9130.et" {
  coords 130.165 1.006 128.171
+}
+GameEntity : "{F4B9ADFE20D0D6B8}Prefabs/Weapons/Attachments/Bayonets/Bayonet_VZ58/Bayonet_VZ58_v2.et" {
+ coords 132.221 1 129.718
+}
+GenericEntity : "{FA5C25BF66A53DCF}Prefabs/Weapons/Rifles/AK74/Rifle_AK74.et" {
+ coords 128.602 1 128.276
 }

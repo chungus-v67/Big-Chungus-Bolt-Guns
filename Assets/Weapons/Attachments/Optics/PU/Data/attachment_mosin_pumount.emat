@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{8E376868692F68C8}Assets/Weapons/Attachments/Optics/PU/Data/Textures/attachment_mosin_pumount_BCR.edds"
+ NMOMap "{B6EFD3FAB0583A56}Assets/Weapons/Attachments/Optics/PU/Data/Textures/attachment_mosin_pumount_NMO.edds"
+}

@@ -1,0 +1,5 @@
+MatPBRBasic "{7B50711CA2035091}Assets/Weapons/Attachments/Suppressors/data/bramit_mosin_suppressor.emat" {
+ Emissive 0 0 0 1
+ BCRMap "{DF9F765E43EF8D96}Assets/Weapons/Attachments/Suppressors/data/Textures/bramit_mosin_suppressor_BCR.edds"
+ NMOMap "{E747CDCC9A98DF08}Assets/Weapons/Attachments/Suppressors/data/Textures/bramit_mosin_suppressor_NMO.edds"
+}

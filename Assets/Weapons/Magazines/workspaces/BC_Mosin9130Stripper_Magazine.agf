@@ -64,7 +64,7 @@ AnimSrcGraphFile {
      Column "Pne"
     }
     AnimSrcNodeSource InsertMagAnim {
-     EditorPos -4.461 -13.732
+     EditorPos -4.451 -13.732
      Source "Reload.Reload_InsertRounds"
     }
     AnimSrcNodeStateMachine MagReloadSTM {

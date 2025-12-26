@@ -61,6 +61,8 @@ AnimSrcGraph {
    }
    AnimSrcGCTVarBool BC_IsStripperClipReload {
    }
+   AnimSrcGCTVarBool BC_InterruptReload {
+   }
   }
   Commands {
    AnimSrcGCTCmd CMD_Weapon_Reload {

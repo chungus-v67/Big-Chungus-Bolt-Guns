@@ -1,36 +1,43 @@
 $animation "" {
  #version 2
  #fps 30
- #numFrames 165
- $node "w_bolt_rear" {
-  $keys t q s {
-   $frame 0 165 {
-    #t 0 0.099071 -0.0817779
+ #numFrames 152
+ $node "w_safety" {
+  $keys t q {
+   $frame 0 152 {
+    #t 0.0184825 0.0664719 -0.1216693
    }
   }
   $node "w_bolt" {
-   $keys t q s {
-    $frame 0 165 {
-     #t 0 0 0.0770658
-     #q 0.00000005 0.00000015 0.70710701 0.70710671
+   $keys t q {
+    $frame 0 152 {
+     #t -0 0.0990707 -0.0047122
+     #q 0.00000037 -0.00000025 0.70710707 0.70710671
+    }
+   }
+  }
+  $node "w_bolt_slide" {
+   $keys t {
+    $frame 0 152 {
+     #t 0.0184825 0.0664719 0.0208135
     }
    }
   }
  }
  $events {
-  #event 30 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 30  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
-  #event 36 "BC_InsertRound0" "AnimSrcEventGeneric {  Name \"BC_InsertRound0\"  MainPathOnly 0  Frame 36  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 63 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 63  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
-  #event 69 "BC_InsertRound1" "AnimSrcEventGeneric {  Name \"BC_InsertRound1\"  MainPathOnly 0  Frame 69  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 96 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 96  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
-  #event 102 "BC_InsertRound2" "AnimSrcEventGeneric {  Name \"BC_InsertRound2\"  MainPathOnly 0  Frame 102  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 133 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 133  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
-  #event 139 "BC_InsertRound3" "AnimSrcEventGeneric {  Name \"BC_InsertRound3\"  MainPathOnly 0  Frame 139  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 159 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 159  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
-  #event 165 "BC_InsertRound4" "AnimSrcEventGeneric {  Name \"BC_InsertRound4\"  MainPathOnly 0  Frame 165  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 27 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 27  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
+  #event 33 "BC_InsertRound0" "AnimSrcEventGeneric {  Name \"BC_InsertRound0\"  MainPathOnly 0  Frame 33  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 58 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 58  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
+  #event 64 "BC_InsertRound1" "AnimSrcEventGeneric {  Name \"BC_InsertRound1\"  MainPathOnly 0  Frame 64  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 89 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 89  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
+  #event 94 "BC_InsertRound2" "AnimSrcEventGeneric {  Name \"BC_InsertRound2\"  MainPathOnly 0  Frame 94  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 119 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 119  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
+  #event 128 "BC_InsertRound3" "AnimSrcEventGeneric {  Name \"BC_InsertRound3\"  MainPathOnly 0  Frame 128  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 146 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 146  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
+  #event 152 "BC_InsertRound4" "AnimSrcEventGeneric {  Name \"BC_InsertRound4\"  MainPathOnly 0  Frame 152  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
  $custProps {
   #custProp "profile" "bc_mosin_bolt"
-  #custProp "sourceFile" "Mosin_9130_char_anims_standing_33.blend"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_60.blend"
  }
 }

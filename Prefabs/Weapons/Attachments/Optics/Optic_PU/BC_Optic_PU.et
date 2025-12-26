@@ -35,39 +35,50 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
   }
   SCR_2DPIPSightsComponent "{5D0CC83435B55855}" {
    SightsPosition PointInfo "{5D0CC83435B55853}" {
+    Offset 0 0 0
    }
    SightsRanges {
     SightRangeInfo "{5D0CCDD062A62502}" {
-     Range 0.075 100
+     Range 0.076 100
     }
     SightRangeInfo "{5D0CCDD062A62503}" {
-     Range 0.11 200
+     Range 0.137 200
     }
     SightRangeInfo "{5D0CCDD062A62500}" {
-     Range 0.178 300
+     Range 0.215 300
     }
     SightRangeInfo "{5D0CCDD062A62501}" {
-     Range 0.247 400
+     Range 0.315 400
     }
     SightRangeInfo "{5D0CCDD062A657C3}" {
-     Range 0.33 500
+     Range 0.41 500
     }
     SightRangeInfo "{5D0CCDD062A657DC}" {
-     Range 0.41 600
+     Range 0.545 600
     }
     SightRangeInfo "{5D0CCDD062A657DD}" {
-     Range 0.515 700
+     Range 0.69 700
     }
     SightRangeInfo "{61E925D6409B78B4}" {
-     Range 0.62 800
+     Range 0.865 800
     }
     SightRangeInfo "{61E925D640FFAAA3}" {
-     Range 0.76 900
+     Range 1.06 900
     }
     SightRangeInfo "{61E925D640D4080B}" {
-     Range 0.915 1000
+     Range 1.303 1000
+    }
+    SightRangeInfo "{671D38EF22288D1D}" {
+     Range 1.582 1100
+    }
+    SightRangeInfo "{671D38EF2270B5FF}" {
+     Range 1.91 1200
+    }
+    SightRangeInfo "{671D38EF23B7F4A6}" {
+     Range 2.29 1300
     }
    }
+   SightsRangesDefaultIndex 0
    SightsFOVInfo SCR_SightsZoomFOVInfo "{5D0CCDD062A657D9}" {
     m_fBaseZoom 3.5
     m_fZoomMax 3.5
@@ -75,21 +86,28 @@ GameEntity : "{F7592BD37116D7C3}Prefabs/Weapons/Attachments/Optics/Optic_ARTII/O
    }
    SightsPointFront PointInfo "{5D0CCDD062A657DB}" {
     PivotID "optic_front"
+    Offset 0 0 0.4586
    }
    SightsPointRear PointInfo "{5D0CCDD062A657D5}" {
     PivotID "optic_rear"
    }
+   SoundInt 10001
+   m_iOpticDOFDistanceScale -1
    m_sReticleTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
    m_sReticleGlowTexture "{420DCE41F41A61CC}UI/Textures/Sights/pu_scope_Reticle.edds"
    m_fMagnification 3.5
+   m_fReticleAngularSize 1
    m_fReticleBaseZoom 3.5
-   m_eZeroingType EPZ_CAMERA_TURN
-   m_fReticleOffsetX -0.065
-   m_vCameraOffset -0.002 0.01 0
-   m_vCameraAngles 0 0.003 0
+   m_fADSActivationPercentage 0.7
+   m_eZeroingType EPZ_RETICLE_OFFSET
+   m_fReticleOffsetX -0.0278
+   m_vCameraOffset 0 0 0
+   m_vCameraAngles 0 0 0
+   m_fMainCameraFOV 30
    m_rScopeHDRMatrial "{1725299A966C713F}Assets/Weapons/Attachments/Optics/ARTII/Data/Optic_PU_HDR.emat"
+   m_fCenterDistance 0.017
    m_fBasicParallax 1
-   m_fScopeRadius 0.01
+   m_fScopeRadius 0.01285
    m_fReticlePIPScale 0.8
    m_fObjectivePIPEdgeMin 3
    m_fObjectivePIPEdgeMax 4.5
