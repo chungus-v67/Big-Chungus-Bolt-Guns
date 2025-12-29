@@ -45,7 +45,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
     AttachmentSlotComponent "{5472D21A19B61CDF}" {
      AttachmentSlot InventoryStorageSlot Scope {
       MergePhysics 1
-      Enabled 0
+      Enabled 1
       Prefab "{A03B33641708422A}Prefabs/Weapons/Attachments/Optics/Optic_PU/BC_Optic_PU.et"
      }
      AttachmentObstructs 0
@@ -203,6 +203,15 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
        }
       }
      }
+     UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
+      m_MagIndicator SCR_MagazineIndicatorConfiguration "{566AAE86623829AF}" {
+       m_sOutline "firemode-rifle-auto"
+       m_sBackground "firemode-rifle-auto"
+       m_sProgress "firemode-rifle-auto"
+       m_sProgressAlphaMask "firemode-rifle-auto"
+       m_sEmptyMagazine "firemode-rifle-auto"
+      }
+     }
      OutOfADSWhileReloading 1
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
       SyncAnims 1
@@ -228,19 +237,26 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      SleepAfterInactivity 0
      m_sCasingEjectionAnimation "{38D9CB344FD6151E}Particles/Weapon/BC_Casing_762x54_Mosin.ptc"
      m_sBulletEjectionAnimation "{AD3B468EEB50A4E2}Particles/Weapon/BC_Bullet_762x54_Mosin.ptc"
-     m_bAcceptsStripperClips 0
+     m_bAcceptsStripperClips 1
      m_effectPosition PointInfo "{623D52BFD8956F4B}" {
       PivotID "slot_magazine"
       Offset 0.022 0.0408 0.0493
       Angles 0 70 0
      }
      m_bClickToRack 1
-     m_bEjectLiveRounds 0
+     m_bEjectLiveRounds 1
     }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "Mosin Nagant 91/30"
     Description "7.62x54mm bolt action sniper rifle."
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{565ECA2FE3F0F3FB}" {
+     m_sOutline "firemode-rifle-auto"
+     m_sBackground "firemode-rifle-auto"
+     m_sProgress "firemode-rifle-auto"
+     m_sProgressAlphaMask "firemode-rifle-auto"
+     m_sEmptyMagazine "firemode-rifle-auto"
+    }
    }
   }
   ActionsManagerComponent "{A29AE67FF4D82B0F}" {

@@ -63,6 +63,9 @@ AnimSrcGraph {
    }
    AnimSrcGCTVarBool BC_InterruptReload {
    }
+   AnimSrcGCTVarBool BC_IsCocked {
+    DefaultValue 1
+   }
   }
   Commands {
    AnimSrcGCTCmd CMD_Weapon_Reload {

@@ -1,4 +1,4 @@
-AnimSetInstanceSource "{66DF7C6915B14623}" {
+AnimSetInstanceSource "{673A352B160935C7}" {
  Template "{79F763F5AE99184C}Assets/Weapons/Rifles/workspaces/bc_mosin_test.ast"
  Lines {
   AnimSetInstanceSource_Line "Reload.Erc.Fire" {
@@ -32,7 +32,7 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
    Resource "{98B89FEF2B16096B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_sight.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Safety" {
-   Resource "{00A3F5323EFA460A}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_bolt_pose.anm"
+   Resource "{3D476A20771BFA23}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Safety" {
    Resource "{3D476A20771BFA23}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_safety.anm"
@@ -67,16 +67,16 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
   AnimSetInstanceSource_Line "Reload.Pne.Idle_finger" {
    Resource "{98B89FEF2B16096B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_sight.anm"
   }
-  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_Off" {
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Safety_Off" {
+   Resource "{663CE3733A6DEEFB}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Safety_Off" {
+   Resource "{663CE3733A6DEEFB}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_off.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Switch_Safety_On" {
    Resource "{3B1AAE89D3A239C3}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_on.anm"
   }
-  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_Off" {
-   Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
-  }
-  AnimSetInstanceSource_Line "Reload.Pne.Switch_Mode_On" {
-   Resource "{814E9C67D6914EB0}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_switch_mode.anm"
-  }
-  AnimSetInstanceSource_Line "Reload.Erc.Switch_Mode_On" {
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Safety_On" {
    Resource "{3B1AAE89D3A239C3}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_on.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.BoltPose" {
@@ -129,6 +129,18 @@ AnimSetInstanceSource "{66DF7C6915B14623}" {
   }
   AnimSetInstanceSource_Line "Inspection.PneRas.RightInspectionOut" {
    Resource "{64C0B93BCA8C9AC5}Assets/Weapons/Rifles/M14/anims/anm/w_rfl_M21_switch_mode_empty.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Safety_WeaponOnly" {
+   Resource "{3D476A20771BFA23}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Pne.Safety_WeaponOnly" {
+   Resource "{3D476A20771BFA23}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_safety.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Safety_On_Cocked" {
+   Resource "{59A19B5222C948C8}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_on_cocked.anm"
+  }
+  AnimSetInstanceSource_Line "Reload.Erc.Switch_Safety_Off_Cocked" {
+   Resource "{BECA625A39123A6B}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_erc_safety_off_cocked.anm"
   }
  }
  RBF AnimSetInstanceSourceRBFArray "{59F8875C18E23C38}" {

@@ -38,11 +38,12 @@ AnimSetTemplateSource {
     "Reload_OpenBolt"
     "Reload_RackBolt"
     "Safety"
+    "Safety_WeaponOnly"
     "Sight"
-    "Switch_Mode_Dep_Off"
-    "Switch_Mode_Dep_On"
-    "Switch_Mode_Off"
-    "Switch_Mode_On"
+    "Switch_Safety_Off"
+    "Switch_Safety_Off_Cocked"
+    "Switch_Safety_On"
+    "Switch_Safety_On_Cocked"
     "Trigger"
    }
    Columns {

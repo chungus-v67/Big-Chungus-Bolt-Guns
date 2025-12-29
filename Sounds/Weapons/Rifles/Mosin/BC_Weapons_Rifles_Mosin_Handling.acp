@@ -25,7 +25,7 @@ AudioClass {
   SignalClass "73741" {
    id 73741
    name "Signal 70"
-   tl -1195.833 -887.222
+   tl -1201.08 -1097.103
    res "{8892979EFCA49B59}Sounds/_SharedData/Signals/SimpleHelpers/RandomDelay.sig"
    conns {
     IOPConnectionClass iopConnection {
@@ -146,7 +146,7 @@ AudioClass {
    id 37897
    name "SOUND_DRY"
    version 5
-   tl -192.404 -985.047
+   tl -197.651 -1194.928
    ins {
     ConnectionsClass "con:64" {
      id 64
@@ -163,28 +163,6 @@ AudioClass {
    }
    outState 69643
    outStatePort 7175
-  }
-  SoundClass "63497" {
-   id 63497
-   name "SOUND_WPN_TOSAFETY"
-   version 5
-   tl -192.404 -1428.988
-   ins {
-    ConnectionsClass "con:64" {
-     id 64
-     links {
-      ConnectionClass "68626:65" {
-       id 68626
-       port 65
-      }
-     }
-    }
-   }
-   pi {
-    127 0
-   }
-   outState 69643
-   outStatePort 6151
   }
   SoundClass "64521" {
    id 64521
@@ -205,8 +183,6 @@ AudioClass {
    pi {
     127 0
    }
-   outState 69643
-   outStatePort 6151
   }
   SoundClass "78857" {
    id 78857
@@ -450,6 +426,50 @@ AudioClass {
    outState 69643
    outStatePort 6151
   }
+  SoundClass "122889" {
+   id 122889
+   name "SOUND_SAFETY_ON"
+   version 5
+   tl -256.809 -662.59
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "124946:65" {
+       id 124946
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
+  SoundClass "128009" {
+   id 128009
+   name "SOUND_SAFETY_OFF"
+   version 5
+   tl -259.357 -858.108
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "125970:65" {
+       id 125970
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    127 0
+   }
+   outState 69643
+   outStatePort 6151
+  }
  }
  mixers {
   MixerClass "69643" {
@@ -466,12 +486,12 @@ AudioClass {
        id 3081
        port 65
       }
-      ConnectionClass "63497:65" {
-       id 63497
+      ConnectionClass "118793:65" {
+       id 118793
        port 65
       }
-      ConnectionClass "64521:65" {
-       id 64521
+      ConnectionClass "122889:65" {
+       id 122889
        port 65
       }
       ConnectionClass "78857:65" {
@@ -514,8 +534,8 @@ AudioClass {
        id 115721
        port 65
       }
-      ConnectionClass "118793:65" {
-       id 118793
+      ConnectionClass "128009:65" {
+       id 128009
        port 65
       }
      }
@@ -562,7 +582,7 @@ AudioClass {
    id 74764
    name "Constant 69"
    version 5
-   tl -1364.722 -888.334
+   tl -1369.969 -1098.215
    "Constant values" {
     IOPConstantsValueClass "Delay Min" {
      Key "Delay Min"
@@ -629,7 +649,7 @@ AudioClass {
    id 34834
    name "SOUND_DRY"
    version 5
-   tl -407.904 -985.047
+   tl -413.151 -1194.928
    ins {
     ConnectionsClass "con:0" {
      id 0
@@ -682,85 +702,11 @@ AudioClass {
    version 5
    tl -407.904 -1623.273
    ins {
-    ConnectionsClass "con:0" {
-     id 0
-     links {
-      ConnectionClass "101404:65" {
-       id 101404
-       port 65
-      }
-     }
-    }
-    ConnectionsClass "con:1" {
-     id 1
-     links {
-      ConnectionClass "11283:65" {
-       id 11283
-       port 65
-      }
-     }
-    }
-    ConnectionsClass "con:2" {
-     id 2
-     links {
-      ConnectionClass "12309:65" {
-       id 12309
-       port 65
-      }
-     }
-    }
     ConnectionsClass "con:64" {
      id 64
      links {
       ConnectionClass "65540:65" {
        id 65540
-       port 65
-      }
-     }
-    }
-   }
-   pi {
-    23 0
-   }
-  }
-  ShaderClass "68626" {
-   id 68626
-   name "SOUND_WPN_TOSAFETY"
-   version 5
-   tl -407.904 -1428.988
-   ins {
-    ConnectionsClass "con:0" {
-     id 0
-     links {
-      ConnectionClass "101404:65" {
-       id 101404
-       port 65
-      }
-     }
-    }
-    ConnectionsClass "con:1" {
-     id 1
-     links {
-      ConnectionClass "11283:65" {
-       id 11283
-       port 65
-      }
-     }
-    }
-    ConnectionsClass "con:2" {
-     id 2
-     links {
-      ConnectionClass "12309:65" {
-       id 12309
-       port 65
-      }
-     }
-    }
-    ConnectionsClass "con:64" {
-     id 64
-     links {
-      ConnectionClass "67588:65" {
-       id 67588
        port 65
       }
      }
@@ -1287,6 +1233,100 @@ AudioClass {
     23 0
    }
   }
+  ShaderClass "124946" {
+   id 124946
+   name "SOUND_SAFETY_ON"
+   version 5
+   tl -476.621 -632.315
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "101404:65" {
+       id 101404
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "88083:65" {
+       id 88083
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "12309:65" {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "123908:65" {
+       id 123908
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass "125970" {
+   id 125970
+   name "SOUND_SAFETY_OFF"
+   version 5
+   tl -454.835 -809.583
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "101404:65" {
+       id 101404
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "88083:65" {
+       id 88083
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "12309:65" {
+       id 12309
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "126980:65" {
+       id 126980
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
  }
  amplitudes {
   AmplitudeClass "11283" : "{7BAAAD4DE72D5E71}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-65LUFS_to_-60LUFS.conf" {
@@ -1322,7 +1362,7 @@ AudioClass {
   AmplitudeClass "91155" : "{D6921F7062BE7960}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-60LUFS_to_-55LUFS.conf" {
    id 91155
    version 5
-   tl -408.333 -1060
+   tl -413.58 -1269.881
    parent "{D6921F7062BE7960}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-60LUFS_to_-55LUFS.conf"
   }
  }
@@ -1333,17 +1373,6 @@ AudioClass {
    tl -1356.097 482.103
    ctl -2812.5 1687.5
    parent "{65257CB7AD05C1FD}Sounds/_SharedData/Configs/Frequency/Weapons/Frequency_Weapons_Handling_Rifle.conf"
-   ins {
-    ConnectionsClass "con:4" {
-     id 4
-     links {
-      ConnectionClass "62477:42" {
-       id 62477
-       port 42
-      }
-     }
-    }
-   }
    pi {
     16 0
    }
@@ -1354,7 +1383,7 @@ AudioClass {
    id 33796
    name "Shot_Dry"
    version 7
-   tl -1019 -1005.047
+   tl -1024.247 -1214.928
    Volume -24
    "Pitch variance" 0.25
    Samples {
@@ -1531,40 +1560,11 @@ AudioClass {
     }
    }
   }
-  BankLocalClass "67588" {
-   id 67588
-   name "Sniper_SafetyOn"
-   version 7
-   tl -1019 -1423.273
-   Volume -31
-   "Volume variance" 1
-   "Pitch variance" 1
-   Samples {
-    AudioBankSampleClass "Weapons_Sniper_SafetyOn_01.wav" {
-     Filename "{991456D83B30E3D7}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_01.wav"
-     Probability 100
-     Index 0
-     SampleMetadata ""
-    }
-    AudioBankSampleClass "Weapons_Sniper_SafetyOn_02.wav" {
-     Filename "{000AEF4126D7D247}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_02.wav"
-     Probability 100
-     Index 1
-     SampleMetadata ""
-    }
-    AudioBankSampleClass "Weapons_Sniper_SafetyOn_03.wav" {
-     Filename "{770087C9D2753D37}Sounds/Weapons/_SharedData/Safety/Samples/Sniper/Weapons_Sniper_SafetyOn_03.wav"
-     Probability 100
-     Index 2
-     SampleMetadata ""
-    }
-   }
-  }
   BankLocalClass "72708" {
    id 72708
    name "Trigger Release Click"
    version 7
-   tl -1017.889 -912.917
+   tl -1023.136 -1122.798
    ins {
     ConnectionsClass "con:5" {
      id 5
@@ -1835,6 +1835,46 @@ AudioClass {
     }
    }
   }
+  BankLocalClass "123908" {
+   id 123908
+   name "SafetyOn"
+   version 7
+   tl -1058.332 -537.512
+   Volume -1
+   "Pitch variance" 0.5
+   Resampler FIR_8
+   "Fade in function" SCurve
+   "Fade in time" 200
+   "Fade out function" SCurve
+   Samples {
+    AudioBankSampleClass "Mosin_Safety_On_01.wav" {
+     Filename "{2275E30F1C1C7FA6}Sounds/Weapons/Rifles/Mosin/sounds/Mosin_Safety_On_01.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "126980" {
+   id 126980
+   name "SafetyOff"
+   version 7
+   tl -1057.706 -712.135
+   Volume -12
+   Pitch -1
+   "Pitch variance" 0.5
+   Resampler FIR_8
+   "Fade in function" SCurve
+   "Fade out function" SCurve
+   Samples {
+    AudioBankSampleClass "MosinSafetyOff07.wav" {
+     Filename "{A82512BB368F782E}Sounds/Weapons/Rifles/Mosin/sounds/MosinSafetyOff07.wav"
+     Probability 100
+     Index 1
+     SampleMetadata ""
+    }
+   }
+  }
  }
  spatialities {
   SpatialityClass "101404" : "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf" {
@@ -1842,17 +1882,6 @@ AudioClass {
    version 5
    tl -1368.804 294.56
    parent "{68C6E66C2A370788}Sounds/_SharedData/Configs/Spatiality/Spatiality_Signal_Update.conf"
-   ins {
-    ConnectionsClass "con:0" {
-     id 0
-     links {
-      ConnectionClass "102413:9" {
-       id 102413
-       port 9
-      }
-     }
-    }
-   }
    pi + {
     0
    }
@@ -1879,12 +1908,12 @@ AudioClass {
        id 37897
        port 5
       }
-      ConnectionClass "63497:5" {
-       id 63497
+      ConnectionClass "118793:5" {
+       id 118793
        port 5
       }
-      ConnectionClass "64521:5" {
-       id 64521
+      ConnectionClass "122889:5" {
+       id 122889
        port 5
       }
       ConnectionClass "78857:5" {
@@ -1907,8 +1936,8 @@ AudioClass {
        id 83977
        port 5
       }
-      ConnectionClass "118793:5" {
-       id 118793
+      ConnectionClass "128009:5" {
+       id 128009
        port 5
       }
      }
@@ -1946,12 +1975,12 @@ AudioClass {
     ConnectionsClass "con:0" {
      id 0
      links {
-      ConnectionClass "64521:5" {
-       id 64521
+      ConnectionClass "109577:5" {
+       id 109577
        port 5
       }
-      ConnectionClass "63497:5" {
-       id 63497
+      ConnectionClass "106505:5" {
+       id 106505
        port 5
       }
       ConnectionClass "37897:5" {
@@ -1984,14 +2013,6 @@ AudioClass {
       }
       ConnectionClass "103433:5" {
        id 103433
-       port 5
-      }
-      ConnectionClass "106505:5" {
-       id 106505
-       port 5
-      }
-      ConnectionClass "109577:5" {
-       id 109577
        port 5
       }
      }

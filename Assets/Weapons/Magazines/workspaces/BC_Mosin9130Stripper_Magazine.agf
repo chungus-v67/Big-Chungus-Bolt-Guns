@@ -68,17 +68,23 @@ AnimSrcGraphFile {
      Source "Reload.Reload_InsertRounds"
     }
     AnimSrcNodeStateMachine MagReloadSTM {
-     EditorPos -3.73 -16.103
+     Tags {
+      ""
+     }
+     EditorPos -3.715 -16.027
      states {
       AnimSrcNodeState InsertMag {
-       EditorPos -4.413 -15.14
+       Tags {
+        "BC_TagIsLoadingAmmo"
+       }
+       EditorPos -4.368 -15.064
        Child "InsertMagAnim"
        StartCondition "!BC_IsStripperClipReload"
        TimeStorage "Real Time"
        IsExit 1
       }
       AnimSrcNodeState InsertStripper {
-       EditorPos -1.986 -15.141
+       EditorPos -1.971 -15.065
        Child "Source 18070"
        StartCondition "BC_IsStripperClipReload"
        TimeStorage "Real Time"

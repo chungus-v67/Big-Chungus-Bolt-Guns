@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{1D788A53589401C0}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_insert_stripper.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_9130_char_anims_standing_62.blend"
+   SourcePath "Mosin_9130_char_anims_standing_66.blend"
    SourceProfile "bc_mosin_bolt"
   }
   TXAResourceClass XBOX_ONE : PC {

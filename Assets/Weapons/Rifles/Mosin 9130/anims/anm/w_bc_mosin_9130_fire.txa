@@ -2,21 +2,56 @@ $animation "" {
  #version 2
  #fps 30
  #numFrames 3
- $node "Scene_Root" {
-  $keys t q {
-   $frame 0 3 {
+ $node "w_trigger" {
+  $keys q {
+   $frame 0 {
+   }
+   $frame 1 {
+    #q 0.04456548 0 0 0.99900651
+   }
+   $frame 2 {
+    #q 0.12732995 0 0 0.99186039
+   }
+   $frame 3 {
+    #q 0.17140618 0 0 0.98520052
+   }
+  }
+  $node "w_bolt_slide" {
+   $keys t {
+    $frame 0 3 {
+     #t 0.0000017 0.0990698 0.1721115
+    }
+   }
+   $node "w_safety" {
+    $keys t q {
+     $frame 0 {
+      #t -0.0000073 0.0000047 -0.1599852
+      #q 0.00001125 0.00001729 -0 1
+     }
+     $frame 1 3 {
+      #t -0.0000067 0.0000043 -0.1424827
+     }
+    }
+   }
+   $node "w_bolt" {
+    $keys t q {
+     $frame 0 3 {
+      #t -0.000004 0.0000026 -0.065417
+      #q 0.00001125 0.00001729 0 1
+     }
+    }
    }
   }
  }
  $events {
   #event 0 "Weapon_TriggerPulled" "AnimSrcEventGeneric {  Name \"Weapon_TriggerPulled\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 1 "AdjustAmmoCount" "AnimSrcEventGeneric {  Name \"AdjustAmmoCount\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 1 "LoopIn" "AnimSrcEventGeneric {  Name \"LoopIn\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 2 "LoopOut" "AnimSrcEventGeneric {  Name \"LoopOut\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 1 "AdjustAmmoCount" "AnimSrcEventGeneric {  Name \"AdjustAmmoCount\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 2 "Weapon_TriggerReleased" "AnimSrcEventGeneric {  Name \"Weapon_TriggerReleased\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 2 "LoopOut" "AnimSrcEventGeneric {  Name \"LoopOut\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
  $custProps {
-  #custProp "profile" "999_Empty"
-  #custProp "sourceFile" "mosin_26.blend"
+  #custProp "profile" "bc_mosin_fire"
+  #custProp "sourceFile" "mosin_46.blend"
  }
 }

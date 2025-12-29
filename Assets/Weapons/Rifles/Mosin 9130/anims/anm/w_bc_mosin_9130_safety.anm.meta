@@ -2,8 +2,8 @@ MetaFileClass {
  Name "{3D476A20771BFA23}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_safety.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "mosin_26.blend"
-   SourceProfile "Weapons_Safety"
+   SourcePath "mosin_46.blend"
+   SourceProfile "bc_mosin_safety_only"
   }
   TXAResourceClass XBOX_ONE : PC {
   }

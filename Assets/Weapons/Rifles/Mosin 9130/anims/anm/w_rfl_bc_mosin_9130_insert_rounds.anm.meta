@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{974C210587B374C6}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_rfl_bc_mosin_9130_insert_rounds.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_9130_char_anims_standing_60.blend"
+   SourcePath "Mosin_9130_char_anims_standing_68.blend"
    SourceProfile "bc_mosin_bolt"
   }
   TXAResourceClass XBOX_ONE : PC {

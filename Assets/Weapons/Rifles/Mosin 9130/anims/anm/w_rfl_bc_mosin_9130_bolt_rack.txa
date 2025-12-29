@@ -2,45 +2,78 @@ $animation "" {
  #version 2
  #fps 30
  #numFrames 42
- $node "w_safety" {
-  $keys t q s {
+ $node "w_bolt_slide" {
+  $keys t s {
    $frame 0 13 {
-    #t 0 0.0990709 0.0296288
+    #t 0 0.0990708 0.1721115
    }
    $frame 14 {
-    #t 0 0.0990709 0.0180425
+    #t 0 0.0990708 0.1605465
    }
    $frame 15 {
-    #t 0 0.0990709 -0.0095864
+    #t 0 0.0990708 0.1329686
    }
    $frame 16 {
-    #t 0 0.0990709 -0.0425628
+    #t 0 0.0990708 0.100053
    }
    $frame 17 {
-    #t 0 0.0990709 -0.0701916
+    #t 0 0.0990708 0.0724751
    }
-   $frame 18 20 {
-    #t 0 0.0990709 -0.0817779
+   $frame 18 {
+    #t 0 0.0990708 0.0609102
+   }
+   $frame 19 {
+    #t 0 0.0990708 0.06707
+   }
+   $frame 20 {
+    #t 0 0.0990708 0.0829559
    }
    $frame 21 {
-    #t 0 0.0990709 -0.0701916
+    #t 0 0.0990709 0.1046775
    }
    $frame 22 {
-    #t 0 0.0990709 -0.0425628
+    #t 0 0.0990708 0.1283442
    }
    $frame 23 {
-    #t 0 0.0990709 -0.0095864
+    #t 0 0.0990709 0.1500657
    }
    $frame 24 {
-    #t 0 0.0990709 0.0180425
+    #t 0 0.0990708 0.1659517
    }
    $frame 25 42 {
+   }
+  }
+  $node "w_safety" {
+   $keys t q s {
+    $frame 0 20 {
+     #t 0 0 -0.1424827
+    }
+    $frame 21 {
+     #t 0 -0.0000001 -0.1424827
+    }
+    $frame 22 {
+    }
+    $frame 23 {
+     #t 0 -0.0000001 -0.1424827
+    }
+    $frame 24 {
+     #t 0 0 -0.1532042
+    }
+    $frame 25 {
+     #t 0 0 -0.1596061
+    }
+    $frame 26 {
+     #t 0 0 -0.1595044
+    }
+    $frame 27 42 {
+     #t 0 0 -0.1599852
+    }
    }
   }
   $node "w_bolt" {
    $keys t q s {
     $frame 0 8 {
-     #t 0 0.0990708 0.1066945
+     #t 0 0 -0.0654169
     }
     $frame 9 {
      #q 0 0 0.07563237 0.99713582
@@ -54,97 +87,36 @@ $animation "" {
     $frame 12 {
      #q -0.00000002 0.00000003 0.65160143 0.75856167
     }
-    $frame 13 {
+    $frame 13 20 {
      #q 0.00000005 0.00000011 0.70710689 0.70710665
     }
-    $frame 14 {
-     #t 0 0.0990708 0.0951083
-     #q 0.00000016 0.00000007 0.70710689 0.70710665
-    }
-    $frame 15 {
-     #t 0 0.0990708 0.0674794
-     #q 0.00000024 -0.00000002 0.70710689 0.70710665
-    }
-    $frame 16 {
-     #t 0 0.0990708 0.034503
-     #q 0.0000003 -0.00000013 0.70710689 0.70710665
-    }
-    $frame 17 {
-     #t 0 0.0990708 0.0068742
-     #q 0.00000034 -0.00000022 0.70710689 0.70710665
-    }
-    $frame 18 20 {
-     #t 0 0.0990708 -0.0047121
+    $frame 21 {
+     #t 0 -0.0000001 -0.0654169
      #q 0.00000036 -0.00000026 0.70710689 0.70710665
     }
-    $frame 21 {
-     #t 0 0.0990708 0.0068742
-     #q 0.00000033 -0.00000022 0.70710689 0.70710665
-    }
     $frame 22 {
-     #t 0 0.0990708 0.034503
-     #q 0.00000027 -0.00000013 0.70710689 0.70710665
+     #q 0.00000036 -0.00000026 0.70710689 0.70710665
     }
     $frame 23 {
-     #t 0 0.0990708 0.0674794
-     #q 0.00000019 -0.00000002 0.70710689 0.70710665
+     #t 0 -0.0000001 -0.0654169
+     #q 0.00000036 -0.00000026 0.70710689 0.70710665
     }
-    $frame 24 {
-     #t 0 0.0990708 0.0951083
-     #q 0.00000011 0.00000007 0.70710689 0.70710665
-    }
-    $frame 25 {
-     #q 0.00000005 0.00000011 0.70710689 0.70710665
+    $frame 24 25 {
+     #q 0.00000036 -0.00000026 0.70710689 0.70710665
     }
     $frame 26 {
-     #q 0.00000006 0.0000001 0.65160149 0.75856155
+     #q 0.00000033 -0.00000024 0.65160149 0.75856155
     }
     $frame 27 {
-     #q 0.00000006 0.00000009 0.49227148 0.87044179
+     #q 0.00000025 -0.00000019 0.49227148 0.87044179
     }
     $frame 28 {
-     #q 0.00000007 0.00000008 0.26740676 0.96358377
+     #q 0.00000013 -0.00000011 0.26740676 0.96358377
     }
     $frame 29 {
-     #q 0.00000007 0.00000008 0.07563234 0.99713582
+     #q 0.00000004 -0.00000003 0.07563234 0.99713582
     }
     $frame 30 42 {
-    }
-   }
-  }
-  $node "w_bolt_slide" {
-   $keys t s {
-    $frame 0 13 {
-     #t 0 0.0990708 0.1721115
-    }
-    $frame 14 {
-     #t 0 0.0990708 0.1605252
-    }
-    $frame 15 {
-     #t 0 0.0990708 0.1328963
-    }
-    $frame 16 {
-     #t 0 0.0990708 0.0999199
-    }
-    $frame 17 {
-     #t 0 0.0990708 0.0722911
-    }
-    $frame 18 20 {
-     #t 0 0.0990708 0.0607048
-    }
-    $frame 21 {
-     #t 0 0.0990708 0.0722911
-    }
-    $frame 22 {
-     #t 0 0.0990708 0.0999199
-    }
-    $frame 23 {
-     #t 0 0.0990708 0.1328963
-    }
-    $frame 24 {
-     #t 0 0.0990708 0.1605252
-    }
-    $frame 25 42 {
     }
    }
   }
@@ -154,11 +126,11 @@ $animation "" {
   #event 0 "Weapon_EnableFire" "AnimSrcEventGeneric {  Name \"Weapon_EnableFire\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 7 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 7  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_OPEN_FAST\"  UserInt 0 }" 0 0 "" 0
   #event 15 "BC_BoltActionEjectRound" "AnimSrcEventGeneric {  Name \"BC_BoltActionEjectRound\"  MainPathOnly 0  Frame 15  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
-  #event 16 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 18 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 18  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_CLOSE_FAST\"  UserInt 0 }" 0 0 "" 0
+  #event 20 "Weapon_Rack_Bolt" "AnimSrcEventGeneric {  Name \"Weapon_Rack_Bolt\"  MainPathOnly 0  Frame 20  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
  $custProps {
   #custProp "profile" "bc_mosin_bolt"
-  #custProp "sourceFile" "Mosin_9130_char_anims_standing_58.blend"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_67.blend"
  }
 }

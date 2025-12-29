@@ -1,0 +1,67 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 28
+ $node "w_bolt_slide" {
+  $keys t s {
+   $frame 0 28 {
+    #t 0 0.0990708 0.1721115
+   }
+  }
+  $node "w_safety" {
+   $keys t q s {
+    $frame 0 9 {
+     #t 0 0 -0.1599852
+    }
+    $frame 10 {
+     #t 0 0 -0.1603405
+    }
+    $frame 11 {
+     #t 0 0 -0.1612569
+    }
+    $frame 12 {
+     #t 0 0 -0.16251
+     #q -0.0006309 -0.00020921 0.02339565 0.99972612
+    }
+    $frame 13 {
+     #t 0 0.0000001 -0.1638752
+     #q -0.00228006 -0.0007561 0.0824056 0.99659604
+    }
+    $frame 14 {
+     #t 0 0 -0.1651283
+     #q -0.00455968 -0.00151204 0.15940128 0.98720223
+    }
+    $frame 15 {
+     #t 0 0 -0.1660447
+     #q -0.00704327 -0.00233563 0.23543619 0.97186154
+    }
+    $frame 16 {
+     #t 0 0 -0.1664
+     #q -0.00932329 -0.00309171 0.29243106 0.95623624
+    }
+    $frame 17 {
+     #t 0 0 -0.1636258
+     #q -0.0110445 -0.00366248 0.31473467 0.94910842
+    }
+    $frame 18 28 {
+     #t 0 0 -0.1608516
+     #q -0.01174321 -0.00389418 0.31473193 0.94910008
+    }
+   }
+  }
+  $node "w_bolt" {
+   $keys t q s {
+    $frame 0 28 {
+     #t 0 0 -0.0654169
+    }
+   }
+  }
+ }
+ $events {
+  #event 11 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 11  FrameCount 0  UserString \"SOUND_SAFETY_ON\"  UserInt 0 }" 0 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "bc_mosin_bolt"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_72.blend"
+ }
+}

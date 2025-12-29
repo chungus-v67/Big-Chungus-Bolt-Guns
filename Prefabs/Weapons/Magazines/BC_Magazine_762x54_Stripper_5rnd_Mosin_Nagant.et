@@ -78,6 +78,14 @@ GenericEntity : "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14
     m_sAmmoCaliber "7.62x54"
     m_sAmmoType ""
     m_eAmmoTypeFlags FMJ
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5866951DE2665916}" {
+     m_sMagazineLayout "{4A1C501DD3604DDD}UI/layouts/HUD/WeaponInfo/BC_BoltGunMagazineWidget.layout"
+     m_sOutline "firemode-rifle-auto"
+     m_sBackground "firemode-rifle-auto"
+     m_sProgress "firemode-rifle-auto"
+     m_sProgressAlphaMask "firemode-rifle-auto"
+     m_sEmptyMagazine "firemode-rifle-auto"
+    }
    }
    ItemModel "{BD6D59C29D9059B3}Assets/Weapons/Magazines/Mosin/BC_Mosin_Stripper_Clip.xob"
    MaxAmmo 5

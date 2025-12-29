@@ -2,24 +2,24 @@ $animation "" {
  #version 2
  #fps 30
  #numFrames 70
- $node "w_safety" {
-  $keys t q {
+ $node "w_bolt_slide" {
+  $keys t {
    $frame 0 70 {
-    #t 0.0184825 0.0664719 -0.1216693
+    #t 0 0.0990708 0.0609102
+   }
+  }
+  $node "w_safety" {
+   $keys t q {
+    $frame 0 70 {
+     #t -0 0 -0.1424827
+    }
    }
   }
   $node "w_bolt" {
    $keys t q {
     $frame 0 70 {
-     #t -0 0.0990707 -0.0047122
-     #q 0.00000037 -0.00000025 0.70710707 0.70710671
-    }
-   }
-  }
-  $node "w_bolt_slide" {
-   $keys t {
-    $frame 0 70 {
-     #t 0.0184825 0.0664719 0.0208135
+     #t 0 0 -0.0654169
+     #q 0.00000036 -0.00000026 0.70710689 0.70710665
     }
    }
   }
@@ -35,6 +35,6 @@ $animation "" {
  }
  $custProps {
   #custProp "profile" "bc_mosin_bolt"
-  #custProp "sourceFile" "Mosin_9130_char_anims_standing_62.blend"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_66.blend"
  }
 }

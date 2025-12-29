@@ -1,29 +1,24 @@
 $animation "" {
  #version 2
  #fps 30
- #numFrames 0
- $node "w_fire_mode" {
-  $keys q {
+ #numFrames 2
+ $node "w_safety" {
+  $keys t q {
    $frame 0 {
+    #t -0.0000067 0.0000043 -0.1424827
+    #q 0.00001125 0.00001729 -0 1
    }
-  }
-  $node "w_trigger" {
-   $keys t q {
-    $frame 0 {
-     #t 0 0.0427416 0.0661644
-    }
+   $frame 1 {
+    #t -0.0000073 0.0000047 -0.1599852
    }
-  }
-  $node "w_bolt" {
-   $keys t q {
-    $frame 0 {
-     #t 0 0.0990709 0.1066946
-    }
+   $frame 2 {
+    #t -0.0000073 0.0000047 -0.1608517
+    #q -0.01172708 -0.00388132 0.31473204 0.9491002
    }
   }
  }
  $custProps {
-  #custProp "profile" "Weapons_Safety"
-  #custProp "sourceFile" "mosin_26.blend"
+  #custProp "profile" "bc_mosin_safety_only"
+  #custProp "sourceFile" "mosin_46.blend"
  }
 }

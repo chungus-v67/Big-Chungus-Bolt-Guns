@@ -1,0 +1,154 @@
+OverlayWidgetClass {
+ Name "SizeLayout0"
+ Slot LayoutSlot "{6312886AD8446041}" {
+  HorizontalAlign 2
+  VerticalAlign 2
+ }
+ components {
+  SCR_SingleMagazineWidgetComponent_RocketPod "{645A949A695E7E9D}" {
+   m_IdleColorSet WeaponInfoColorSet "{645A949A63BD9F62}" {
+    m_IconColor 1 1 1 0.149
+    m_BackgroundColor 0 0 0 0.4
+    m_GlowColor 0 0 0 0.392
+    m_ContrastColor 0.761 0.386 0.078 0.298
+   }
+   m_HighlightColorSet WeaponInfoColorSet "{645A949A65203FF3}" {
+    m_IconColor 1 1 1 0.702
+    m_GlowColor 0 0 0 0.392
+    m_ContrastColor 0.761 0.386 0.078 0.298
+   }
+   m_DisabledColorSet WeaponInfoColorSet "{645A949A59025290}" {
+    m_IconColor 1 1 1 0.149
+    m_BackgroundColor 0 0 0 0.4
+    m_GlowColor 0 0 0 0.392
+    m_ContrastColor 0.761 0.386 0.078 0.298
+   }
+  }
+ }
+ {
+  OverlayWidgetClass "{6736E557874DFA8B}" {
+   Name "m_MagazineIndicator"
+   Slot OverlayWidgetSlot "{6318874419F73713}" {
+    HorizontalAlign 3
+    VerticalAlign 3
+   }
+   Clipping False
+   {
+    ImageWidgetClass "{6736E557874DFAB5}" {
+     Name "m_MagazineEmpty"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+      Padding 0 0 0 0
+     }
+     "Is Visible" 0
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "magazine-rockets-disabled"
+     Size 32 32
+     "Transition width" 0
+     Progress 0.82
+     "Shadow Offset" 0 0
+    }
+    ImageWidgetClass "{6736E557874D183A}" {
+     Name "m_MagazineProgress"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "magazine-ak47-fill"
+     Size 24 32
+     Mask "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     MaskImage "magazine-ak47-alpha"
+     "Transition width" 0
+     Progress 0.82
+     "Shadow Offset" 0 0
+    }
+    ImageWidgetClass "{6736E557874D1839}" {
+     Name "m_ReloadBackground"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Color 0.761 0.392 0.08 1
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "magazine-default-fill"
+     Size 96 128
+     Mask "{54F7755D48B394FD}UI/Textures/VehicleInfo/AnalogGaugeImageset.imageset"
+     MaskImage "CircularGradient2"
+     "Transition width" 0.01
+     Progress 0.3
+     Range 0.02
+     "Shadow Offset" 0 0
+     "Shadow Size Increase" 0 0
+    }
+    ImageWidgetClass "{6736E557874CC23B}" {
+     Name "m_ReloadOutline"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     "Is Enabled" 0
+     "Is Visible" 0
+     Color 0.761 0.392 0.08 1
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "magazine-default-outline"
+     Size 96 128
+     Mask "{54F7755D48B394FD}UI/Textures/VehicleInfo/AnalogGaugeImageset.imageset"
+     MaskImage "CircularGradient2"
+     "Transition width" 0.01
+     Progress 0.3
+     Range 0.025
+     "Shadow Offset" 0 0
+     "Shadow Size Increase" 0 0
+    }
+    ImageWidgetClass "{6736E557874D5D77}" {
+     Name "m_MagazineBackground"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0 0 0 0.275
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "firemode-rifle-auto"
+     Size 24 32
+     Progress 0.75
+     "Shadow Offset" 0 0
+     "Shadow Size Increase" 0 0
+    }
+    ImageWidgetClass "{6736E557874DFAB6}" {
+     Name "m_MagazineGlow"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "magazine-ak47-fill"
+     Size 24 32
+     "Shadow Offset" 0 0
+     "Shadow Size Increase" 0 0
+    }
+    ImageWidgetClass "{6736E554C4736468}" {
+     Name "m_MagazineOutline"
+     Slot OverlayWidgetSlot "{564EB628692727FD}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0 0 0 1
+     Texture "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     Image "firemode-rifle-auto"
+     Size 24 32
+     Mask "{CDA6C73DFD789999}UI/Imagesets/WeaponInfo/WeaponInfo.imageset"
+     MaskImage "firemode-rifle-auto"
+     "Transition width" 0
+     Progress 0.9
+     "Shadow Offset" 0 0
+    }
+   }
+  }
+ }
+}
