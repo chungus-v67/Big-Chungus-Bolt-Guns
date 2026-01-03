@@ -69,7 +69,7 @@ AnimSrcGraphFile {
     }
     AnimSrcNodeStateMachine MagReloadSTM {
      Tags {
-      ""
+      "BC_TagStripperReload"
      }
      EditorPos -3.715 -16.027
      states {
@@ -77,7 +77,7 @@ AnimSrcGraphFile {
        Tags {
         "BC_TagIsLoadingAmmo"
        }
-       EditorPos -4.368 -15.064
+       EditorPos -4.316 -15.064
        Child "InsertMagAnim"
        StartCondition "!BC_IsStripperClipReload"
        TimeStorage "Real Time"
@@ -88,7 +88,6 @@ AnimSrcGraphFile {
        Child "Source 18070"
        StartCondition "BC_IsStripperClipReload"
        TimeStorage "Real Time"
-       IsExit 1
       }
      }
     }

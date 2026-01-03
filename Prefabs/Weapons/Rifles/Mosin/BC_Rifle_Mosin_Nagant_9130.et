@@ -3,7 +3,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
  components {
   WeaponSoundComponent "{5A8685198A9AEEDD}" {
    Filenames {
-    "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{6F5597365A3E2FFA}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Shot.acp" "{00AB0532CCEE5B13}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Handling.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp" "{9EE4A47D49D3805F}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Shot_Suppressed_SuperSonic.acp" "{E419B2CF55F4A389}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Bayonett.acp"
+    "{A84D9F22F2C0D9CE}Sounds/Weapons/_SharedData/PickUp/Weapons_PickUp_Rifle_WoodMetal.acp" "{68E023371FDD3B12}Sounds/Weapons/_SharedData/Drop/Weapons_Drop_Rifle_WoodMetal.acp" "{52391BEA68BE9143}Sounds/Weapons/Rifles/SVD/BC_Weapons_Rifles_Mosin_9130_Shot_2.acp" "{00AB0532CCEE5B13}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Handling.acp" "{332983CC95EE1E1E}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Rifle.acp" "{D8F675F3468362E2}Sounds/Weapons/_SharedData/Weapons_Sights_Actions.acp" "{10C1421961C34D26}Sounds/Weapons/_SharedData/Weapons_Deployment.acp" "{9EE4A47D49D3805F}Sounds/Weapons/Rifles/Mosin/BC_Weapons_Rifles_Mosin_Shot_Suppressed_SuperSonic.acp" "{E419B2CF55F4A389}Sounds/Weapons/_SharedData/Melee/Weapons_Melee_Bayonett.acp"
    }
   }
   MeshObject "{CFBAA4B701F95D69}" {
@@ -47,6 +47,8 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       MergePhysics 1
       Enabled 1
       Prefab "{A03B33641708422A}Prefabs/Weapons/Attachments/Optics/Optic_PU/BC_Optic_PU.et"
+     }
+     AttachmentType BCC_AttachmentOpticsMosinPU "{58E2BCF93BDCA8BA}" {
      }
      AttachmentObstructs 0
     }
@@ -157,7 +159,9 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
         PivotID "slot_barrel_muzzle"
         ChildPivotID "snap_weapon"
         Prefab ""
-        InspectionWidgetOffset 0 0.07 0.568
+        InspectionWidgetOffset 0 0.07 0.5422
+       }
+       AttachmentType BCC_AttachmentMuzzleMosin "{68443390AE5F2DAE}" {
        }
        AttachmentObstructs 1
        ShowInInspection 1
@@ -213,6 +217,10 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
       }
      }
      OutOfADSWhileReloading 1
+     "LEFT HAND TARGET" DeploymentPointInfo lht {
+      PivotID "slot_magazine"
+      Offset 0 0 0
+     }
      MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
       SyncAnims 1
      }
@@ -240,7 +248,7 @@ GenericEntity : "{B31929F65F0D0279}Prefabs/Weapons/Rifles/M14/Rifle_M21.et" {
      m_bAcceptsStripperClips 1
      m_effectPosition PointInfo "{623D52BFD8956F4B}" {
       PivotID "slot_magazine"
-      Offset 0.022 0.0408 0.0493
+      Offset 0.0225 0.0408 0.0655
       Angles 0 70 0
      }
      m_bClickToRack 1

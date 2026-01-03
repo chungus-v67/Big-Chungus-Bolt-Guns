@@ -4,7 +4,7 @@ MatPBRBasicGlass {
  AlphaTest 0.05
  AlphaMul 1.036
  BCRMap "{A005214D74660AD9}Assets/Weapons/Attachments/Optics/AP2k/Data/Optic_AP2k_glass_BCR.edds"
- OpacityMap "{7B1EE68EC55A68A8}Assets/_SharedData/Glass/ST_Glass_Optics_01_A.edds"
+ OpacityMap "{10C9B91845029178}Assets/Weapons/Attachments/Optics/UK59_4x8/Data/Optic_UK59_4x8_Lensglass_A.edds"
  GlobalMapsUVTransform MatUVTransform "{67163B1781812C75}" {
  }
  DetailNormalPower 0.011

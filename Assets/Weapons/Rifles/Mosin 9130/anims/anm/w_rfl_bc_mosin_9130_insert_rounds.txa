@@ -3,20 +3,20 @@ $animation "" {
  #fps 30
  #numFrames 152
  $node "w_bolt_slide" {
-  $keys t {
+  $keys t s {
    $frame 0 152 {
     #t 0 0.0990708 0.0609102
    }
   }
   $node "w_safety" {
-   $keys t q {
+   $keys t q s {
     $frame 0 152 {
-     #t -0 0 -0.1424827
+     #t 0 0 -0.1424827
     }
    }
   }
   $node "w_bolt" {
-   $keys t q {
+   $keys t q s {
     $frame 0 152 {
      #t 0 0 -0.0654169
      #q 0.00000036 -0.00000026 0.70710689 0.70710665
@@ -25,6 +25,7 @@ $animation "" {
   }
  }
  $events {
+  #event 0 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"SOUND_STRIP_ROUNDS\"  UserInt -1 }" -1 0 "" 0
   #event 27 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 27  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0
   #event 33 "BC_InsertRound0" "AnimSrcEventGeneric {  Name \"BC_InsertRound0\"  MainPathOnly 0  Frame 33  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 58 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 58  FrameCount 0  UserString \"SOUND_RELOAD_INSERT_ROUND\"  UserInt 1 }" 1 0 "" 0

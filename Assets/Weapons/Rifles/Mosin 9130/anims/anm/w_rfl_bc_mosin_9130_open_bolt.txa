@@ -3,7 +3,7 @@ $animation "" {
  #fps 30
  #numFrames 40
  $node "w_bolt_slide" {
-  $keys t {
+  $keys t s {
    $frame 0 14 {
     #t 0 0.0990708 0.1721115
    }
@@ -27,12 +27,12 @@ $animation "" {
    }
   }
   $node "w_bolt" {
-   $keys t q {
+   $keys t q s {
     $frame 0 9 {
      #t 0 0 -0.0654169
     }
     $frame 10 {
-     #q -0 0 0.07563237 0.99713582
+     #q 0 0 0.07563237 0.99713582
     }
     $frame 11 {
      #q -0.00000001 0 0.26740682 0.96358371
@@ -48,11 +48,11 @@ $animation "" {
      #q 0.00000005 0.00000011 0.70710689 0.70710665
     }
     $frame 15 {
-     #t -0 0 -0.0686766
+     #t 0 0 -0.0686766
      #q 0.00000015 0.00000008 0.70710689 0.70710665
     }
     $frame 16 {
-     #t -0 0 -0.0680247
+     #t 0 0 -0.0680247
      #q 0.00000023 0.00000001 0.70710689 0.70710665
     }
     $frame 17 {
@@ -75,7 +75,8 @@ $animation "" {
  }
  $events {
   #event 7 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 7  FrameCount 0  UserString \"SOUND_RELOAD_BOLT_OPEN\"  UserInt 0 }" 0 0 "" 0
-  #event 16 "BC_BoltActionEjectRound" "AnimSrcEventGeneric {  Name \"BC_BoltActionEjectRound\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 12 "BC_BoltActionEjectRound" "AnimSrcEventGeneric {  Name \"BC_BoltActionEjectRound\"  MainPathOnly 0  Frame 12  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 16 "BC_UncockMosin" "AnimSrcEventGeneric {  Name \"BC_UncockMosin\"  MainPathOnly 0  Frame 16  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 40 "BlendOut2" "AnimSrcEventGeneric {  Name \"BlendOut2\"  MainPathOnly 0  Frame 40  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
  }
  $custProps {

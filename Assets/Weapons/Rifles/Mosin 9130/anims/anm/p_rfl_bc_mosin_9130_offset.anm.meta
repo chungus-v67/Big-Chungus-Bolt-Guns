@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{C1C91AC19943732D}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_offset.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_9130_Player_IK_3.blend"
+   SourcePath "Mosin_9130_Player_IK_4.blend"
    SourceProfile "101_FullBodyABS"
   }
   TXAResourceClass XBOX_ONE : PC {

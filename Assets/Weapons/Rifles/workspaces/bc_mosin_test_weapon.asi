@@ -17,7 +17,7 @@ AnimSetInstanceSource "{673A352B160935C7}" {
    Resource "{D4E6F727260C5720}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_bolt_rack.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
-   Resource "{54F072ACED3216BA}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_erc_trigger.anm"
+   Resource "{ABF7D725612867D7}Assets/Weapons/Rifles/Mosin 9130/anims/anm/w_bc_mosin_9130_trigger.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
    Resource "{54F072ACED3216BA}Assets/Weapons/Rifles/anims/anm/w_rfl_mosin_erc_trigger.anm"

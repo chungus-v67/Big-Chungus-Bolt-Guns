@@ -2,7 +2,7 @@ MetaFileClass {
  Name "{7EBB5A324C4B1EA0}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_erc_open_bolt.anm"
  Configurations {
   TXAResourceClass PC {
-   SourcePath "Mosin_9130_char_anims_standing_42.blend"
+   SourcePath "Mosin_9130_char_anims_standing_78.blend"
    SourceProfile "252_UpperbodyADD_ArmsABS"
   }
   TXAResourceClass XBOX_ONE : PC {

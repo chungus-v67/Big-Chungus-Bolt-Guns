@@ -16,9 +16,16 @@ $animation "" {
     }
    }
   }
+  $node "w_trigger" {
+   $keys t q {
+    $frame 0 {
+     #t 0 0.0427416 0.0661644
+    }
+   }
+  }
  }
  $custProps {
-  #custProp "profile" "bc_mosin_bolt_no_safety"
-  #custProp "sourceFile" "mosin_46.blend"
+  #custProp "profile" "bc_mosin_bolt_pose"
+  #custProp "sourceFile" "mosin_47.blend"
  }
 }

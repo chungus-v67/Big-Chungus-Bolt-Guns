@@ -3,7 +3,7 @@ $animation "" {
  #fps 30
  #numFrames 152
  $node "m_bullet01" {
-  $keys t q {
+  $keys t q s {
    $frame 0 {
     #t 0.0057887 -0.0091102 -0.0012917
     #q -0.07263738 0.05523469 -0.09646833 -0.99114424
@@ -150,7 +150,7 @@ $animation "" {
    }
   }
   $node "m_bullet02" {
-   $keys t q {
+   $keys t q s {
     $frame 0 {
      #t 0.0130299 0.0020162 -0.0015787
      #q 0.090412 -0.07104614 -0.18187779 0.97657496
@@ -358,7 +358,7 @@ $animation "" {
    }
   }
   $node "m_bullet03" {
-   $keys t q {
+   $keys t q s {
     $frame 0 {
      #t 0.0003287 0.0018943 -0.0000042
      #q -0.01316786 0.04684585 -0.21920437 -0.97446489
@@ -682,7 +682,7 @@ $animation "" {
    }
   }
   $node "m_bullet04" {
-   $keys t q {
+   $keys t q s {
     $frame 0 {
      #t -0.0059186 0.0130171 0.0014105
      #q -0.00058898 -0.00400472 -0.11493739 0.99336451
@@ -1107,7 +1107,7 @@ $animation "" {
    }
   }
   $node "m_bullet05" {
-   $keys t q {
+   $keys t q s {
     $frame 0 {
      #t -0.0167999 0.0089411 -0.0016735
      #q -0.04002171 0.0159954 -0.00550872 0.9990555
@@ -1615,7 +1615,7 @@ $animation "" {
    }
   }
   $node "m_clip" {
-   $keys t q {
+   $keys t q s {
     $frame 0 152 {
      #t -0.032082 -0.0320818 -0.0320819
      #q 0.03475869 0.03509133 0.02541193 0.99845618
@@ -1624,6 +1624,7 @@ $animation "" {
   }
  }
  $events {
+  #event 0 "Sound" "AnimSrcEventGeneric {  Name \"Sound\"  MainPathOnly 0  Frame 0  FrameCount 0  UserString \"SOUND_STRIP_ROUNDS\"  UserInt -1 }" -1 0 "" 0
   #event 33 "BC_InsertRound0" "AnimSrcEventGeneric {  Name \"BC_InsertRound0\"  MainPathOnly 0  Frame 33  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 65 "BC_InsertRound1" "AnimSrcEventGeneric {  Name \"BC_InsertRound1\"  MainPathOnly 0  Frame 65  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
   #event 93 "BC_InsertRound2" "AnimSrcEventGeneric {  Name \"BC_InsertRound2\"  MainPathOnly 0  Frame 93  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0

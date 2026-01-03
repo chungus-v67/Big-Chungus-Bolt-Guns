@@ -1,0 +1,70 @@
+$animation "" {
+ #version 2
+ #fps 30
+ #numFrames 3
+ $node "RightHandIndex1" {
+  $keys q {
+   $frame 0 3 {
+    #q -0.00049776 -0.10830468 0.07434173 0.99133402
+   }
+  }
+  $node "RightHandIndex2" {
+   $keys q {
+    $frame 0 {
+     #q 0.0460718 0.02179222 -0.13386805 0.9896878
+    }
+    $frame 1 {
+     #q 0.04641637 0.02176538 -0.13248667 0.98985815
+    }
+    $frame 2 {
+     #q 0.04714352 0.02172926 -0.12993903 0.99016231
+    }
+    $frame 3 {
+     #q 0.04758203 0.02171715 -0.1285824 0.99031854
+    }
+   }
+   $node "RightHandIndex3" {
+    $keys q {
+     $frame 0 {
+      #q -0.24835636 -0.16489202 -0.08879007 0.9503926
+     }
+     $frame 1 {
+      #q -0.28434497 -0.15051432 -0.09159844 0.94239235
+     }
+     $frame 2 {
+      #q -0.35050613 -0.12390137 -0.0943324 0.92352349
+     }
+     $frame 3 {
+      #q -0.38547364 -0.10973848 -0.09445566 0.9112879
+     }
+    }
+    $node "RightHandIndex4" {
+     $keys q {
+      $frame 0 {
+       #q -0.38050476 -0.0124187 0.05358752 0.92314148
+      }
+      $frame 1 {
+       #q -0.38050193 -0.01242 0.05358502 0.92314285
+      }
+      $frame 2 {
+       #q -0.38049659 -0.01242137 0.05357964 0.92314541
+      }
+      $frame 3 {
+       #q -0.38049337 -0.01242164 0.0535778 0.92314672
+      }
+     }
+    }
+   }
+  }
+ }
+ $events {
+  #event 1 "Weapon_TriggerPulled" "AnimSrcEventGeneric {  Name \"Weapon_TriggerPulled\"  MainPathOnly 0  Frame 1  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 2 "LoopIn" "AnimSrcEventGeneric {  Name \"LoopIn\"  MainPathOnly 0  Frame 2  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 3 "LoopOut" "AnimSrcEventGeneric {  Name \"LoopOut\"  MainPathOnly 0  Frame 3  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+  #event 3 "Weapon_TriggerReleased" "AnimSrcEventGeneric {  Name \"Weapon_TriggerReleased\"  MainPathOnly 0  Frame 3  FrameCount 0  UserString \"\"  UserInt -1 }" -1 0 "" 0
+ }
+ $custProps {
+  #custProp "profile" "401_RIndexABS"
+  #custProp "sourceFile" "Mosin_9130_char_anims_standing_76.blend"
+ }
+}

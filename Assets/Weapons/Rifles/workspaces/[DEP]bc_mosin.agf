@@ -6,7 +6,7 @@ AnimSrcGraphFile {
      Tags {
       "TagIsPullingTrigger"
      }
-     EditorPos -10.102 22.664
+     EditorPos -10.072 22.664
      Source "Reload.Erc.Fire"
      Looptype "No Loop"
     }
@@ -334,71 +334,28 @@ AnimSrcGraphFile {
      PostEval 1
     }
     AnimSrcNodeQueue "Queue 3" {
-     EditorPos -10.002 18.864
+     EditorPos -9.985 18.864
      Child "SlideClosed"
      QueueItems {
       AnimSrcNodeQueueItem "{55AEC32A2912AFA5}" {
        Child "FireAnim"
-       StartExpr "HasVariableChanged(Firing, false, true)"
-       EnqueueMethod Enqueue
+       StartExpr "(HasVariableChanged(Firing, false, true) || HasVariableChanged(TriggerPulled, false, true)) && BC_IsCocked && State != -1"
+       EnqueueMethod InterruptAll
       }
-     }
-    }
-    AnimSrcNodePose BoltOpen {
-     EditorPos -4.302 22.064
-     Source "Reload.Erc.BoltPose"
-     Time "0.25"
-    }
-    AnimSrcNodeQueue "Queue 2" {
-     EditorPos -3.002 18.764
-     Child "BoltOpen"
-     QueueItems {
-      AnimSrcNodeQueueItem "{55AEC3240D48D0E6}" {
-       Child "FireAnim"
-       StartExpr "HasVariableChanged(Firing, false, true)"
-       EnqueueMethod Enqueue
+      AnimSrcNodeQueueItem "{68430102E1E98294}" {
+       Child "Source 21030"
+       StartExpr "(HasVariableChanged(Firing, false, true) || HasVariableChanged(TriggerPulled, false, true)) && !BC_IsCocked && State != -1 && Empty "
+       EnqueueMethod InterruptAll
       }
      }
     }
     AnimSrcNodeStateMachine Firing_STM {
      EditorPos -6.589 15.977
      states {
-      AnimSrcNodeState SlideOpen {
-       Tags {
-        "TagBoltBack"
-       }
-       EditorPos -2.989 17.177
-       Child "Queue 2"
-       StartCondition "true && Empty"
-      }
       AnimSrcNodeState SlideClosed {
-       EditorPos -9.989 17.177
+       EditorPos -9.972 17.177
        Child "Queue 3"
-       StartCondition "true && !Empty"
-      }
-      AnimSrcNodeState FireLast {
-       EditorPos -6.589 17.177
-       Child "FireLastAnim_1"
-       TimeStorage "Real Time"
-      }
-     }
-     transitions {
-      AnimSrcNodeTransition "{55AEC32FF7152B6F}" {
-       FromState ""
-       ToState "SlideClosed"
-       Condition "HasVariableChanged(LastBullet) && !LastBullet && !IsTag(\"TagBoltBack\")"
-       PostEval 1
-      }
-      AnimSrcNodeTransition "{55AEC32FF7152B9D}" {
-       FromState "SlideClosed"
-       ToState "FireLast"
-       Condition "HasVariableChanged(Firing, false, true) && LastBullet && !Empty"
-      }
-      AnimSrcNodeTransition "{55AEC32FF7152B8D}" {
-       FromState "FireLast"
-       ToState "SlideOpen"
-       Condition "RemainingTimeLess(0.01)"
-       PostEval 1
+       StartCondition "true"
       }
      }
     }
@@ -406,18 +363,6 @@ AnimSrcGraphFile {
      EditorPos -11.702 20.064
      Source "Reload.Erc.BoltPose"
      Time "0.0"
-    }
-    AnimSrcNodeSource FireEmptyOpend {
-     EditorPos -1.602 22.064
-     Source "Reload.Erc.Trigger"
-     Looptype "No Loop"
-    }
-    AnimSrcNodeSource FireLastAnim_1 {
-     Tags {
-     }
-     EditorPos -6.602 18.864
-     Source "Reload.Erc.FireLast"
-     Looptype "No Loop"
     }
     AnimSrcNodeBlend "Blend 2" {
      EditorPos -11.9 2.1
@@ -1026,19 +971,19 @@ AnimSrcGraphFile {
      Tags {
       ""
      }
-     EditorPos 7.646 30.738
+     EditorPos 7.663 30.738
      states {
       AnimSrcNodeState OpenBolt {
        Tags {
         "BC_TagOpenBolt"
        }
-       EditorPos 4.643 33.932
+       EditorPos 4.66 33.932
        Child "Source 20480"
        StartCondition "true"
        TimeStorage "Real Time"
       }
       AnimSrcNodeState InsertRounds {
-       EditorPos 8.09 35.958
+       EditorPos 8.107 35.958
        Child "Source 23723"
        TimeStorage "Real Time"
       }
@@ -1046,18 +991,18 @@ AnimSrcGraphFile {
        Tags {
         "TagCloseBolt"
        }
-       EditorPos 11.617 34.066
+       EditorPos 11.634 34.066
        Child "Source 21219"
        TimeStorage "Real Time"
        IsExit 1
       }
       AnimSrcNodeState InsertStripper {
-       EditorPos 7.904 31.67
+       EditorPos 7.921 31.67
        Child "Source 33947"
        TimeStorage "Real Time"
       }
       AnimSrcNodeState Interrupted {
-       EditorPos 8.028 33.965
+       EditorPos 8.045 33.965
        PassThrough 1
       }
      }
@@ -1107,6 +1052,7 @@ AnimSrcGraphFile {
       AnimSrcNodeTransition "{67380B131EC802A0}" {
        FromState "Interrupted"
        ToState "Close Bolt"
+       Duration "0.3"
        Condition "IsCommand(CMD_Weapon_Reload) && GetCommandI(CMD_Weapon_Reload) == -2"
       }
       AnimSrcNodeTransition "{67380B13012A1D07}" {
@@ -1215,10 +1161,9 @@ AnimSrcGraphFile {
      QueueItems {
       AnimSrcNodeQueueItem "{6739291BEA18D635}" {
        Child "Pose 26437"
-       StartExpr "IsEvent(\"BC_BoltActionEjectRound\") "
-       InterruptExpr "!IsTag(\"TagOpenBolt\")"
+       StartExpr "IsEvent(\"BC_UncockMosin\")"
+       InterruptExpr "!IsTag(\"BC_TagOpenBolt\")"
        StartTime "// This is to blend the cocking lever down when the bolt is opened"
-       BlendInTime 1
        EnqueueMethod Enqueue
       }
      }
@@ -1251,12 +1196,12 @@ AnimSrcGraphFile {
      EditorPos 10.099 -5.882
      states {
       AnimSrcNodeState Cocked {
-       EditorPos 8.946 -4.439
+       EditorPos 8.946 -4.382
        Child "Pose 23565"
        StartCondition "BC_IsCocked"
       }
       AnimSrcNodeState Uncocked {
-       EditorPos 11.104 -4.419
+       EditorPos 11.596 -4.408
        Child ""
        StartCondition "!BC_IsCocked"
       }
@@ -1281,6 +1226,13 @@ AnimSrcGraphFile {
     AnimSrcNodeSource "SafetyOffCockedSrc " {
      EditorPos 18.546 17.165
      Source "Reload.Erc.Switch_Safety_Off_Cocked"
+    }
+    AnimSrcNodeSource "Source 21030" {
+     Tags {
+      "TagIsPullingTrigger"
+     }
+     EditorPos -7.542 22.748
+     Source "Reload.Erc.Trigger"
     }
    }
   }

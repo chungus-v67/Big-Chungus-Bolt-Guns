@@ -2,7 +2,7 @@ AnimSetInstanceSource "{673A352B16170F82}" {
  Template "{79F763F5AE99184C}Assets/Weapons/Rifles/workspaces/bc_mosin_test.ast"
  Lines {
   AnimSetInstanceSource_Line "Reload.Erc.Fire" {
-   Resource "{C692BD09D0DC1382}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_fire.anm"
+   Resource "{801F0A25EE31A89F}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_erc_fire.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Fire" {
    Resource "{93D5BEFAFE6F5A5B}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire.anm"
@@ -29,7 +29,7 @@ AnimSetInstanceSource "{673A352B16170F82}" {
    Resource "{E9FF401C062224ED}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_safety.anm"
   }
   AnimSetInstanceSource_Line "Reload.Erc.Trigger" {
-   Resource "{C692BD09D0DC1382}Assets/Weapons/Rifles/anims/anm/p_rfl_mosin_erc_fire.anm"
+   Resource "{801F0A25EE31A89F}Assets/Weapons/Rifles/Mosin 9130/anims/anm/p_rfl_bc_mosin_9130_erc_fire.anm"
   }
   AnimSetInstanceSource_Line "Reload.Pne.Trigger" {
    Resource "{93D5BEFAFE6F5A5B}Assets/Weapons/Rifles/M14/anims/anm/p_rfl_M21_erc_fire.anm"
